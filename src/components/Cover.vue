@@ -1,6 +1,19 @@
 <template>
-  <div class="cover">
-    <div class="cover-image"></div>
+  <div id="cover" class="cover">
+    <div class="cover-image">
+      <div
+        class="centered shadow-none jumbotron bg-transparent justify-content-center align-self-center"
+      >
+        <div class="container">
+          <h1 class="font-weight-bold text-white">Hello, I'm Carlos Zabaleta.</h1>
+          <p class="font-weight-bold h3 text-success">I'm a full-stack web developer.</p>
+          <div class="button" dest="about">
+            View my work
+            <i class="fas fa-arrow-right fa-rotate-90"></i>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container">
       <p>
         <i class="fas fa-pencil-ruler"></i>Ut et explicabo odio magnam harum error voluptas qui alias. Quaerat expedita ea natus cupiditate impedit aliquid rerum officiis eum. Impedit nemo enim placeat. Voluptatum quasi et voluptas exercitationem sed aut earum molestias. Sunt sint nihil quaerat labore voluptas. Commodi iste aut impedit rerum.
@@ -17,4 +30,29 @@ export default {};
 </script>
 
 <style scoped>
+#cover .jumbotron {
+  width: 100%;
+}
+h1 {
+  font-size: 360%;
+}
+.h3 {
+  font-size: 260%;
+}
+
+.button {
+  padding: 10px 20px;
+  color: white;
+  border: 2px solid #fff;
+  box-sizing: inherit;
+  display: inline-block;
+  font-size: 13pt;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #04c2c9;
+  border-color: #04c2c9;
+}
 </style>
