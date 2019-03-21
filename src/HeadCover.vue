@@ -1,5 +1,5 @@
 <template>
-  <div id="head">
+  <div id="HeadCover">
     <Cover/>
   </div>
 </template>
@@ -8,7 +8,7 @@
 import Cover from "./components/Cover";
 
 export default {
-  name: "head",
+  name: "HeadCover",
   components: {
     Cover
   }
