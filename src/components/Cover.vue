@@ -1,12 +1,10 @@
 <template>
   <div id="cover" class="cover">
     <div class="cover-image">
-      <div
-        class="centered shadow-none jumbotron bg-transparent justify-content-center align-self-center"
-      >
+      <div class="jumbotron centered shadow-none bg-transparent">
         <div class="container">
-          <h1 class="font-weight-bold text-white">Hello, I'm Carlos Zabaleta.</h1>
-          <p class="font-weight-bold h3 text-success">I'm a full-stack web developer.</p>
+          <h1 class="font-weight-bold text-white display-4">Hello, I'm Carlos Zabaleta.</h1>
+          <h1 class="font-weight-bold text-success">I'm a full-stack web developer.</h1>
           <div class="button" dest="about">
             View my work
             <i class="fas fa-arrow-right fa-rotate-90"></i>
@@ -32,12 +30,6 @@ export default {};
 <style scoped>
 #cover .jumbotron {
   width: 100%;
-}
-h1 {
-  font-size: 360%;
-}
-.h3 {
-  font-size: 260%;
 }
 
 .button {

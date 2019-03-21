@@ -1,12 +1,10 @@
 import Vue from "vue";
-import App from "./App.vue";
+import Head from "./Head.vue";
 
-require("./assets/css/styles.css");
-require("../node_modules/mdbootstrap/css/bootstrap.min.css");
-require("../node_modules/mdbootstrap/css/mdb.min.css");
+require("./assets/js/_references");
 
 Vue.config.productionTip = false;
 
 new Vue({
-  render: h => h(App)
-}).$mount("#app");
+  render: h => h(Head)
+}).$mount("#head");
