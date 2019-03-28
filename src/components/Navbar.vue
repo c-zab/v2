@@ -1,7 +1,6 @@
 <template>
   <div id="navbar">
     <nav id="nav" class="navbar navbar-expand-md sticky-top navbar-dark info-color">
-      <a class="navbar-brand" href="#">Home</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -15,17 +14,20 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link waves-effect waves-light" href="#">
-              Home
-              <span class="sr-only">(current)</span>
-            </a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link waves-effect waves-light" href="#">Features</a>
+            <a class="nav-link" href="#">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link waves-effect waves-light" href="#">Pricing</a>
+            <a class="nav-link" href="#">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
           </li>
         </ul>
       </div>
@@ -61,23 +63,24 @@ window.onload = function() {
 
 #nav a {
   float: left;
+  font-weight: 400;
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 5px 12px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 19px;
 }
 
 #nav a:hover {
   background-color: #ddd;
   color: black;
 }
-
+/*
 #nav a.active {
   background-color: #4caf50;
   color: white;
-}
+} */
 
 .content {
   padding: 16px;
