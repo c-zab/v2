@@ -55,18 +55,21 @@
         Autem consequatur ex iusto sint voluptas tenetur voluptate velit. Eos et nostrum soluta odit. Optio asperiores veniam ipsa vel ex neque dolorum quia. Quo debitis non et qui.
       </p>
     </div>
+    <Footer/>
   </div>
 </template>
 
 <script>
 import Cover from "./components/Cover";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 export default {
   name: "HeadCover",
   components: {
     Cover,
-    Navbar
+    Navbar,
+    Footer
   }
 };
 </script>
