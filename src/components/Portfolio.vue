@@ -1,6 +1,6 @@
 <template>
-  <div class="container">
-    <h1 id="portfolio" class="sec-title">PORTFOLIO</h1>
+  <div id="portfolio-sec" class="container">
+    <Title title="PORTFOLIO"/>
     <p>
       <i class="fas fa-pencil-ruler"></i>Ut et explicabo odio magnam harum error voluptas qui alias. Quaerat expedita ea natus cupiditate impedit aliquid rerum officiis eum. Impedit nemo enim placeat. Voluptatum quasi et voluptas exercitationem sed aut earum molestias. Sunt sint nihil quaerat labore voluptas. Commodi iste aut impedit rerum.
       Sit magni officiis sunt optio quibusdam accusamus dicta voluptatum. Dolores et et molestiae doloremque dolorem odit dolorum id sed. Ipsum enim molestiae vel nemo consequatur a deleniti dolorum. Est incidunt ea qui voluptatem adipisci velit esse ducimus harum.
@@ -20,7 +20,14 @@
 </template>
 
 <script>
-export default {};
+import Title from "./includes/Title";
+
+export default {
+  name: "portfolio-sec",
+  components: {
+    Title
+  }
+};
 </script>
 
 <style scoped>
