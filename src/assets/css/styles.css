@@ -33,3 +33,12 @@ p {
 .bg-color {
   background-color: #041b2b;
 }
+
+.sec-title::before {
+  display: block;
+  content: " ";
+  margin-top: -80px;
+  height: 80px;
+  visibility: hidden;
+  pointer-events: none;
+}
