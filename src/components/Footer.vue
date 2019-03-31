@@ -1,67 +1,43 @@
 <template>
-  <div>
-    <footer class="footer">
-      <div class="content has-text-centered">
-        <div class="columns is-centered is-vcentered is-mobile">
-          <a class="column is-narrow" href="#about" style="color:#ffffff;">
-            <div class="icon">
-              <i class="mdi fab fa-linkedin-in"></i>
-            </div>
-          </a>
-          <a class="column is-narrow" href="#about" style="color:#ffffff;">
-            <div class="icon">
-              <i class="mdi fab fa-facebook-f"></i>
-            </div>
-          </a>
-          <a class="column is-narrow" href="#about" style="color:#ffffff;">
-            <div class="icon">
-              <i class="mdi fab fa-instagram"></i>
-            </div>
-          </a>
-          <a class="column is-narrow" href="#about" style="color:#ffffff;">
-            <div class="icon">
-              <i class="mdi fab fa-github"></i>
-            </div>
-          </a>
+  <!-- Footer -->
+  <footer class="footer-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 py-4">
+          <div class="mb-4 flex-center">
+            <!-- Github -->
+            <a class="tw-ic" href="https://github.com/c-zab">
+              <i class="fab fa-github fa-lg white-text mx-4 fa-2x"></i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic" href="https://twitter.com/CZabaletaCopa">
+              <i class="fab fa-twitter fa-lg white-text mx-4 fa-2x"></i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic" href="https://www.instagram.com/car.zab/">
+              <i class="fab fa-instagram fa-lg white-text mx-4 fa-2x"></i>
+            </a>
+            <!--Linkedin -->
+            <a class="li-ic" href="https://www.linkedin.com/in/czarloss/">
+              <i class="fab fa-linkedin-in fa-lg white-text mx-4 fa-2x"></i>
+            </a>
+          </div>
         </div>
-        <p>CARLOS ZABALETA ©2019</p>
       </div>
-    </footer>
-  </div>
+    </div>
+    <div class="text-muted bg-color text-center py-3">
+      © 2019
+      <span class="text-white">Carlos Zabaleta</span>
+    </div>
+  </footer>
 </template>
 
 <script>
-export default {}
+export default {};
 </script>
 
 <style scoped>
-.mdi {
-  padding-top: 25%;
-}
-footer .icon {
-  overflow: hidden;
-  transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
-  cursor: pointer;
-  width: 55px;
-  height: 55px;
-  position: relative;
-  text-align: center;
-  margin: 0px;
-  background: #c5c5c5;
-  font-size: 18pt;
-}
-
-footer .icon:hover {
-  background: #04c2c9;
-  box-shadow: 0 0 0 3px rgba(4, 94, 201, 0.1);
-  transform: scale(0.95);
-}
-footer .icon:hover .mdi {
-  color: #fff;
-}
-footer .icon:hover .mdi {
-  -webkit-animation: toBottomFromTop 0.3s forwards;
-  -moz-animation: toBottomFromTop 0.3s forwards;
-  animation: toBottomFromTop 0.3s forwards;
+.footer-content {
+  background-color: #052438;
 }
 </style>
