@@ -1,21 +1,23 @@
 <template>
   <div id="about-sec" class="container">
     <Title title="ABOUT"/>
-    <p>
-      <i class="fas fa-pencil-ruler"></i>Ut et explicabo odio magnam harum error voluptas qui alias. Quaerat expedita ea natus cupiditate impedit aliquid rerum officiis eum. Impedit nemo enim placeat. Voluptatum quasi et voluptas exercitationem sed aut earum molestias. Sunt sint nihil quaerat labore voluptas. Commodi iste aut impedit rerum.
-      Sit magni officiis sunt optio quibusdam accusamus dicta voluptatum. Dolores et et molestiae doloremque dolorem odit dolorum id sed. Ipsum enim molestiae vel nemo consequatur a deleniti dolorum. Est incidunt ea qui voluptatem adipisci Svelit esse ducimus harum.
-      Omnis eum vero id fugit totam ea hic alias est. Asperiores ipsum adipisci est rerum. Quae dignissimos dolores sed. Et accusamus eos earum architecto.
-      Autem consequatur ex iusto sint voluptas tenetur voluptate velit. Eos et nostrum soluta odit. Optio asperiores veniam ipsa vel ex neque dolorum quia. Quo debitis non et qui.
-      <i
-        class="fas fa-pencil-ruler"
-      ></i>Ut et explicabo odio magnam harum error voluptas qui alias. Quaerat expedita ea natus cupiditate impedit aliquid rerum officiis eum. Impedit nemo enim placeat. Voluptatum quasi et voluptas exercitationem sed aut earum molestias. Sunt sint nihil quaerat labore voluptas. Commodi iste aut impedit rerum.
-      Sit magni officiis sunt optio quibusdam accusamus dicta voluptatum. Dolores et et molestiae doloremque dolorem odit dolorum id sed. Ipsum enim molestiae vel nemo consequatur a deleniti dolorum. Est incidunt ea qui voluptatem adipisci velit esse ducimus harum.
-      Omnis eum vero id fugit totam ea hic alias est. Asperiores ipsum adipisci est rerum. Quae dignissimos dolores sed. Et accusamus eos earum architecto.
-      Autem consequatur ex iusto sint voluptas tenetur voluptate velit. Eos et nostrum soluta odit. Optio asperiores veniam ipsa vel ex neque dolorum quia. Quo debitis non et qui.
-      <i
-        class="fas fa-pencil-ruler"
-      ></i>
-    </p>
+    <div class="container">
+      <div class="row text-center align-self-center">
+        <div class="col-sm">
+          <img class="me-picture" src="../assets/images/me.jpg" align="center" alt="image">
+          <h2>Who I am?</h2>
+          <p>
+            I am a
+            <strong>full-stack</strong> developer based in Toronto, Canada.
+          </p>
+          <p>
+            I am pasionate for developing quality software; besides, I am a
+            <strong>team work person</strong> and I like to create intuitive and dynamic user experiences.
+          </p>
+        </div>
+        <div class="col-sm align-self-center"></div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -31,4 +33,34 @@ export default {
 </script>
 
 <style scoped>
+/* @media (min-width: 768px) { */
+img.me-picture {
+  width: 70%;
+  clip-path: polygon(
+    30% 15%,
+    40% 15%,
+    70% 15%,
+    90% 50%,
+    70% 85%,
+    40% 85%,
+    30% 85%,
+    10% 50%
+  );
+  transition: clip-path 500ms;
+}
+
+img.me-picture:hover {
+  clip-path: polygon(
+    30% 5%,
+    70% 5%,
+    95% 30%,
+    95% 70%,
+    70% 95%,
+    30% 95%,
+    5% 70%,
+    5% 30%
+  );
+}
+
+/* } */
 </style>
