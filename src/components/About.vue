@@ -15,7 +15,18 @@
             <strong>team work person</strong> and I like to create intuitive and dynamic user experiences.
           </p>
         </div>
-        <div class="col-sm align-self-center"></div>
+        <div class="col-sm align-self-center">
+          <Language name="Python" percentage="70"/>
+          <Language name="PHP" percentage="70"/>
+          <Language name="C#" percentage="60"/>
+          <Language name="Java" percentage="65"/>
+          <Language name="VueJS" percentage="70"/>
+          <Language name="React" percentage="55"/>
+          <Language name="Git" percentage="80"/>
+          <Language name="JS" percentage="70"/>
+          <Language name="CSS" percentage="80"/>
+          <Language name="HTML" percentage="75"/>
+        </div>
       </div>
     </div>
   </div>
@@ -23,11 +34,13 @@
 
 <script>
 import Title from "./includes/Title";
+import Language from "./includes/Language";
 
 export default {
   name: "about-sec",
   components: {
-    Title
+    Title,
+    Language
   }
 };
 </script>
