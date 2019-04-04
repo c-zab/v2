@@ -1,5 +1,5 @@
 <template>
-  <div class="title-sec pb-3">
+  <div class="title-sec pb-4">
     <div class="row justify-content-center">
       <h2 v-bind:id="title | idName" class="sec-title col-auto">{{ title }}</h2>
     </div>
