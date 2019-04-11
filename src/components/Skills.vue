@@ -186,8 +186,7 @@ export default {
       expOthersTable: [
         {
           id: 1,
-          name: "Webpack",
-          classItem: "devicon-image devicon-webpack-plain colored"
+          name: "Webpack"
         },
         {
           id: 2,
@@ -196,16 +195,20 @@ export default {
         },
         {
           id: 3,
+          name: "Yarn"
+        },
+        {
+          id: 4,
           name: "Illustrator",
           classItem: "devicon-image devicon-illustrator-plain colored"
         },
         {
-          id: 4,
+          id: 5,
           name: "Android Studio",
           classItem: "devicon-image devicon-android-plain colored"
         },
         {
-          id: 5,
+          id: 6,
           name: "Chrome Dev Tools"
         }
       ]
