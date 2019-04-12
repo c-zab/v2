@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "jquery": "^3.3.1",
     "mdbootstrap": "^4.7.5",
     "popper.js": "^1.14.7",

@@ -3,9 +3,17 @@
     <div class="cover-image">
       <div class="jumbotron centered shadow-none bg-transparent">
         <div class="container">
-          <h1 class="text-white">Hello, I'm Carlos Zabaleta.</h1>
-          <h1 class="text-success">I'm a full-stack web developer.</h1>
-          <div class="button" dest="about">
+          <h1
+            data-aos="fade-right"
+            data-aos-delay="1000"
+            class="text-white"
+          >Hello, I'm Carlos Zabaleta.</h1>
+          <h1
+            data-aos="fade-right"
+            data-aos-delay="1000"
+            class="text-success"
+          >I'm a full-stack web developer.</h1>
+          <div class="button" data-aos="zoom-in" data-aos-delay="1300" dest="about">
             View my work
             <i class="fas fa-arrow-right fa-rotate-90"></i>
           </div>

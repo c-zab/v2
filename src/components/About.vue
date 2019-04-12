@@ -1,21 +1,30 @@
 <template>
   <div id="about-sec" class="container">
-    <Title title="ABOUT"/>
+    <Title data-aos="fade-right" title="ABOUT"/>
     <div class="container pb-5">
       <div class="row text-center align-self-center">
         <div class="col-md">
-          <img class="me-picture" src="../assets/images/me.jpg" align="center" alt="image">
-          <h2>Who I am?</h2>
-          <p>
-            I am a
-            <strong>full-stack</strong> developer based in Toronto, Canada.
-          </p>
-          <p>
-            I am pasionate for developing quality software; besides, I am a
-            <strong>team work person</strong> and I like to create intuitive and dynamic user experiences.
-          </p>
+          <div data-aos="zoom-in" data-aos-delay="800">
+            <img class="me-picture" src="../assets/images/me.jpg" align="center" alt="image">
+          </div>
+          <div data-aos="zoom-in" data-aos-delay="1000">
+            <h2>Who I am?</h2>
+            <p>
+              I am a
+              <strong>full-stack</strong> developer based in Toronto, Canada.
+            </p>
+            <p>
+              I am pasionate for developing quality software; besides, I am a
+              <strong>team work person</strong> and I like to create intuitive and dynamic user experiences.
+            </p>
+          </div>
         </div>
-        <div class="col-md align-self-center">
+        <div
+          data-aos="fade-left"
+          data-aos-delay="1500"
+          data-aos-offset="200"
+          class="col-md align-self-center"
+        >
           <Language name="Python" percentage="70"/>
           <Language name="PHP" percentage="70"/>
           <Language name="C#" percentage="60"/>
@@ -30,7 +39,12 @@
     </div>
     <div class="container pt-4">
       <div class="row text-center">
-        <div class="col-md-6 col-lg py-3">
+        <div
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+          data-aos-duration="1000"
+          class="col-md-6 col-lg py-3"
+        >
           <i
             class="about-icon fas fa-5x"
             @mouseover="hoverBolt = true"
@@ -40,7 +54,13 @@
           <h3 @mouseover="hoverBolt = true" @mouseleave="hoverBolt = false">Fast</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit tempore fuga numquam</p>
         </div>
-        <div class="col-md-6 col-lg py-3">
+        <div
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+          data-aos-duration="1000"
+          data-aos-delay="700"
+          class="col-md-6 col-lg py-3"
+        >
           <i
             class="about-icon fas fa-5x"
             @mouseover="hoverMobile = true"
@@ -50,7 +70,13 @@
           <h3 @mouseover="hoverMobile = true" @mouseleave="hoverMobile = false">Responsive</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit tempore fuga numquam</p>
         </div>
-        <div class="col-md col-lg py-3">
+        <div
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+          data-aos-duration="1000"
+          data-aos-delay="900"
+          class="col-md col-lg py-3"
+        >
           <i
             class="about-icon far fa-5x"
             @mouseover="hoverLight=true"
@@ -60,7 +86,13 @@
           <h3 @mouseover="hoverLight=true" @mouseleave="hoverLight=false">Intuitive</h3>
           <p>yellow rgba-yellow-strong Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit tempore fuga numquam</p>
         </div>
-        <div class="col-md col-lg py-3">
+        <div
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+          data-aos-duration="1000"
+          data-aos-delay="1100"
+          class="col-md col-lg py-3"
+        >
           <i
             class="about-icon fa-5x"
             @mouseover="hoverRocket = true"
@@ -70,7 +102,13 @@
           <h3 @mouseover="hoverRocket = true" @mouseleave="hoverRocket = false">Dinamic</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit tempore fuga numquam</p>
         </div>
-        <div class="col-md-12 col-lg-12 py-3">
+        <div
+          data-aos="zoom-in-down"
+          data-aos-anchor-placement="bottom-bottom"
+          data-aos-duration="1000"
+          data-aos-delay="1300"
+          class="col-md-12 col-lg-12 py-3"
+        >
           <i
             class="about-icon fa-5x"
             @mouseover="hoverCode = true"

@@ -1,6 +1,6 @@
 <template>
   <div id="skills-sec" class="container">
-    <Title title="SKILLS"/>
+    <Title data-aos="fade-right" title="SKILLS"/>
     <div class="container">
       <div class="row">
         <SkillsTable title="Backend" :table="backendTable"/>

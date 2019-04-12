@@ -1,11 +1,21 @@
 <template>
   <div class="col-md">
-    <h3 class="py-4">{{ title }}</h3>
+    <h3
+      data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine"
+      class="py-4"
+    >{{ title }}</h3>
     <div class="list-group-flush">
       <div class="col-md">
         <div class="list-group-flush">
           <div v-for="item in table" v-bind:key="item.id" class="list-group-item py-2">
-            <div class="row">
+            <div
+              data-aos="fade-up"
+              data-aos-anchor-placement="bottom-bottom"
+              data-aos-duration="1000"
+              class="row"
+            >
               <div class="col-3">
                 <div v-if="title==='Backend'">
                   <div v-if="item.name=== 'Python'">
