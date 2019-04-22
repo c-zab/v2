@@ -11,8 +11,9 @@
         <div class="list-group-flush">
           <div v-for="item in table" v-bind:key="item.id" class="list-group-item py-2">
             <div
-              data-aos="fade-up"
+              data-aos="flip-right"
               data-aos-anchor-placement="bottom-bottom"
+              data-aos-delay="1000"
               data-aos-duration="1000"
               class="row"
             >

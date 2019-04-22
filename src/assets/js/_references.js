@@ -1,7 +1,7 @@
 // CSS
 require("../../../node_modules/mdbootstrap/css/bootstrap.min.css");
 require("../../../node_modules/mdbootstrap/css/mdb.min.css");
-require("../css/styles.css");
+require(/* webpackPrefetch: true */ "../css/styles.css");
 
 // JS
 require("../../../node_modules/jquery/dist/jquery.min");

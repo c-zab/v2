@@ -5,7 +5,7 @@
     <About class="py-3"/>
     <Skills class="py-3"/>
     <Portfolio class="py-3"/>
-    <Testimonials class="py-3"/>
+    <!-- <Testimonials class="py-3"/> -->
     <Contact class="py-3"/>
     <Footer/>
   </div>
@@ -18,7 +18,7 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Portfolio from "./components/Portfolio";
-import Testimonials from "./components/Testimonials";
+// import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 
 export default {
@@ -30,7 +30,7 @@ export default {
     About,
     Skills,
     Portfolio,
-    Testimonials,
+    // Testimonials,
     Contact
   }
 };
