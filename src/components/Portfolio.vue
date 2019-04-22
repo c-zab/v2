@@ -10,15 +10,18 @@
     </div>
 
     <div class="containerMix row">
-      <div class="mix backend col-md-4 bg-danger">
+      <div class="mix backend col-md-4">
         <div
           class="card card-image"
           style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);"
         >
           <div
-            class="text-white text-center align-items-center rgba-black-strong py-5 px-4 bg-info"
+            class="text-white text-center align-items-center rgba-black-strong py-5 px-4"
+            style="height:300px;"
+            @mouseover="show = true"
+            @mouseleave="show = false"
           >
-            <div>
+            <div v-if="show">
               <h5 class="pink-text">
                 <i class="fas fa-chart-pie"></i> Backend
               </h5>
@@ -32,7 +35,7 @@
           </div>
         </div>
       </div>
-      <div class="mix frontend col-md-4">
+      <!-- <div class="mix frontend col-md-4">
         <div
           class="card card-image"
           style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);"
@@ -56,15 +59,12 @@
             </div>
           </div>
         </div>
-        <!-- Card -->
       </div>
       <div class="mix backend col-md-4">
-        <!-- Card -->
         <div
           class="card card-image"
           style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);"
         >
-          <!-- Content -->
           <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
             <div>
               <h5 class="pink-text">
@@ -84,15 +84,12 @@
             </div>
           </div>
         </div>
-        <!-- Card -->
       </div>
       <div class="mix frontend col-md-4">
-        <!-- Card -->
         <div
           class="card card-image"
           style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);"
         >
-          <!-- Content -->
           <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
             <div>
               <h5 class="pink-text">
@@ -112,15 +109,12 @@
             </div>
           </div>
         </div>
-        <!-- Card -->
       </div>
       <div class="mix frontend col-md-4">
-        <!-- Card -->
         <div
           class="card card-image"
           style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);"
         >
-          <!-- Content -->
           <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
             <div>
               <h5 class="pink-text">
@@ -140,7 +134,6 @@
             </div>
           </div>
         </div>
-        <!-- Card -->
       </div>
       <div class="mix backend col-md-4">
         <div
@@ -166,15 +159,12 @@
             </div>
           </div>
         </div>
-        <!-- Card -->
       </div>
       <div class="mix leadership col-md-4">
-        <!-- Card -->
         <div
           class="card card-image"
           style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);"
         >
-          <!-- Content -->
           <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
             <div>
               <h5 class="pink-text">
@@ -194,15 +184,12 @@
             </div>
           </div>
         </div>
-        <!-- Card -->
       </div>
       <div class="mix leadership col-md-4">
-        <!-- Card -->
         <div
           class="card card-image"
           style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);"
         >
-          <!-- Content -->
           <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
             <div>
               <h5 class="pink-text">
@@ -222,15 +209,12 @@
             </div>
           </div>
         </div>
-        <!-- Card -->
       </div>
       <div class="mix leadership col-md-4">
-        <!-- Card -->
         <div
           class="card card-image"
           style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);"
         >
-          <!-- Content -->
           <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
             <div>
               <h5 class="pink-text">
@@ -250,8 +234,7 @@
             </div>
           </div>
         </div>
-        <!-- Card -->
-      </div>
+      </div>-->
     </div>
   </div>
 </template>
@@ -268,6 +251,11 @@ export default {
   mounted() {
     var containerEl = document.querySelector(".containerMix");
     mixitup(containerEl);
+  },
+  data() {
+    return {
+      show: false
+    };
   }
 };
 </script>
