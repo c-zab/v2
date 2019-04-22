@@ -26,12 +26,11 @@
         >Leadership</button>
       </div>
     </div>
-
-    <div class="containerMix row">
+    <div class="containerMix row no-gutters">
       <div class="mix backend col-md-4">
         <div
-          class="card card-image"
-          style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);"
+          class="card-image"
+          :style="{ backgroundImage: 'url(' + require('@/assets/images/cards.jpg') + ')' }"
         >
           <div
             class="text-white text-center align-items-center rgba-black-strong py-5 px-4"
@@ -39,21 +38,21 @@
             @mouseover="show = true"
             @mouseleave="show = false"
           >
-            <div v-if="show">
-              <h5 class="pink-text">
-                <i class="fas fa-chart-pie"></i> Backend
-              </h5>
-              <h3 class="card-title pt-2">
-                <strong>QueryFox</strong>
-              </h3>
-              <a class="btn btn-pink">
-                <i class="fas fa-clone left"></i> Details
-              </a>
-            </div>
+            <transition name="bounce">
+              <div v-if="show">
+                <h5 class="pink-text">Backend</h5>
+                <h3 class="card-title pt-2">
+                  <strong>QueryFox</strong>
+                </h3>
+                <a class="btn btn-pink">
+                  <i class="fas fa-clone left"></i> Details
+                </a>
+              </div>
+            </transition>
           </div>
         </div>
       </div>
-      <!-- <div class="mix frontend col-md-4">
+      <div class="mix frontend col-md-4">
         <div
           class="card card-image"
           style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);"
@@ -66,11 +65,7 @@
               <h3 class="card-title pt-2">
                 <strong>Czabalet</strong>
               </h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
-                optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos.
-                Odit sed qui, dolorum!.
-              </p>
+
               <a class="btn btn-pink">
                 <i class="fas fa-clone left"></i> Details
               </a>
@@ -91,11 +86,7 @@
               <h3 class="card-title pt-2">
                 <strong>Anthony's Games</strong>
               </h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
-                optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos.
-                Odit sed qui, dolorum!.
-              </p>
+
               <a class="btn btn-pink">
                 <i class="fas fa-clone left"></i> Details
               </a>
@@ -116,11 +107,7 @@
               <h3 class="card-title pt-2">
                 <strong>Delisa</strong>
               </h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
-                optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos.
-                Odit sed qui, dolorum!.
-              </p>
+
               <a class="btn btn-pink">
                 <i class="fas fa-clone left"></i> Details
               </a>
@@ -141,11 +128,7 @@
               <h3 class="card-title pt-2">
                 <strong>Arrow Game</strong>
               </h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
-                optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos.
-                Odit sed qui, dolorum!.
-              </p>
+
               <a class="btn btn-pink">
                 <i class="fas fa-clone left"></i> Details
               </a>
@@ -153,7 +136,7 @@
           </div>
         </div>
       </div>
-      <div class="mix backend col-md-4">
+      <!-- <div class="mix backend col-md-4">
         <div
           class="card card-image"
           style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);"
@@ -279,4 +262,27 @@ export default {
 </script>
 
 <style scoped>
+.card-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bounce-enter-active {
+  animation: bounce-in 0.5s;
+}
+.bounce-leave-active {
+  animation: bounce-in 0.5s reverse;
+}
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 </style>
