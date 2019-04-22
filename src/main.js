@@ -12,7 +12,7 @@ Vue.config.productionTip = false;
 new Vue({
   created() {
     AOS.init({
-      delay: 500,
+      // delay: 500,
       duration: 500
       // once: true
     });

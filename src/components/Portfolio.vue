@@ -2,11 +2,29 @@
   <div id="portfolio-sec" class="container">
     <Title data-aos="fade-right" title="PORTFOLIO"/>
 
-    <div class="controls">
-      <button type="button" class="control btn-info" data-filter="all">All</button>
-      <button type="button" class="control" data-filter=".backend">Backend</button>
-      <button type="button" class="control" data-filter=".frontend">Frontend</button>
-      <button type="button" class="control" data-filter=".leadership">Leadership</button>
+    <div class="container pb-4">
+      <div class="controls row justify-content-center">
+        <button
+          type="button"
+          class="col-sm-4 col-md-2 col-xs-2 control btn btn-info"
+          data-filter="all"
+        >All</button>
+        <button
+          type="button"
+          class="col-sm-4 col-md-2 col-xs-2 control btn btn-info"
+          data-filter=".backend"
+        >Backend</button>
+        <button
+          type="button"
+          class="col-sm-4 col-md-2 col-xs-2 control btn btn-info"
+          data-filter=".frontend"
+        >Frontend</button>
+        <button
+          type="button"
+          class="col-sm-4 col-md-2 col-xs-2 control btn btn-info"
+          data-filter=".leadership"
+        >Leadership</button>
+      </div>
     </div>
 
     <div class="containerMix row">
