@@ -14,24 +14,24 @@
 <script>
 import Cover from "./components/Cover";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Portfolio from "./components/Portfolio";
 // import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 export default {
   name: "App",
   components: {
     Cover,
     Navbar,
-    Footer,
     About,
     Skills,
     Portfolio,
     // Testimonials,
-    Contact
+    Contact,
+    Footer
   }
 };
 </script>

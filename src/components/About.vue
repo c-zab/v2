@@ -2,7 +2,7 @@
   <div id="about-sec" class="container">
     <Title data-aos="fade-right" title="ABOUT"/>
     <div class="container pb-5">
-      <div class="row text-center align-self-center">
+      <div class="row text-center">
         <div class="col-md">
           <div data-aos="zoom-in" data-aos-delay="800">
             <img class="me-picture" src="../assets/images/me.jpg" align="center" alt="image">
@@ -19,12 +19,7 @@
             </p>
           </div>
         </div>
-        <div
-          data-aos="fade-left"
-          data-aos-delay="1500"
-          data-aos-offset="200"
-          class="col-md align-self-center"
-        >
+        <div class="col-md align-self-center">
           <Language name="Python" percentage="70"/>
           <Language name="PHP" percentage="70"/>
           <Language name="C#" percentage="60"/>
@@ -37,6 +32,7 @@
         </div>
       </div>
     </div>
+
     <div class="container pt-4">
       <div class="row text-center">
         <div
