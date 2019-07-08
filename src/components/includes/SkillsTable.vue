@@ -2,8 +2,7 @@
   <div class="col-md">
     <h3
       data-aos="fade-right"
-      data-aos-offset="300"
-      data-aos-easing="ease-in-sine"
+      data-aos-anchor-placement="bottom-bottom"
       class="py-4"
     >{{ title }}</h3>
     <div class="list-group-flush">
@@ -12,9 +11,7 @@
           <div v-for="item in table" v-bind:key="item.id" class="list-group-item py-2">
             <div
               data-aos="flip-right"
-              data-aos-anchor-placement="bottom-bottom"
-              data-aos-delay="1000"
-              data-aos-duration="1000"
+              data-aos-anchor-placement="top-bottom"
               class="row"
             >
               <div class="col-3">

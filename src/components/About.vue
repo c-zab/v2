@@ -1,13 +1,26 @@
 <template>
   <div id="about-sec" class="container">
-    <Title data-aos="fade-right" title="ABOUT"/>
+    <Title title="ABOUT"/>
     <div class="container pb-5">
       <div class="row text-center">
-        <div class="col-md">
-          <div data-aos="zoom-in" data-aos-delay="800">
+        <div class="col-md align-self-center">
+          <div
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500"
+            data-aos-anchor-placement="top-bottom"
+          >
             <img class="me-picture" src="../assets/images/me.jpg" align="center" alt="image">
           </div>
-          <div data-aos="zoom-in" data-aos-delay="1000">
+          <div
+            data-aos="fade-right"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500"
+            data-aos-delay="300"
+            data-aos-anchor-placement="top-bottom"
+          >
             <h2>Who I am?</h2>
             <p>
               I am a
@@ -20,15 +33,87 @@
           </div>
         </div>
         <div class="col-md align-self-center">
-          <Language name="Python" percentage="70"/>
-          <Language name="PHP" percentage="70"/>
-          <Language name="C#" percentage="60"/>
-          <Language name="Typescript" percentage="65"/>
-          <Language name="VueJS" percentage="70"/>
-          <Language name="React" percentage="55"/>
-          <Language name="JS" percentage="70"/>
-          <Language name="CSS" percentage="80"/>
-          <Language name="HTML" percentage="75"/>
+          <Language
+            data-aos="zoom-in"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500"
+            data-aos-anchor-placement="bottom-bottom"
+            name="Python"
+            percentage="70"
+          />
+          <Language
+            data-aos="zoom-in"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500"
+            data-aos-anchor-placement="bottom-bottom"
+            name="PHP"
+            percentage="70"
+          />
+          <Language
+            data-aos="zoom-in"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500"
+            data-aos-anchor-placement="bottom-bottom"
+            name="C#"
+            percentage="60"
+          />
+          <Language
+            data-aos="zoom-in"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500"
+            data-aos-anchor-placement="bottom-bottom"
+            name="Typescript"
+            percentage="65"
+          />
+          <Language
+            data-aos="zoom-in"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500"
+            data-aos-anchor-placement="bottom-bottom"
+            name="VueJS"
+            percentage="70"
+          />
+          <Language
+            data-aos="zoom-in"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500"
+            data-aos-anchor-placement="bottom-bottom"
+            name="React"
+            percentage="55"
+          />
+          <Language
+            data-aos="zoom-in"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500"
+            data-aos-anchor-placement="bottom-bottom"
+            name="JS"
+            percentage="70"
+          />
+          <Language
+            data-aos="zoom-in"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500"
+            data-aos-anchor-placement="bottom-bottom"
+            name="CSS"
+            percentage="80"
+          />
+          <Language
+            data-aos="zoom-in"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500"
+            data-aos-anchor-placement="bottom-bottom"
+            name="HTML"
+            percentage="75"
+          />
         </div>
       </div>
     </div>
@@ -37,8 +122,9 @@
       <div class="row text-center">
         <div
           data-aos="fade-up"
-          data-aos-anchor-placement="bottom-bottom"
-          data-aos-duration="1000"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="500"
+          data-aos-delay="300"
           class="col-md-6 col-lg py-3"
         >
           <i
@@ -52,9 +138,9 @@
         </div>
         <div
           data-aos="fade-up"
-          data-aos-anchor-placement="bottom-bottom"
-          data-aos-duration="1000"
-          data-aos-delay="700"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="500"
+          data-aos-delay="350"
           class="col-md-6 col-lg py-3"
         >
           <i
@@ -68,9 +154,9 @@
         </div>
         <div
           data-aos="fade-up"
-          data-aos-anchor-placement="bottom-bottom"
-          data-aos-duration="1000"
-          data-aos-delay="900"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="500"
+          data-aos-delay="400"
           class="col-md col-lg py-3"
         >
           <i
@@ -84,9 +170,9 @@
         </div>
         <div
           data-aos="fade-up"
-          data-aos-anchor-placement="bottom-bottom"
-          data-aos-duration="1000"
-          data-aos-delay="1100"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="500"
+          data-aos-delay="450"
           class="col-md col-lg py-3"
         >
           <i
@@ -99,10 +185,10 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit tempore fuga numquam</p>
         </div>
         <div
-          data-aos="zoom-in-down"
-          data-aos-anchor-placement="bottom-bottom"
-          data-aos-duration="1000"
-          data-aos-delay="1300"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="500"
+          data-aos-delay="450"
           class="col-md-12 col-lg-12 py-3"
         >
           <i

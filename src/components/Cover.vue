@@ -13,8 +13,13 @@
             data-aos-delay="1000"
             class="text-success"
           >I'm a full-stack web developer.</h1>
-          <div class="button" data-aos="zoom-in" data-aos-delay="1300" dest="about">
-            View my work
+          <div
+            class="button"
+            data-aos="zoom-in"
+            data-aos-delay="1300"
+            data-aos-anchor-placement="top-bottom"
+            dest="about"
+            >View my work
             <i class="fas fa-arrow-right fa-rotate-90"></i>
           </div>
         </div>

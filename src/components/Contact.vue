@@ -1,17 +1,100 @@
 <template>
   <div id="contact-sec" class="container">
-    <Title data-aos="fade-right" title="CONTACT"/>
-    <div data-aos="zoom-in-up">
-      <p>
-        <i class="fas fa-pencil-ruler"></i>Ut et explicabo odio magnam harum error voluptas qui alias. Quaerat expedita ea natus cupiditate impedit aliquid rerum officiis eum. Impedit nemo enim placeat. Voluptatum quasi et voluptas exercitationem sed aut earum molestias. Sunt sint nihil quaerat labore voluptas. Commodi iste aut impedit rerum.
-        Sit magni officiis sunt optio quibusdam accusamus dicta voluptatum. Dolores et et molestiae doloremque dolorem odit dolorum id sed. Ipsum enim molestiae vel nemo consequatur a deleniti dolorum. Est incidunt ea qui voluptatem adipisci velit esse ducimus harum.
-        Omnis eum vero id fugit totam ea hic alias est. Asperiores ipsum adipisci est rerum. Quae dignissimos dolores sed. Et accusamus eos earum architecto.
-        Autem consequatur ex iusto sint voluptas tenetur voluptate velit. Eos et nostrum soluta odit. Optio asperiores veniam ipsa vel ex neque dolorum quia. Quo debitis non et qui.
-        <i
-          class="fas fa-pencil-ruler"
-        ></i>
-      </p>
-    </div>
+	<Title data-aos="fade-right" title="CONTACT"/>
+	<div data-aos="zoom-in-up">
+
+<section class="mb-4">
+
+	<p class="text-center w-responsive mx-auto mb-5">Do you want to <strong>work together</strong>? Please feel free to send me a message. I will come back to you within
+		a matter of hours to help you.</p>
+
+	<div class="row">
+
+		<!--Grid column-->
+		<div class="col-md-9 mb-md-0 mb-5">
+			<form id="contact-form" name="contact-form" action="#" method="POST">
+
+				<!--Grid row-->
+				<div class="row">
+
+					<!--Grid column-->
+					<div class="col-md-6">
+						<div class="md-form mb-0">
+							<input type="text" id="name" name="name" class="form-control">
+							<label for="name" class="">Your name</label>
+						</div>
+					</div>
+					<!--Grid column-->
+
+					<!--Grid column-->
+					<div class="col-md-6">
+						<div class="md-form mb-0">
+							<input type="text" id="email" name="email" class="form-control">
+							<label for="email" class="">Your email</label>
+						</div>
+					</div>
+					<!--Grid column-->
+
+				</div>
+				<!--Grid row-->
+
+				<!--Grid row-->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="md-form mb-0">
+							<input type="text" id="subject" name="subject" class="form-control">
+							<label for="subject" class="">Subject</label>
+						</div>
+					</div>
+				</div>
+				<!--Grid row-->
+
+				<!--Grid row-->
+				<div class="row">
+
+					<!--Grid column-->
+					<div class="col-md-12">
+
+						<div class="md-form">
+							<textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+							<label for="message">Your message</label>
+						</div>
+
+					</div>
+				</div>
+				<!--Grid row-->
+
+			</form>
+
+			<div class="text-center text-md-left">
+				<button class="btn btn-primary" onclick="document.getElementById('contact-form').submit();" disabled>Send</button>
+			</div>
+			<div class="status"></div>
+		</div>
+		<!--Grid column-->
+
+		<!--Grid column-->
+		<div class="col-md-3 text-center">
+			<ul class="list-unstyled mb-0">
+				<li><i class="fas fa-map-marker-alt fa-2x"></i>
+					<p>Toronto, Canada</p>
+				</li>
+
+				<li><i class="fas fa-phone mt-4 fa-2x"></i>
+					<p>+1 647 917 9683</p>
+				</li>
+
+				<li><i class="fas fa-envelope mt-4 fa-2x"></i>
+					<p>zabaletacopa@gmail.com</p>
+				</li>
+			</ul>
+		</div>
+		<!--Grid column-->
+
+</div>
+</section>
+<!--Section: Contact v.2-->
+	</div>
   </div>
 </template>
 
@@ -19,10 +102,10 @@
 import Title from "./includes/Title";
 
 export default {
-  name: "contact-sec",
-  components: {
-    Title
-  }
+	name: "contact-sec",
+	components: {
+		Title
+	}
 };
 </script>
 

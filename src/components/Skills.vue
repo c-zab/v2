@@ -1,13 +1,13 @@
 <template>
   <div id="skills-sec" class="container">
-    <Title data-aos="fade-right" title="SKILLS"/>
+    <Title title="SKILLS"/>
     <div class="container">
       <div class="row">
         <SkillsTable title="Backend" :table="backendTable"/>
         <SkillsTable title="Frontend" :table="frontendTable"/>
         <SkillsTable title="Others" :table="othersTable"/>
       </div>
-      <h2 class="text-center py-5">I also have experience working on</h2>
+      <h2 data-aos="zoom-in" class="text-center py-5">I also have experience working on</h2>
       <div class="row">
         <SkillsTable title="Backend" :table="expBackendTable"/>
         <SkillsTable title="Frontend" :table="expFrontendTable"/>

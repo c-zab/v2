@@ -1,25 +1,29 @@
 <template>
   <div id="portfolio-sec" class="container">
-    <Title data-aos="fade-right" title="PORTFOLIO"/>
+    <Title title="PORTFOLIO"/>
 
     <div class="container pb-4">
       <div class="controls row justify-content-center">
         <button
+          data-aos="zoom-in"
           type="button"
           class="col-sm-4 col-md-2 col-xs-2 control btn btn-info"
           data-filter="all"
         >All</button>
         <button
+          data-aos="zoom-in"
           type="button"
           class="col-sm-4 col-md-2 col-xs-2 control btn btn-info"
           data-filter=".backend"
         >Backend</button>
         <button
+          data-aos="zoom-in"
           type="button"
           class="col-sm-4 col-md-2 col-xs-2 control btn btn-info"
           data-filter=".frontend"
         >Frontend</button>
         <button
+          data-aos="zoom-in"
           type="button"
           class="col-sm-4 col-md-2 col-xs-2 control btn btn-info"
           data-filter=".leadership"

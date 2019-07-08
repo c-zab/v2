@@ -26,8 +26,8 @@
       </div>
     </div>
     <div class="text-muted bg-color text-center py-3">
-      © 2019
-      <span class="text-white">Carlos Zabaleta</span>
+      <p class="grey-text mb-0" style="font-size:0.8rem">© czabalet 2019. All rights reserved. Yes, all of them.</p>
+      <p class="grey-text mb-0" style="font-size:0.8rem">Designed with <span class="text-white">&#10084;</span> by <strong>Carlos Zabaleta</strong>.</p>
     </div>
   </footer>
 </template>
@@ -35,9 +35,3 @@
 <script>
 export default {};
 </script>
-
-<style scoped>
-.footer-content {
-  background-color: #052438;
-}
-</style>
