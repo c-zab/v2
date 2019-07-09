@@ -3,15 +3,55 @@ $font-family-sans-serif: 'Montserrat', sans-serif;
 
 $break-large: 800px;
 
+$my-cyan: #14cbeb;
+
+$my-pink: #D90368;
+
+$my-dark-gray: #2d2d2d;
+
+$my-dark-cyan: #0e8aa0;
+
+$my-bg-color: #041b2b;
+
+$my-footer: #052438;
+
+$my-success: #2ce059;
+
+.text-success {
+	color: $my-success !important;
+}
+
+$my-danger: #fb173f;
+
+.text-danger {
+	color: $my-danger !important;
+};
+
+.text-info {
+	color: $my-cyan !important;
+}
+
+.btn-info {
+	border-color: $my-cyan !important;
+	background-color: $my-cyan !important;
+}
+
+$my-warning: #ffe219;
+
+.text-warning {
+	color: $my-warning !important;
+};
+
+$my-primary: #0496FF;
+
+.text-primary {
+	color: $my-primary !important;
+};
+
+
 h1 {
 	font-family: "Raleway", sans-serif;
 	font-weight: 600;
-}
-
-@media screen and (max-width: 800px){
-	h1{
-		font-size: 2em;
-	}
 }
 
 h2 {
@@ -37,4 +77,16 @@ h5 {
 p {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
+}
+
+@media screen and (max-width: 800px){
+	h1{
+		font-size: 2em;
+	}
+	h4 {
+		font-size: 1.4em;
+	}
+	h5 {
+		font-size: 1em;
+	}
 }

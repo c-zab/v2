@@ -31,7 +31,7 @@
       >© czabalet 2019. All rights reserved. Yes, all of them.</p>
       <p class="grey-text mb-0">
         Designed with
-        <span class="text-white">&#10084;</span> by
+        <span class="text-danger">&#10084;</span> by
         <strong>Carlos Zabaleta</strong>.
       </p>
     </div>

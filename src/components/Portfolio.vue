@@ -3,7 +3,7 @@
     <Title title="PORTFOLIO" />
 
     <div class="container pb-4">
-      <div class="controls row justify-content-center">
+      <div class="controls row justify-content-center" data-aos="zoom-in" data-aos-delay="300">
         <button
           data-aos="zoom-in"
           type="button"
@@ -30,7 +30,7 @@
         >Leadership</button>
       </div>
     </div>
-    <div class="containerMix row no-gutters">
+    <div class="containerMix row no-gutters" data-aos="zoom-in" data-aos-delay="400">
       <cardItem :cardItem="queryfox" />
       <cardItem :cardItem="czabalet" />
       <cardItem :cardItem="games" />

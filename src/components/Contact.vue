@@ -62,7 +62,7 @@
 
             <div class="text-center text-md-left">
               <button
-                class="btn btn-primary"
+                class="btn btn-info"
                 onclick="document.getElementById('contact-form').submit();"
                 disabled
               >Send</button>

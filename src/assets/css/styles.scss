@@ -19,14 +19,14 @@
 // Navbar
 
 .navbar {
-  border-bottom: 4px solid #14cbeb;
+  border-bottom: 4px solid $my-cyan;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
 }
 
 .nav-item{
 	&:hover .nav-link{
-		color: #b32b72 !important
+		color: $my-pink !important
 	}
 }
 
@@ -35,13 +35,13 @@
 .bar {
   width: 6em;
   height: 0.3em;
-  background-color: #2d2d2d;
+  background-color: $my-dark-gray;
 }
 
 .sec-title {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-	color: #2d2d2d;
+	color: $my-dark-gray;
 	&::before {
 		display: block;
 		content: "";
@@ -86,10 +86,10 @@ img.me-picture {
 }
 
 .fill {
-  background: #0e8aa0;
+  background: $my-dark-cyan;
 	height: 35px;
 	& #name {
-		background: #14cbeb;
+		background: $my-cyan;
 		height: 100%;
 		width: 30%;
 	}
@@ -123,7 +123,7 @@ img.me-picture {
 }
 
 .devicon-photoshop-plain {
-  color: #004e9b;
+  color: #2082d2 !important;
 }
 
 // Portfolio
@@ -153,12 +153,12 @@ img.me-picture {
 // Footer
 
 .bg-color {
-	background-color: #041b2b;
+	background-color: $my-bg-color;
 
 }
 
 .footer-content {
-	background-color: #052438;
+	background-color: $my-footer;
 }
 
 .footer-text {
