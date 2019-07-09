@@ -1,13 +1,13 @@
 <template>
   <div id="app">
-    <Cover/>
-    <Navbar/>
-    <About class="py-3"/>
-    <Skills class="py-3"/>
-    <Portfolio class="py-3"/>
+    <Cover />
+    <Navbar />
+    <About class="py-3" />
+    <Skills class="py-3" />
+    <Portfolio class="py-3" />
     <!-- <Testimonials class="py-3"/> -->
-    <Contact class="py-3"/>
-    <Footer/>
+    <Contact class="py-3" />
+    <Footer />
   </div>
 </template>
 
@@ -22,19 +22,16 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 export default {
-  name: "App",
-  components: {
-    Cover,
-    Navbar,
-    About,
-    Skills,
-    Portfolio,
-    // Testimonials,
-    Contact,
-    Footer
-  }
+	name: "App",
+	components: {
+		Cover,
+		Navbar,
+		About,
+		Skills,
+		Portfolio,
+		// Testimonials,
+		Contact,
+		Footer
+	}
 };
 </script>
-
-<style>
-</style>

@@ -10,12 +10,11 @@ require("./assets/js/_references");
 Vue.config.productionTip = false;
 
 new Vue({
-  created() {
-    AOS.init({
-      // delay: 500,
-      duration: 500,
-      // once: true
-    });
-  },
-  render: h => h(App)
+	created() {
+		AOS.init({
+			duration: 500,
+			// once: true
+		});
+	},
+	render: h => h(App)
 }).$mount("#app");

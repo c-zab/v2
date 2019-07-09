@@ -1,6 +1,6 @@
 <template>
   <div id="about-sec" class="container">
-    <Title title="ABOUT"/>
+    <Title title="ABOUT" />
     <div class="container pb-5">
       <div class="row text-center">
         <div class="col-md align-self-center">
@@ -8,16 +8,14 @@
             data-aos="fade-right"
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"
-            data-aos-duration="500"
             data-aos-anchor-placement="top-bottom"
           >
-            <img class="me-picture" src="../assets/images/me.jpg" align="center" alt="image">
+            <img class="me-picture" src="../assets/images/me.jpg" align="center" alt="image" />
           </div>
           <div
             data-aos="fade-right"
             data-aos-offset="100"
             data-aos-easing="ease-in-sine"
-            data-aos-duration="500"
             data-aos-delay="300"
             data-aos-anchor-placement="top-bottom"
           >
@@ -37,7 +35,6 @@
             data-aos="zoom-in"
             data-aos-offset="100"
             data-aos-easing="ease-in-sine"
-            data-aos-duration="500"
             data-aos-anchor-placement="bottom-bottom"
             name="Python"
             percentage="70"
@@ -46,7 +43,6 @@
             data-aos="zoom-in"
             data-aos-offset="100"
             data-aos-easing="ease-in-sine"
-            data-aos-duration="500"
             data-aos-anchor-placement="bottom-bottom"
             name="PHP"
             percentage="70"
@@ -55,7 +51,6 @@
             data-aos="zoom-in"
             data-aos-offset="100"
             data-aos-easing="ease-in-sine"
-            data-aos-duration="500"
             data-aos-anchor-placement="bottom-bottom"
             name="C#"
             percentage="60"
@@ -64,7 +59,6 @@
             data-aos="zoom-in"
             data-aos-offset="100"
             data-aos-easing="ease-in-sine"
-            data-aos-duration="500"
             data-aos-anchor-placement="bottom-bottom"
             name="Typescript"
             percentage="65"
@@ -73,7 +67,6 @@
             data-aos="zoom-in"
             data-aos-offset="100"
             data-aos-easing="ease-in-sine"
-            data-aos-duration="500"
             data-aos-anchor-placement="bottom-bottom"
             name="VueJS"
             percentage="70"
@@ -82,7 +75,6 @@
             data-aos="zoom-in"
             data-aos-offset="100"
             data-aos-easing="ease-in-sine"
-            data-aos-duration="500"
             data-aos-anchor-placement="bottom-bottom"
             name="React"
             percentage="55"
@@ -91,7 +83,6 @@
             data-aos="zoom-in"
             data-aos-offset="100"
             data-aos-easing="ease-in-sine"
-            data-aos-duration="500"
             data-aos-anchor-placement="bottom-bottom"
             name="JS"
             percentage="70"
@@ -100,7 +91,6 @@
             data-aos="zoom-in"
             data-aos-offset="100"
             data-aos-easing="ease-in-sine"
-            data-aos-duration="500"
             data-aos-anchor-placement="bottom-bottom"
             name="CSS"
             percentage="80"
@@ -109,7 +99,6 @@
             data-aos="zoom-in"
             data-aos-offset="100"
             data-aos-easing="ease-in-sine"
-            data-aos-duration="500"
             data-aos-anchor-placement="bottom-bottom"
             name="HTML"
             percentage="75"
@@ -123,81 +112,76 @@
         <div
           data-aos="fade-up"
           data-aos-anchor-placement="center-bottom"
-          data-aos-duration="500"
           data-aos-delay="300"
           class="col-md-6 col-lg py-3"
         >
-          <i
-            class="about-icon fas fa-5x"
-            @mouseover="hoverBolt = true"
-            @mouseleave="hoverBolt = false"
-            :class="{'amber-text':hoverBolt, 'fa-bolt':hoverBolt,'fa-tachometer-alt':!hoverBolt}"
-          ></i>
-          <h3 @mouseover="hoverBolt = true" @mouseleave="hoverBolt = false">Fast</h3>
+          <div @mouseover="hoverBolt = true" @mouseleave="hoverBolt = false">
+            <i
+              class="about-icon fas fa-5x mb-3"
+              :class="{'text-warning':hoverBolt, 'fa-bolt':hoverBolt,'fa-tachometer-alt':!hoverBolt}"
+            ></i>
+            <h3>Fast</h3>
+          </div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit tempore fuga numquam</p>
         </div>
         <div
           data-aos="fade-up"
           data-aos-anchor-placement="center-bottom"
-          data-aos-duration="500"
           data-aos-delay="350"
           class="col-md-6 col-lg py-3"
         >
-          <i
-            class="about-icon fas fa-5x"
-            @mouseover="hoverMobile = true"
-            @mouseleave="hoverMobile = false"
-            :class="{'indigo-text':hoverMobile, 'fa-laptop':!hoverMobile,'fa-mobile-alt':hoverMobile}"
-          ></i>
-          <h3 @mouseover="hoverMobile = true" @mouseleave="hoverMobile = false">Responsive</h3>
+          <div @mouseover="hoverMobile = true" @mouseleave="hoverMobile = false">
+            <i
+              class="about-icon fas fa-5x mb-3"
+              :class="{'text-info':hoverMobile, 'fa-laptop':!hoverMobile,'fa-mobile-alt':hoverMobile}"
+            ></i>
+            <h3>Responsive</h3>
+          </div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit tempore fuga numquam</p>
         </div>
         <div
           data-aos="fade-up"
           data-aos-anchor-placement="center-bottom"
-          data-aos-duration="500"
           data-aos-delay="400"
           class="col-md col-lg py-3"
         >
-          <i
-            class="about-icon far fa-5x"
-            @mouseover="hoverLight=true"
-            @mouseleave="hoverLight=false"
-            :class="{'fa-grin-beam': hoverLight, 'fa-lightbulb': !hoverLight, 'teal-text': hoverLight}"
-          ></i>
-          <h3 @mouseover="hoverLight=true" @mouseleave="hoverLight=false">Intuitive</h3>
+          <div @mouseover="hoverLight = true" @mouseleave="hoverLight = false">
+            <i
+              class="about-icon far fa-5x mb-3"
+              :class="{'fa-grin-beam': hoverLight, 'fa-lightbulb': !hoverLight, 'text-success': hoverLight}"
+            ></i>
+            <h3>Intuitive</h3>
+          </div>
           <p>yellow rgba-yellow-strong Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit tempore fuga numquam</p>
         </div>
         <div
           data-aos="fade-up"
           data-aos-anchor-placement="center-bottom"
-          data-aos-duration="500"
           data-aos-delay="450"
           class="col-md col-lg py-3"
         >
-          <i
-            class="about-icon fa-5x"
-            @mouseover="hoverRocket = true"
-            @mouseleave="hoverRocket = false"
-            :class="{'fas fa-rocket':hoverRocket,'far fa-paper-plane':!hoverRocket, 'red-text':hoverRocket}"
-          ></i>
-          <h3 @mouseover="hoverRocket = true" @mouseleave="hoverRocket = false">Dinamic</h3>
+          <div @mouseover="hoverRocket = true" @mouseleave="hoverRocket = false">
+            <i
+              class="about-icon fa-5x mb-3"
+              :class="{'fas fa-rocket':hoverRocket,'far fa-paper-plane':!hoverRocket, 'text-danger':hoverRocket}"
+            ></i>
+            <h3>Dinamic</h3>
+          </div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit tempore fuga numquam</p>
         </div>
         <div
           data-aos="fade-up"
           data-aos-anchor-placement="center-bottom"
-          data-aos-duration="500"
           data-aos-delay="450"
           class="col-md-12 col-lg-12 py-3"
         >
-          <i
-            class="about-icon fa-5x"
-            @mouseover="hoverCode = true"
-            @mouseleave="hoverCode = false"
-            :class="{'fas fa-laptop-code':hoverCode, 'far fa-file-code':!hoverCode, 'light-blue-text': hoverCode }"
-          ></i>
-          <h3 @mouseover="hoverCode = true" @mouseleave="hoverCode = false">Code</h3>
+          <div @mouseover="hoverCode = true" @mouseleave="hoverCode = false">
+            <i
+              class="about-icon fa-5x mb-3"
+              :class="{'fas fa-laptop-code':hoverCode, 'far fa-file-code':!hoverCode, 'text-primary': hoverCode }"
+            ></i>
+            <h3>Code</h3>
+          </div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit tempore fuga numquam</p>
         </div>
       </div>
@@ -210,55 +194,19 @@ import Title from "./includes/Title";
 import Language from "./includes/Language";
 
 export default {
-  name: "about-sec",
-  components: {
-    Title,
-    Language
-  },
-  data() {
-    return {
-      hoverBolt: false,
-      hoverMobile: false,
-      hoverLight: false,
-      hoverRocket: false,
-      hoverCode: false
-    };
-  }
+	name: "about-sec",
+	components: {
+		Title,
+		Language
+	},
+	data() {
+		return {
+			hoverBolt: false,
+			hoverMobile: false,
+			hoverLight: false,
+			hoverRocket: false,
+			hoverCode: false
+		};
+	}
 };
 </script>
-
-<style scoped>
-.about-icon {
-  width: 100%;
-}
-
-img.me-picture {
-  width: 70%;
-  clip-path: polygon(
-    30% 15%,
-    40% 15%,
-    70% 15%,
-    90% 50%,
-    70% 85%,
-    40% 85%,
-    30% 85%,
-    10% 50%
-  );
-  transition: clip-path 500ms;
-}
-
-img.me-picture:hover {
-  clip-path: polygon(
-    30% 5%,
-    70% 5%,
-    95% 30%,
-    95% 70%,
-    70% 95%,
-    30% 95%,
-    5% 70%,
-    5% 30%
-  );
-}
-
-/* } */
-</style>

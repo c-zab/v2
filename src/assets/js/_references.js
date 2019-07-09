@@ -1,10 +1,8 @@
 // CSS
-require(/* webpackPreload: true */ "../css/styles.css");
-require("../../../node_modules/mdbootstrap/css/bootstrap.min.css");
-require("../../../node_modules/mdbootstrap/css/mdb.min.css");
+require("../../../node_modules/bootstrap/dist/css/bootstrap.min.css");
+require("../css/styles.scss");
 
 // JS
 require("../../../node_modules/jquery/dist/jquery.min");
-require("../../../node_modules/mdbootstrap/js/popper.min.js");
-require("../../../node_modules/mdbootstrap/js/bootstrap.min.js");
-require("../../../node_modules/mdbootstrap/js/mdb.min.js");
+require("../../../node_modules/popper.js/dist/popper.min.js");
+require("../../../node_modules/bootstrap/dist/js/bootstrap.min.js");

@@ -1,12 +1,9 @@
 <template>
-  <div class="mix col-md-4" :class="mixVal">
-    <div
-      class="card-image"
-      :style="{ backgroundImage: 'url(' + require('@/assets/images/cards/queryfox.jpg') + ')' }"
-    >
+  <div class="mix col-md-4 col-sm-6" :class="mixVal">
+    <div class="class bg-dark text-white">
+      <img class="card-img" src="@/assets/images/cards/queryfox.jpg" />
       <div
-        class="text-white text-center align-items-center rgba-black-strong py-5 px-4"
-        style="height:300px;"
+        class="card-img-overlay text-center align-items-center py-5 px-4"
         @mouseover="show = true"
         @mouseleave="show = false"
       >
@@ -16,7 +13,7 @@
             <h3 class="card-title pt-2">
               <strong>{{ cardItem.title }}</strong>
             </h3>
-            <a class="btn btn-pink">
+            <a class="btn btn-danger">
               <i class="fas fa-clone left"></i> Details
             </a>
           </div>
@@ -28,38 +25,12 @@
 
 <script>
 export default {
-  props: { cardItem: Object },
-  data() {
-    return {
-      show: false,
-      mixVal: this.cardItem.type.toLowerCase()
-    };
-  }
+	props: { cardItem: Object },
+	data() {
+		return {
+			show: false,
+			mixVal: this.cardItem.type.toLowerCase()
+		};
+	}
 };
 </script>
-
-<style scoped>
-.card-image {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.bounce-enter-active {
-  animation: bounce-in 0.5s;
-}
-.bounce-leave-active {
-  animation: bounce-in 0.3s reverse;
-}
-@keyframes bounce-in {
-  0% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(1.3);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-</style>
