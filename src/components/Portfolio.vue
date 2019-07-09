@@ -3,7 +3,7 @@
     <Title title="PORTFOLIO" />
 
     <div class="container pb-4">
-      <div class="controls row justify-content-center" data-aos="zoom-in" data-aos-delay="300">
+      <div class="controls row justify-content-center">
         <button
           data-aos="zoom-in"
           type="button"
@@ -30,7 +30,7 @@
         >Leadership</button>
       </div>
     </div>
-    <div class="containerMix row no-gutters" data-aos="zoom-in" data-aos-delay="400">
+    <div class="containerMix row no-gutters">
       <cardItem :cardItem="queryfox" />
       <cardItem :cardItem="czabalet" />
       <cardItem :cardItem="games" />
@@ -65,46 +65,55 @@ export default {
 			queryfox: {
 				title: "QueryFox",
 				image: "queryfox.jpg",
+				languages: "PHP, Laravel and Vue ",
 				type: "Backend"
 			},
 			czabalet: {
 				title: "Czabalet",
 				image: "czabalet.jpg",
+				languages: "Vue and Bootstrap",
 				type: "Frontend"
 			},
 			games: {
 				title: "Games and Stuff",
 				image: "games.jpg",
+				languages: "Python, Django and MongoDB",
 				type: "Backend"
 			},
 			delisa: {
 				title: "Delisa",
 				image: "delisa.jpg",
+				languages: "Bootstrap, Vue and Laravel",
 				type: "Frontend"
 			},
 			space: {
 				title: "Space Shooter",
 				image: "space.jpg",
+				languages: "Typescript",
 				type: "Frontend"
 			},
 			books: {
 				title: "Books Library",
 				image: "books.jpg",
+				languages: "C#, MySQL and Bootstrap",
 				type: "Frontend"
 			},
 			aiesec: {
 				title: "AIESEC",
 				image: "aiesec.jpg",
+				languages: "Team Work, Sell Skills and Time Management",
 				type: "Leadership"
 			},
 			tedx: {
 				title: "TEDx",
 				image: "tedx.jpg",
+				languages: "Founder, Organizer and Empowerment",
 				type: "Leadership"
 			},
 			google: {
 				title: "Google Development Group",
 				image: "google.jpg",
+				languages: "Speaker and Organizer",
 				type: "Leadership"
 			}
 		};

@@ -9,10 +9,12 @@
       >
         <transition name="bounce">
           <div v-if="show">
-            <h5 class="pink-text">{{ cardItem.type }} - {{mixVal}}</h5>
             <h3 class="card-title pt-2">
               <strong>{{ cardItem.title }}</strong>
             </h3>
+
+            <h5 class="pink-text">{{ cardItem.languages }}</h5>
+
             <a class="btn btn-danger">
               <i class="fas fa-clone left"></i> Details
             </a>

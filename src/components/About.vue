@@ -22,10 +22,11 @@
             <h2>Who I am?</h2>
             <p>
               I am a
-              <strong>full-stack</strong> developer based in Toronto, Canada.
+              <strong class="text-success">full-stack</strong> developer based in Toronto, Canada.
             </p>
             <p>
-              I am pasionate for developing quality software; besides, I am a
+              I am pasionate for developing
+              <strong class="text-warning">quality software</strong>. It is exiting to learn about new technologies and to work as a team in order to deliver a great product; besides, I am a
               <strong>team work person</strong> and I like to create intuitive and dynamic user experiences.
             </p>
           </div>
