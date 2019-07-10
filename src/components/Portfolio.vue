@@ -6,24 +6,28 @@
       <div class="controls row justify-content-center">
         <button
           data-aos="zoom-in"
+          data-aos-delay="300"
           type="button"
           class="col-sm-4 col-md-2 col-xs-2 control btn btn-info m-1"
           data-filter="all"
         >All</button>
         <button
           data-aos="zoom-in"
+          data-aos-delay="350"
           type="button"
           class="col-sm-4 col-md-2 col-xs-2 control btn btn-info m-1"
           data-filter=".backend"
         >Backend</button>
         <button
           data-aos="zoom-in"
+          data-aos-delay="400"
           type="button"
           class="col-sm-4 col-md-2 col-xs-2 control btn btn-info m-1"
           data-filter=".frontend"
         >Frontend</button>
         <button
           data-aos="zoom-in"
+          data-aos-delay="450"
           type="button"
           class="col-sm-4 col-md-2 col-xs-2 control btn btn-info m-1"
           data-filter=".leadership"
@@ -101,19 +105,20 @@ export default {
 			aiesec: {
 				title: "AIESEC",
 				image: "aiesec.jpg",
-				languages: "Team Work, Sell Skills and Time Management",
+				languages: "Team Work, Sales, and Time Management",
 				type: "Leadership"
 			},
 			tedx: {
 				title: "TEDx",
 				image: "tedx.jpg",
-				languages: "Founder, Organizer and Empowerment",
+				languages:
+          "Event Management, Volunteer Management, Finance, and Team Empowerment",
 				type: "Leadership"
 			},
 			google: {
 				title: "Google Development Group",
 				image: "google.jpg",
-				languages: "Speaker and Organizer",
+				languages: "Presentation Skills, Teaching and Counselling",
 				type: "Leadership"
 			}
 		};

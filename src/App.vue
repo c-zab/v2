@@ -4,7 +4,7 @@
     <Navbar />
     <About class="py-3" />
     <Skills class="py-3" />
-    <Portfolio class="py-3" />
+    <Portfolio lazy class="py-3" />
     <!-- <Testimonials class="py-3"/> -->
     <Contact class="py-3" />
     <Footer />

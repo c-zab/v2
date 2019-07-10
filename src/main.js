@@ -12,8 +12,8 @@ Vue.config.productionTip = false;
 new Vue({
 	created() {
 		AOS.init({
-			duration: 500,
-			// once: true
+			duration: 700,
+			once: true
 		});
 	},
 	render: h => h(App)

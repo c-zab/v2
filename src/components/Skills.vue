@@ -2,13 +2,13 @@
   <div id="skills-sec" class="container">
     <Title title="SKILLS" />
     <div class="container">
-      <div class="row">
+      <div class="row justify-content-center">
         <SkillsTable title="Backend" :table="backendTable" />
         <SkillsTable title="Frontend" :table="frontendTable" />
         <SkillsTable title="Others" :table="othersTable" />
       </div>
       <h2 data-aos="zoom-in" class="text-center py-5">I also have experience working on</h2>
-      <div class="row">
+      <div class="row justify-content-center">
         <SkillsTable title="Backend" :table="expBackendTable" />
         <SkillsTable title="Frontend" :table="expFrontendTable" />
         <SkillsTable title="Others" :table="expOthersTable" />

@@ -3,107 +3,44 @@
     <Title title="ABOUT" />
     <div class="container pb-5">
       <div class="row text-center">
-        <div class="col-md align-self-center">
-          <div
-            data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
-            data-aos-anchor-placement="top-bottom"
-          >
-            <img class="me-picture" src="../assets/images/me.jpg" align="center" alt="image" />
-          </div>
-          <div
-            data-aos="fade-right"
-            data-aos-offset="100"
-            data-aos-easing="ease-in-sine"
-            data-aos-delay="300"
-            data-aos-anchor-placement="top-bottom"
-          >
-            <h2>Who I am?</h2>
-            <p>
-              I am a
-              <strong class="text-success">full-stack</strong> developer based in Toronto, Canada.
-            </p>
-            <p>
-              I am pasionate for developing
-              <strong class="text-warning">quality software</strong>. It is exiting to learn about new technologies and to work as a team in order to deliver a great product; besides, I am a
-              <strong>team work person</strong> and I like to create intuitive and dynamic user experiences.
-            </p>
-          </div>
+        <div
+          data-aos="fade-right"
+          data-aos-offset="100"
+          data-aos-easing="ease-in-sine"
+          data-aos-anchor-placement="top-bottom"
+          class="col-md align-self-center"
+        >
+          <img class="me-picture" src="../assets/images/me.jpg" align="center" alt="image" />
+          <h2>Who am I?</h2>
+          <p>
+            I am a
+            <strong>full-stack</strong> developer based in Toronto, Canada.
+          </p>
+          <p>
+            I am passionate about
+            <strong>quality software development</strong>. I am
+            <strong>innovative</strong>,
+            <strong>flexible</strong> and
+            <strong>curious</strong>, always looking to learn about new technologies and best practices.
+          </p>
         </div>
-        <div class="col-md align-self-center">
-          <Language
-            data-aos="zoom-in"
-            data-aos-offset="100"
-            data-aos-easing="ease-in-sine"
-            data-aos-anchor-placement="bottom-bottom"
-            name="Python"
-            percentage="70"
-          />
-          <Language
-            data-aos="zoom-in"
-            data-aos-offset="100"
-            data-aos-easing="ease-in-sine"
-            data-aos-anchor-placement="bottom-bottom"
-            name="PHP"
-            percentage="70"
-          />
-          <Language
-            data-aos="zoom-in"
-            data-aos-offset="100"
-            data-aos-easing="ease-in-sine"
-            data-aos-anchor-placement="bottom-bottom"
-            name="C#"
-            percentage="60"
-          />
-          <Language
-            data-aos="zoom-in"
-            data-aos-offset="100"
-            data-aos-easing="ease-in-sine"
-            data-aos-anchor-placement="bottom-bottom"
-            name="Typescript"
-            percentage="65"
-          />
-          <Language
-            data-aos="zoom-in"
-            data-aos-offset="100"
-            data-aos-easing="ease-in-sine"
-            data-aos-anchor-placement="bottom-bottom"
-            name="VueJS"
-            percentage="70"
-          />
-          <Language
-            data-aos="zoom-in"
-            data-aos-offset="100"
-            data-aos-easing="ease-in-sine"
-            data-aos-anchor-placement="bottom-bottom"
-            name="React"
-            percentage="55"
-          />
-          <Language
-            data-aos="zoom-in"
-            data-aos-offset="100"
-            data-aos-easing="ease-in-sine"
-            data-aos-anchor-placement="bottom-bottom"
-            name="JS"
-            percentage="70"
-          />
-          <Language
-            data-aos="zoom-in"
-            data-aos-offset="100"
-            data-aos-easing="ease-in-sine"
-            data-aos-anchor-placement="bottom-bottom"
-            name="CSS"
-            percentage="80"
-          />
-          <Language
-            data-aos="zoom-in"
-            data-aos-offset="100"
-            data-aos-easing="ease-in-sine"
-            data-aos-anchor-placement="bottom-bottom"
-            name="HTML"
-            percentage="75"
-          />
+        <div
+          data-aos="fade-left"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+          data-aos-anchor-placement="top-bottom"
+          class="col-md align-self-center"
+        >
+          <Language name="Python" percentage="70" />
+          <Language name="PHP" percentage="70" />
+          <Language name="C#" percentage="60" />
+          <Language name="JavaScript" percentage="70" />
+          <Language name="Typescript" percentage="65" />
+          <Language name="VueJS" percentage="70" />
+          <Language name="React" percentage="55" />
+          <Language name="CSS" percentage="80" />
+          <Language name="HTML" percentage="75" />
+          <Language name="Git" percentage="75" />
         </div>
       </div>
     </div>
@@ -123,7 +60,7 @@
             ></i>
             <h3>Fast</h3>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit tempore fuga numquam</p>
+          <p>First impressions are vital on the Internet. According to statistics, half of us don’t even wait two seconds for a website content to pop up!</p>
         </div>
         <div
           data-aos="fade-up"
@@ -138,7 +75,7 @@
             ></i>
             <h3>Responsive</h3>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit tempore fuga numquam</p>
+          <p>Every website needs to be user-friendly on a smartphone or any device as Google's SEO increases visibility on search engines based on its responsiveness.</p>
         </div>
         <div
           data-aos="fade-up"
@@ -153,7 +90,7 @@
             ></i>
             <h3>Intuitive</h3>
           </div>
-          <p>yellow rgba-yellow-strong Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit tempore fuga numquam</p>
+          <p>Intuitive design is invisible yet important. The easier your website is to use, the more people will use it.</p>
         </div>
         <div
           data-aos="fade-up"
@@ -166,9 +103,9 @@
               class="about-icon fa-5x mb-3"
               :class="{'fas fa-rocket':hoverRocket,'far fa-paper-plane':!hoverRocket, 'text-danger':hoverRocket}"
             ></i>
-            <h3>Dinamic</h3>
+            <h3>Dynamic</h3>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit tempore fuga numquam</p>
+          <p>A dynamic website allows to make updates and improves its code faster than having an static website.</p>
         </div>
         <div
           data-aos="fade-up"
@@ -183,7 +120,18 @@
             ></i>
             <h3>Code</h3>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit tempore fuga numquam</p>
+          <p>I seek to write open source code so people can modify and share.</p>
+          <p>
+            It is important to
+            <strong>write clean code</strong> so it is easy to read,
+          </p>
+          <p>
+            <strong>consistent code</strong> to make it easy for people to understand how it is working,
+          </p>
+          <p>
+            and
+            <strong>extensible code</strong> so it is easy to reuse and modify.
+          </p>
         </div>
       </div>
     </div>

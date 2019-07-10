@@ -1,9 +1,13 @@
 <template>
   <div class="mix col-md-4 col-sm-6" :class="mixVal">
-    <div class="class bg-dark text-white">
-      <img class="card-img" src="@/assets/images/cards/queryfox.jpg" />
+    <div class="text-white">
+      <video height="auto" class="card-img" loop autoplay muted autobuffer playsinline>
+        <source src="@/assets/images/cards/queryfox.webm" type="video/webm" />
+        <source src="@/assets/images/cards/queryfox.mp4" type="video/mp4" />
+        <p>Your browser does not support the video element.</p>
+      </video>
       <div
-        class="card-img-overlay text-center align-items-center py-5 px-4"
+        class="card-img-overlay text-center align-items-center"
         @mouseover="show = true"
         @mouseleave="show = false"
       >

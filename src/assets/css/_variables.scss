@@ -18,12 +18,15 @@ $my-footer: #052438;
 
 $my-success: #2ce059;
 
+$my-danger: #fb173f;
+
+$my-warning: #ffe219;
+
+$my-primary: #0496FF;
+
 .text-success {
 	color: $my-success !important;
 }
-
-$my-danger: #fb173f;
-
 .text-danger {
 	color: $my-danger !important;
 };
@@ -37,13 +40,9 @@ $my-danger: #fb173f;
 	background-color: $my-cyan !important;
 }
 
-$my-warning: #ffe219;
-
 .text-warning {
 	color: $my-warning !important;
 };
-
-$my-primary: #0496FF;
 
 .text-primary {
 	color: $my-primary !important;
@@ -80,7 +79,7 @@ p {
   font-weight: 400;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 992px){
 	h1{
 		font-size: 2em;
 	}

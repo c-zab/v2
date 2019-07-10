@@ -1,6 +1,4 @@
-
 @import "./_variables.scss";
-
 
 // Cover
 
@@ -27,7 +25,7 @@
 
 .nav-item{
 	&:hover .nav-link{
-		color: $my-pink !important
+		color: $my-success !important
 	}
 }
 
@@ -52,7 +50,6 @@
 	}
 }
 
-
 // About
 
 .about-icon {
@@ -60,31 +57,62 @@
 }
 
 img.me-picture {
-  width: 70%;
+	width: 300px;
+	@media screen and (max-width: 800px){
+		width: 200px;
+	}
   clip-path: polygon(
-    30% 15%,
-    40% 15%,
-    70% 15%,
-    90% 50%,
-    70% 85%,
-    40% 85%,
-    30% 85%,
-    10% 50%
+		50% 0%,
+		83% 12%,
+		100% 43%,
+		94% 78%,
+		68% 100%,
+		32% 100%,
+		6% 78%,
+		0% 43%,
+		17% 12%
   );
 	transition: clip-path 500ms;
 	&:hover{
 		clip-path: polygon(
-    30% 5%,
-    70% 5%,
-    95% 30%,
-    95% 70%,
-    70% 95%,
-    30% 95%,
-    5% 70%,
-    5% 30%
+			30% 0%,
+			50% 0%,
+			70% 0%,
+			100% 30%,
+			100% 70%,
+			70% 100%,
+			30% 100%,
+			0% 70%,
+			0% 30%
   );
 	}
 }
+// img.me-picture {
+//   width: 70%;
+//   clip-path: polygon(
+//     30% 15%,
+//     40% 15%,
+//     70% 15%,
+//     90% 50%,
+//     70% 85%,
+//     40% 85%,
+//     30% 85%,
+//     10% 50%
+//   );
+// 	transition: clip-path 500ms;
+// 	&:hover{
+// 		clip-path: polygon(
+//     30% 5%,
+//     70% 5%,
+//     95% 30%,
+//     95% 70%,
+//     70% 95%,
+//     30% 95%,
+//     5% 70%,
+//     5% 30%
+//   );
+// 	}
+// }
 
 .fill {
   background: $my-dark-cyan;
@@ -93,11 +121,13 @@ img.me-picture {
 		background: $my-cyan;
 		height: 100%;
 		width: 30%;
+		height: 35px !important;
 	}
 }
 
 #percent {
-  height: 100%;
+	height: 100%;
+	height: 35.5px !important;
 }
 
 .vertical-center {
@@ -124,7 +154,7 @@ img.me-picture {
 }
 
 .devicon-photoshop-plain {
-  color: #2082d2 !important;
+  color: #004e9b !important;
 }
 
 // Portfolio
@@ -147,8 +177,8 @@ img.me-picture {
   }
 }
 
-.card-img-overlay {
-	height:300px;
+video {
+	filter:grayscale(50%);
 }
 
 // Footer
