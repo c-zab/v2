@@ -34,16 +34,17 @@
       </div>
     </div>
     <div class="containerMix row justify-content-center no-gutters">
-      <cardItem :cardItem="queryfox" />
-      <cardItem :cardItem="czabalet" />
-      <cardItem :cardItem="delisa" />
-      <cardItem :cardItem="space" />
-      <cardItem :cardItem="books" />
-      <cardItem :cardItem="tedx" />
-      <cardItem :cardItem="games" />
-      <cardItem :cardItem="aiesec" />
-      <cardItem :cardItem="google" />
+      <cardItem @showModal="showModal" :cardItem="queryfox" />
+      <cardItem @showModal="showModal" :cardItem="czabalet" />
+      <cardItem @showModal="showModal" :cardItem="delisa" />
+      <cardItem @showModal="showModal" :cardItem="space" />
+      <cardItem @showModal="showModal" :cardItem="books" />
+      <cardItem @showModal="showModal" :cardItem="tedx" />
+      <cardItem @showModal="showModal" :cardItem="games" />
+      <cardItem @showModal="showModal" :cardItem="aiesec" />
+      <cardItem @showModal="showModal" :cardItem="google" />
     </div>
+    <modal :modalData="modalData" v-if="isModalVisible" @close="isModalVisible = false" />
   </div>
 </template>
 
@@ -51,20 +52,31 @@
 import Title from "./includes/Title";
 import cardItem from "./includes/cardItem";
 import mixitup from "mixitup";
+import modal from "./includes/Modal";
 
 export default {
 	name: "portfolio-sec",
 	components: {
 		Title,
-		cardItem
+		cardItem,
+		modal
 	},
 	mounted() {
 		var containerEl = document.querySelector(".containerMix");
 		mixitup(containerEl);
 	},
+	methods: {
+		showModal(modalData) {
+			this.modalData = modalData;
+			console.log("receiving the event", modalData);
+			this.isModalVisible = true;
+		}
+	},
 	data() {
 		return {
 			show: false,
+			isModalVisible: false,
+			modalData: {},
 			queryfox: {
 				title: "QueryFox",
 				image: "queryfox.png",
