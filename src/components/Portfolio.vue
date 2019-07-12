@@ -1,7 +1,6 @@
 <template>
   <div id="portfolio-sec" class="container">
     <Title title="PORTFOLIO" />
-
     <div class="container pb-4">
       <div class="controls row justify-content-center">
         <button
@@ -34,15 +33,15 @@
         >Leadership</button>
       </div>
     </div>
-    <div class="containerMix row no-gutters">
+    <div class="containerMix row justify-content-center no-gutters">
       <cardItem :cardItem="queryfox" />
       <cardItem :cardItem="czabalet" />
-      <cardItem :cardItem="games" />
       <cardItem :cardItem="delisa" />
       <cardItem :cardItem="space" />
       <cardItem :cardItem="books" />
-      <cardItem :cardItem="aiesec" />
       <cardItem :cardItem="tedx" />
+      <cardItem :cardItem="games" />
+      <cardItem :cardItem="aiesec" />
       <cardItem :cardItem="google" />
     </div>
   </div>
@@ -68,57 +67,66 @@ export default {
 			show: false,
 			queryfox: {
 				title: "QueryFox",
-				image: "queryfox.jpg",
+				image: "queryfox.png",
 				languages: "PHP, Laravel and Vue ",
+				link: "https://queryfox.com/",
 				type: "Backend"
 			},
 			czabalet: {
 				title: "Czabalet",
-				image: "czabalet.jpg",
+				image: "czabalet.png",
 				languages: "Vue and Bootstrap",
+				link: "http://czabalet.com/",
 				type: "Frontend"
-			},
-			games: {
-				title: "Games and Stuff",
-				image: "games.jpg",
-				languages: "Python, Django and MongoDB",
-				type: "Backend"
 			},
 			delisa: {
 				title: "Delisa",
-				image: "delisa.jpg",
+				image: "delisa.png",
 				languages: "Bootstrap, Vue and Laravel",
+				link: "http://delisamaranth.com/",
 				type: "Frontend"
 			},
 			space: {
 				title: "Space Shooter",
-				image: "space.jpg",
+				image: "space.png",
 				languages: "Typescript",
+				link: "https://github.com/ClaudiaFeliciano/Arrow-6",
 				type: "Frontend"
 			},
 			books: {
 				title: "Books Library",
-				image: "books.jpg",
+				image: "books.png",
 				languages: "C#, MySQL and Bootstrap",
+				link: "https://github.com/UTSCCSCC01/final-charjd",
 				type: "Frontend"
+			},
+			games: {
+				title: "Games and Stuff",
+				image: "games.png",
+				languages: "Python, Django and MongoDB",
+				link: "",
+				type: "Backend"
 			},
 			aiesec: {
 				title: "AIESEC",
-				image: "aiesec.jpg",
+				image: "aiesec.png",
 				languages: "Team Work, Sales, and Time Management",
+				link: "https://aiesec.org/",
 				type: "Leadership"
 			},
 			tedx: {
 				title: "TEDx",
-				image: "tedx.jpg",
+				image: "tedx.png",
 				languages:
           "Event Management, Volunteer Management, Finance, and Team Empowerment",
+				link: "https://www.ted.com/about/programs-initiatives/tedx-program",
 				type: "Leadership"
 			},
 			google: {
 				title: "Google Development Group",
-				image: "google.jpg",
+				image: "google.png",
 				languages: "Presentation Skills, Teaching and Counselling",
+				link: "https://developers.google.com/community/gdg/",
 				type: "Leadership"
 			}
 		};

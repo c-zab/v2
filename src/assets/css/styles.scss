@@ -1,6 +1,7 @@
 @import "./_variables.scss";
 
 // Cover
+html, body{ overflow-x: hidden }
 
 .cover-image {
 	height: 100vh !important;
@@ -87,32 +88,6 @@ img.me-picture {
   );
 	}
 }
-// img.me-picture {
-//   width: 70%;
-//   clip-path: polygon(
-//     30% 15%,
-//     40% 15%,
-//     70% 15%,
-//     90% 50%,
-//     70% 85%,
-//     40% 85%,
-//     30% 85%,
-//     10% 50%
-//   );
-// 	transition: clip-path 500ms;
-// 	&:hover{
-// 		clip-path: polygon(
-//     30% 5%,
-//     70% 5%,
-//     95% 30%,
-//     95% 70%,
-//     70% 95%,
-//     30% 95%,
-//     5% 70%,
-//     5% 30%
-//   );
-// 	}
-// }
 
 .fill {
   background: $my-dark-cyan;
@@ -158,9 +133,11 @@ img.me-picture {
 }
 
 // Portfolio
+
 .bounce-enter-active {
   animation: bounce-in 0.5s;
 }
+
 .bounce-leave-active {
   animation: bounce-in 0.3s reverse;
 }
@@ -180,6 +157,20 @@ img.me-picture {
 video {
 	filter:grayscale(50%);
 }
+
+.card-ima-blur {
+	filter: blur(2px);
+}
+
+.card-body {
+	transition: 1s;
+	&:hover{
+		cursor: pointer;
+		background: rgba(black, 0.6);
+		transition: background 0.5s ease-out;
+	}
+}
+
 
 // Footer
 

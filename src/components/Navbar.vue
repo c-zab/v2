@@ -1,7 +1,7 @@
 <template>
-  <nav class="navbar sticky-top navbar-dark navbar-expand-sm bg-color">
+  <nav class="mx-auto navbar navbar-dark navbar-expand-sm bg-color">
     <button
-      class="navbar-toggler"
+      class="navbar-toggler mx-auto"
       type="button"
       data-target="#navbarNav"
       aria-controls="navbarNav"
