@@ -24,10 +24,22 @@ html, body{ overflow-x: hidden }
   font-weight: 400;
 }
 
-.nav-item{
+.nav-item {
 	&:hover .nav-link{
 		color: $my-success !important
 	}
+}
+
+.active-item {
+	color: $my-success !important
+}
+
+.stick {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1030;
 }
 
 // Title

@@ -1,8 +1,8 @@
 <template>
-  <div class="title-sec pb-4">
+  <div class="pb-4">
     <div class="row justify-content-center">
       <h1
-        v-bind:id="title | idName"
+        :id="title"
         class="sec-title col-auto"
         data-aos="fade-right"
         data-aos-anchor-placement="center-bottom"
@@ -22,11 +22,9 @@
 <script>
 export default {
 	props: {
-		title: String
-	},
-	filters: {
-		idName(value) {
-			return value.toLowerCase();
+		title: {
+			type: String,
+			require: true
 		}
 	}
 };

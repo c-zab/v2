@@ -1,40 +1,47 @@
 <template>
-  <nav class="mx-auto navbar navbar-dark navbar-expand-sm bg-color">
-    <button
-      class="navbar-toggler mx-auto"
-      type="button"
-      data-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-      v-on:click="toggleNavbar"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav" :class="{ 'show': show }">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item px-3">
-          <a class="nav-link" href="#cover" v-on:click="toggleNavbar">HOME</a>
-        </li>
-        <li class="nav-item px-3">
-          <a class="nav-link" href="#about" v-on:click="toggleNavbar">ABOUT</a>
-        </li>
-        <li class="nav-item px-3">
-          <a class="nav-link" href="#skills" v-on:click="toggleNavbar">SKILLS</a>
-        </li>
-        <li class="nav-item px-3">
-          <a class="nav-link" href="#portfolio" v-on:click="toggleNavbar">PORTFOLIO</a>
-        </li>
-        <li class="nav-item px-3">
-          <a class="nav-link" href="#contact" v-on:click="toggleNavbar">CONTACT</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  <pinned>
+    <nav class="mx-auto navbar navbar-dark navbar-expand-sm bg-color">
+      <button
+        class="navbar-toggler mx-auto"
+        type="button"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        v-on:click="toggleNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav" :class="{ 'show': show }">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item px-3">
+            <a class="nav-link" href="#cover" v-on:click="toggleNavbar">HOME</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link active-item" href="#about" v-on:click="toggleNavbar">ABOUT</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link" href="#skills" v-on:click="toggleNavbar">SKILLS</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link" href="#portfolio" v-on:click="toggleNavbar">PORTFOLIO</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link" href="#contact" v-on:click="toggleNavbar">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </pinned>
 </template>
 
 <script>
+import pinned from "./includes/Pinned";
+
 export default {
+	components: {
+		pinned
+	},
 	data() {
 		return {
 			show: false
