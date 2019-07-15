@@ -38,9 +38,9 @@
       <cardItem @showModal="showModal" :cardItem="czabalet" />
       <cardItem @showModal="showModal" :cardItem="delisa" />
       <cardItem @showModal="showModal" :cardItem="space" />
-      <cardItem @showModal="showModal" :cardItem="books" />
       <cardItem @showModal="showModal" :cardItem="tedx" />
       <cardItem @showModal="showModal" :cardItem="games" />
+      <cardItem @showModal="showModal" :cardItem="books" />
       <cardItem @showModal="showModal" :cardItem="aiesec" />
       <cardItem @showModal="showModal" :cardItem="google" />
     </div>
@@ -82,49 +82,49 @@ export default {
 				image: "queryfox.png",
 				languages: "PHP, Laravel and Vue ",
 				link: "https://queryfox.com/",
-				type: "Backend"
+				types: { backend: true, frontend: true, leadership: false }
 			},
 			czabalet: {
 				title: "Czabalet",
 				image: "czabalet.png",
 				languages: "Vue and Bootstrap",
 				link: "http://czabalet.com/",
-				type: "Frontend"
+				types: { backend: true, frontend: true, leadership: false }
 			},
 			delisa: {
 				title: "Delisa",
 				image: "delisa.png",
 				languages: "Bootstrap, Vue and Laravel",
 				link: "http://delisamaranth.com/",
-				type: "Frontend"
+				types: { backend: true, frontend: true, leadership: false }
 			},
 			space: {
 				title: "Space Shooter",
 				image: "space.png",
 				languages: "Typescript",
 				link: "https://github.com/ClaudiaFeliciano/Arrow-6",
-				type: "Frontend"
+				types: { backend: false, frontend: true, leadership: false }
 			},
 			books: {
 				title: "Books Library",
 				image: "books.png",
 				languages: "C#, MySQL and Bootstrap",
 				link: "https://github.com/UTSCCSCC01/final-charjd",
-				type: "Frontend"
+				types: { backend: true, frontend: true, leadership: true }
 			},
 			games: {
 				title: "Games and Stuff",
 				image: "games.png",
 				languages: "Python, Django and MongoDB",
 				link: "",
-				type: "Backend"
+				types: { backend: true, frontend: true, leadership: false }
 			},
 			aiesec: {
 				title: "AIESEC",
 				image: "aiesec.png",
 				languages: "Team Work, Sales, and Time Management",
 				link: "https://aiesec.org/",
-				type: "Leadership"
+				types: { backend: false, frontend: false, leadership: true }
 			},
 			tedx: {
 				title: "TEDx",
@@ -132,14 +132,14 @@ export default {
 				languages:
           "Event Management, Volunteer Management, Finance, and Team Empowerment",
 				link: "https://www.ted.com/about/programs-initiatives/tedx-program",
-				type: "Leadership"
+				types: { backend: false, frontend: false, leadership: true }
 			},
 			google: {
 				title: "Google Development Group",
 				image: "google.png",
 				languages: "Presentation Skills, Teaching and Counselling",
 				link: "https://developers.google.com/community/gdg/",
-				type: "Leadership"
+				types: { backend: false, frontend: false, leadership: true }
 			}
 		};
 	}

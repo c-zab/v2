@@ -1,5 +1,5 @@
 <template>
-  <div class="mix col-lg-4 col-sm-10 col-12" :class="mixVal">
+  <div class="mix col-lg-4 col-sm-10 col-12" :class="cardItem.types">
     <div class="text-white" @mouseover="show = true" @mouseleave="show = false">
       <!-- <video height="auto" class="card-img" loop autoplay muted autobuffer playsinline>
         <source src="@/assets/images/cards/delisa.webm" type="video/webm" />
@@ -37,7 +37,6 @@ export default {
 	data() {
 		return {
 			show: false,
-			mixVal: this.cardItem.type.toLowerCase(),
 			ima: this.cardItem.image
 		};
 	},
