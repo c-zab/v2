@@ -1,68 +1,81 @@
 <template>
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
       <div class="modal-content border-0">
         <div class="modal-body p-0">
           <div class="container-fluid">
             <div class="row">
               <div class="col-12 bg-danger p-0">
-                <picture>
+                <!-- <picture>
                   <source
                     media="(max-width: 550px)"
-                    srcset="@/assets/images/modals/aiesecModal2.png"
+                    srcset="@/assets/images/modals/aiesecModal.png"
                   />
                   <source
                     media="(min-width: 551px)"
-                    srcset="@/assets/images/modals/aiesecModal3.png"
+                    srcset="@/assets/images/modals/aiesecModal2.png"
                   />
                   <img
-                    src="@/assets/images/modals/aiesecModal3.png"
+                    src="@/assets/images/modals/aiesecModal.png"
                     class="img-fluid"
                     alt="placeholder"
                   />
-                </picture>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-3 ml-auto">.col-md-3 .ml-auto</div>
-              <div class="col-md-2 ml-auto">.col-md-2 .ml-auto</div>
-            </div>
-            <div class="row">
-              <div class="col-md-6 ml-auto">.col-md-6 .ml-auto</div>
-            </div>
-            <div class="row">
-              <div class="col-sm-9">
-                Level 1: .col-sm-9
-                <div class="row">
-                  <div class="col-8 col-sm-6">Level 2: .col-8 .col-sm-6</div>
-                  <div class="col-4 col-sm-6">Level 2: .col-4 .col-sm-6</div>
+                </picture>-->
+                <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div
+                      class="carousel-item"
+                      v-for="(image, index) in modalData.modalImages"
+                      :key="`image-${index}`"
+                      :class="{ 'active': index === 0 }"
+                      data-interval="6000"
+                    >
+                      <img :src="image" class="d-block w-100" alt="image" />
+                    </div>
+                  </div>
+                  <a
+                    class="carousel-control-prev"
+                    href="#carouselExampleInterval"
+                    role="button"
+                    data-slide="prev"
+                  >
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a
+                    class="carousel-control-next"
+                    href="#carouselExampleInterval"
+                    role="button"
+                    data-slide="next"
+                  >
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
                 </div>
               </div>
             </div>
+            <div class="row">
+              <div class="col-12">
+                <h3 class="mb-0">{{ modalData.title }}</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 text-muted">
+                <p class="border-bottom border-dark">{{ modalData.subtitle }}</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12">
+                <p>{{ modalData.description }}</p>
+              </div>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
           </div>
         </div>
-        <!-- <div class="d-flex justify-content-center">
-          <picture>
-            <source
-
-              media="(max-width: 550px)"
-              srcset="@/assets/images/modals/aiesecModal2.png"
-            />
-            <source
-
-              media="(min-width: 551px)"
-              srcset="@/assets/images/modals/aiesecModal3.png"
-            />
-            <img  src="@/assets/images/modals/aiesecModal3.png" alt="placeholder" />
-          </picture>
-        </div>
-        <h4 class="modal-title" id="myModalLabel">{{ modalData.title }}</h4>
-        <div class="modal-body">
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente quod repellendus autem repellat accusantium laboriosam sequi. Corrupti laboriosam nam esse blanditiis debitis odio eligendi saepe, sequi velit corporis nemo sapiente.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-        </div>-->
       </div>
     </div>
   </div>
@@ -76,6 +89,7 @@ export default {
 			type: Object,
 			required: true
 		}
-	}
+	},
+	computed: {}
 };
 </script>

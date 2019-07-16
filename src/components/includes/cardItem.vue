@@ -1,11 +1,6 @@
 <template>
   <div class="mix col-lg-4 col-sm-10 col-12" :class="cardItem.types">
     <div class="text-white" @mouseover="show = true" @mouseleave="show = false">
-      <!-- <video height="auto" class="card-img" loop autoplay muted autobuffer playsinline>
-        <source src="@/assets/images/cards/delisa.webm" type="video/webm" />
-        <source src="@/assets/images/cards/delisa.mp4" type="video/mp4" />
-        <p>Your browser does not support the video element.</p>
-      </video>-->
       <img class="card-img" :src="image" :class="{'card-ima-blur': show}" />
 
       <div class="card-img-overlay card-body text-center align-items-center">

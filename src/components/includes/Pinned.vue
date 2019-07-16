@@ -24,19 +24,15 @@ export default {
 		let contactOffset = "";
 		Event.$on("offsetSkills", val => {
 			skillsOffset = val;
-			console.log("TCL: mounted -> skillsOffset", skillsOffset);
 		});
 		Event.$on("offsetAbout", val => {
 			aboutOffset = val;
-			console.log("TCL: mounted -> aboutOffset", aboutOffset);
 		});
 		Event.$on("offsetPortfolio", val => {
 			portfolioOffset = val;
-			console.log("TCL: mounted -> portfolioOffset", portfolioOffset);
 		});
 		Event.$on("offsetContact", val => {
 			contactOffset = val;
-			console.log("TCL: mounted -> contactOffset", contactOffset);
 		});
 		window.addEventListener(
 			"scroll",
