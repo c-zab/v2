@@ -14,6 +14,7 @@
         aria-controls="navbarNav"
         aria-expanded="false"
         aria-label="Toggle navigation"
+        @click="show = !show"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -88,6 +89,7 @@ export default {
 		},
 		scrollTo(selector) {
 			document.querySelector(selector).scrollIntoView({ behavior: "smooth" });
+			this.show = false;
 		}
 	},
 	mounted() {

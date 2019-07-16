@@ -9,13 +9,14 @@
             data-aos-offset="100"
             data-aos-easing="ease-in-sine"
             data-aos-delay="300"
+            data-aos-duration="1000"
           >
             <h4
               class="text-center w-responsive mx-auto mb-5"
             >Have a question or want to work together?</h4>
           </div>
 
-          <div ref="contact-sec" data-aos="zoom-in" data-aos-delay="300">
+          <div ref="contact-sec" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
             <div class="row justify-content-center">
               <div class="col-lg-9">
                 <form id="contact-form" name="contact-form" action="#" method="POST">

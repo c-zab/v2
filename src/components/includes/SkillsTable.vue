@@ -5,7 +5,7 @@
       <div class="list-group-flush">
         <div v-for="item in table" v-bind:key="item.id" class="list-group-item py-2">
           <div
-            data-aos="flip-right"
+            data-aos="zoom-in"
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="1000"
             class="row"

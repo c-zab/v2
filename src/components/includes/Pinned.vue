@@ -41,34 +41,32 @@ export default {
 		window.addEventListener(
 			"scroll",
 			throttle(function() {
-				el.classList[window.scrollY >= originalOffsetTop ? "add" : "remove"](
-					"stick"
-				);
-				if (window.scrollY > 0 && window.scrollY <= aboutOffset) {
-					Event.$emit("isActiveCover");
+				if (window.scrollY >= originalOffsetTop) {
+					el.classList.add("stick");
+				} else {
+					el.classList.remove("stick");
 				}
-				if (
+				if (window.scrollY > 0 && window.scrollY <= aboutOffset - 300) {
+					Event.$emit("isActiveCover");
+				} else if (
 					window.scrollY > aboutOffset - 300 &&
-          window.scrollY <= skillsOffset
+          window.scrollY <= skillsOffset - 500
 				) {
 					Event.$emit("isActiveAbout");
-				}
-				if (
-					window.scrollY > skillsOffset - 300 &&
-          window.scrollY <= portfolioOffset
+				} else if (
+					window.scrollY > skillsOffset - 500 &&
+          window.scrollY <= portfolioOffset - 500
 				) {
 					Event.$emit("isActiveSkills");
-				}
-				if (
-					window.scrollY > portfolioOffset - 300 &&
-          window.scrollY <= contactOffset + 500
+				} else if (
+					window.scrollY > portfolioOffset - 500 &&
+          window.scrollY <= contactOffset + 300
 				) {
 					Event.$emit("isActivePortfolio");
-				}
-				if (window.scrollY > contactOffset + 500) {
+				} else {
 					Event.$emit("isActiveContact");
 				}
-			}, 300)
+			}, 200)
 		);
 	}
 };
