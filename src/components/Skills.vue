@@ -1,5 +1,5 @@
 <template>
-  <div id="skills-sec" class="container">
+  <div ref="skills-sec" id="skills" class="container">
     <Title title="SKILLS" />
     <div class="container">
       <div class="row justify-content-center">
@@ -22,7 +22,7 @@ import Title from "./includes/Title";
 import SkillsTable from "./includes/SkillsTable";
 
 export default {
-	name: "skills-sec",
+	name: "skills",
 	components: {
 		Title,
 		SkillsTable
@@ -213,6 +213,10 @@ export default {
 				}
 			]
 		};
+	},
+	mounted() {
+		let skills_sec = this.$refs["skills-sec"].offsetTop;
+		Event.$emit("offsetSkills", skills_sec);
 	}
 };
 </script>

@@ -9,6 +9,8 @@ require("./assets/js/_references");
 
 Vue.config.productionTip = false;
 
+window.Event = new Vue();
+
 new Vue({
 	created() {
 		AOS.init({

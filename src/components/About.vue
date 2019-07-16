@@ -1,5 +1,5 @@
 <template>
-  <div id="about-sec" class="container">
+  <div id="about" ref="about-sec" class="container">
     <Title title="ABOUT" />
     <div class="container pb-5">
       <div class="row text-center">
@@ -156,6 +156,10 @@ export default {
 			hoverRocket: false,
 			hoverCode: false
 		};
+	},
+	mounted() {
+		let about_sec = this.$refs["about-sec"].offsetTop;
+		Event.$emit("offsetAbout", about_sec);
 	}
 };
 </script>

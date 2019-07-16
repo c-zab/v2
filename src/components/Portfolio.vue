@@ -1,5 +1,5 @@
 <template>
-  <div id="portfolio-sec" class="container">
+  <div ref="portfolio-sec" id="portfolio" class="container">
     <Title title="PORTFOLIO" />
     <div class="container pb-4">
       <div class="controls row justify-content-center">
@@ -55,7 +55,7 @@ import mixitup from "mixitup";
 import modal from "./includes/Modal";
 
 export default {
-	name: "portfolio-sec",
+	name: "portfolio",
 	components: {
 		Title,
 		cardItem,
@@ -64,6 +64,8 @@ export default {
 	mounted() {
 		var containerEl = document.querySelector(".containerMix");
 		mixitup(containerEl);
+		let portfolio_sec = this.$refs["portfolio-sec"].offsetTop;
+		Event.$emit("offsetPortfolio", portfolio_sec);
 	},
 	methods: {
 		showModal(modalData) {
