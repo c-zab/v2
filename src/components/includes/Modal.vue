@@ -1,36 +1,40 @@
 <template>
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
       <div class="modal-content border-0">
         <div class="modal-body p-0">
           <div class="container-fluid">
             <div class="row">
               <div class="col-12 bg-danger p-0">
-                <!-- <picture>
-                  <source
-                    media="(max-width: 550px)"
-                    srcset="@/assets/images/modals/aiesecModal.png"
-                  />
-                  <source
-                    media="(min-width: 551px)"
-                    srcset="@/assets/images/modals/aiesecModal2.png"
-                  />
-                  <img
-                    src="@/assets/images/modals/aiesecModal.png"
-                    class="img-fluid"
-                    alt="placeholder"
-                  />
-                </picture>-->
                 <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
                   <div class="carousel-inner">
-                    <div
-                      class="carousel-item"
-                      v-for="(image, index) in modalData.modalImages"
-                      :key="`image-${index}`"
-                      :class="{ 'active': index === 0 }"
-                      data-interval="6000"
-                    >
-                      <img :src="image" class="d-block w-100" alt="image" />
+                    <div class="carousel-item active" data-interval="3000">
+                      <picture>
+                        <source media="(max-width: 550px)" :srcset="imageModal1" />
+                        <source media="(min-width: 551px)" :srcset="imageModalXL1" />
+                        <img :src="imageModalXL1" class="d-block w-100" alt="image" />
+                      </picture>
+                    </div>
+                    <div class="carousel-item" data-interval="3000">
+                      <picture>
+                        <source media="(max-width: 550px)" :srcset="imageModal2" />
+                        <source media="(min-width: 551px)" :srcset="imageModalXL2" />
+                        <img :src="imageModalXL2" class="d-block w-100" alt="image" />
+                      </picture>
+                    </div>
+                    <div class="carousel-item" data-interval="3000">
+                      <picture>
+                        <source media="(max-width: 550px)" :srcset="imageModal3" />
+                        <source media="(min-width: 551px)" :srcset="imageModalXL3" />
+                        <img :src="imageModal3" class="d-block w-100" alt="image" />
+                      </picture>
+                    </div>
+                    <div class="carousel-item" data-interval="3000">
+                      <picture>
+                        <source media="(max-width: 550px)" :srcset="imageModal4" />
+                        <source media="(min-width: 551px)" :srcset="imageModalXL4" />
+                        <img :src="imageModal4" class="d-block w-100" alt="image" />
+                      </picture>
                     </div>
                   </div>
                   <a
@@ -56,7 +60,7 @@
             </div>
             <div class="row">
               <div class="col-12">
-                <h3 class="mb-0">{{ modalData.title }}</h3>
+                <h3 class="mb-0 mt-3">{{ modalData.title }}</h3>
               </div>
             </div>
             <div class="row">
@@ -90,6 +94,31 @@ export default {
 			required: true
 		}
 	},
-	computed: {}
+	computed: {
+		imageModal1() {
+			return require("@/assets/images/modals/" + this.modalData.imageModal1);
+		},
+		imageModalXL1() {
+			return require("@/assets/images/modals/" + this.modalData.imageModalXL1);
+		},
+		imageModal2() {
+			return require("@/assets/images/modals/" + this.modalData.imageModal2);
+		},
+		imageModalXL2() {
+			return require("@/assets/images/modals/" + this.modalData.imageModalXL2);
+		},
+		imageModal3() {
+			return require("@/assets/images/modals/" + this.modalData.imageModal3);
+		},
+		imageModalXL3() {
+			return require("@/assets/images/modals/" + this.modalData.imageModalXL3);
+		},
+		imageModal4() {
+			return require("@/assets/images/modals/" + this.modalData.imageModal4);
+		},
+		imageModalXL4() {
+			return require("@/assets/images/modals/" + this.modalData.imageModalXL4);
+		}
+	}
 };
 </script>
