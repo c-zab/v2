@@ -57,6 +57,14 @@
                       <i class="fas fa-hands-helping mx-1"></i> Volunteer
                     </p>
                   </div>
+                  <div
+                    v-if="modalData.links.construction"
+                    class="col-auto my-1 col-sm-auto text-center"
+                  >
+                    <p class="li-ic my-0 text-warning" :href="modalData.links.repository">
+                      <i class="fas fa-tools mx-1"></i> In progress
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

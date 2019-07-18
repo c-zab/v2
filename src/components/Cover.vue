@@ -15,14 +15,14 @@
         <div class="container">
           <h1
             data-aos="fade-right"
-            data-aos-delay="500"
+            data-aos-delay="800"
             data-aos-duration="800"
             data-aos-anchor-placement="top-bottom"
             class="text-white"
           >Hello, I'm Carlos Zabaleta.</h1>
           <h1
             data-aos="fade-right"
-            data-aos-delay="500"
+            data-aos-delay="800"
             data-aos-duration="800"
             data-aos-anchor-placement="top-bottom"
             class="text-success"

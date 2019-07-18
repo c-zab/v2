@@ -82,7 +82,7 @@ export default {
 				title: "QueryFox",
 				subtitle: "Unified Management System",
 				description:
-          "Quis fugit eius. Facilis quis deserunt. Ipsam sequi asperiores necessitatibus. Vel dolores est animi. Error autem ipsam dolor magnam molestias aut error.",
+          "Queryfox is a Canadian startup which gives municipalities unprecedented control over managing resident issues, assigning tasks, sharing knowledge, defining trends and creating metrics for budgeting and benchmarking.",
 				image: "queryfox.png",
 				imageModal: "queryfoxModal.gif",
 				imageModalXL: "queryfoxModalXL.gif",
@@ -96,8 +96,7 @@ export default {
 			czabalet: {
 				title: "Czabalet",
 				subtitle: "Personal Website",
-				description:
-          "Aperiam sed et consectetur itaque debitis autem corrupti. Qui facilis sed assumenda vel. Aut ut nam ullam voluptatem qui voluptatem neque aut repellendus. Totam qui at qui ut consequatur aliquid ut velit quibusdam. Reiciendis totam esse. Quia omnis aut porro molestias dolore nam dignissimos. Aperiam sed et consectetur itaque debitis autem corrupti. Qui facilis sed assumenda vel. Aut ut nam ullam voluptatem qui voluptatem neque aut repellendus. Totam qui at qui ut consequatur aliquid ut velit quibusdam. Reiciendis totam esse. Quia omnis aut porro molestias dolore nam dignissimos.",
+				description: `Czabalet is a dream come true. Since I started my first "Hello World" in Java I had an idea about showing my work and experience in a website, build it from scratch. At this point in my life I have learnt enough about programming languages, algorithms, and best practices for frontend and backend that helped me to build this gorgeous website and others. This is one of my first steps yet the last in this development journey.`,
 				image: "czabalet.png",
 				imageModal: "czabaletModal.gif",
 				imageModalXL: "czabaletModalXL.gif",
@@ -112,7 +111,7 @@ export default {
 				title: "Delisa",
 				subtitle: "Amaranth Retailer",
 				description:
-          "Et minus quasi. Provident et nesciunt distinctio fugit placeat ea fugiat est ratione. Ut nam ullam delectus aut beatae recusandae. Corporis architecto voluptas nisi. Placeat nihil dolor nostrum in eum iure. Illum eos qui sequi ducimus ut autem debitis quisquam tempora.",
+          "Delisa is a family business operated by professional people in the food industry. As a group, we have extensive experience of our members who have worked for more than 30 years in local and international companies, (Food Industry) providing a solid base and confidence in our operations, processes and products.",
 				image: "delisa.png",
 				imageModal: "delisaModal.gif",
 				imageModalXL: "delisaModalXL.gif",
@@ -127,8 +126,7 @@ export default {
 			space: {
 				title: "Space Shooter",
 				subtitle: "College Project",
-				description:
-          "Dicta molestiae dolorem accusamus est est eos. Ut doloribus inventore est et non quas nemo fuga nihil. Asperiores assumenda quia. Quo enim omnis animi ad est vero libero neque id. Nisi eveniet dolores ex similique nemo ratione.",
+				description: `Arrow 6.0 is the latest game inspired by the famous old-school manic shooters. This Shoot 'em up will immerse you in a space environment aboard an aircraft made in Canada (Super Arrow) where your goal is to shoot waves of enemies! This "bullet hell" game is easy-to-handle but hard to master!`,
 				image: "space.png",
 				imageModal: "spaceModal.gif",
 				imageModalXL: "spaceModalXL.gif",
@@ -142,7 +140,7 @@ export default {
 				title: "Books Library",
 				subtitle: "College Project",
 				description:
-          "Qui dolor reprehenderit quae id et. Reprehenderit natus occaecati dolorem non quasi enim vel molestiae. Repellendus ut modi ullam voluptate asperiores hic. Hic eveniet saepe mollitia nobis error aliquam quaerat aspernatur et. Rerum ut ea ullam soluta labore perferendis voluptatibus.",
+          "Books Library is a web project developed in Centennial College, We work as a team of 6 people working in an Agile environment.",
 				image: "books.png",
 				imageModal: "booksModal.gif",
 				imageModalXL: "booksModalXL.gif",
@@ -156,19 +154,19 @@ export default {
 				title: "Games and Stuff",
 				subtitle: "Entrepreneurship",
 				description:
-          "Aliquid modi non nam id ut iure sit blanditiis. Ipsum velit doloremque quasi. Natus quae est nostrum rem. Qui impedit dolor quos suscipit vitae non. Voluptas sint occaecati officiis quam.",
+          "Games and Stuff (not final name) is an entrepreneurship business idea. Anthony Portocarrero Garcia, owner, is a guy with autism who has been collecting video games since a young age. So far, he has more that 4000 video games including consoles, toys and more objects related with video games. Besides, he also collects videos. We are thinking about finding the best way to sell and buy video games, toys and others related with video games and videos from Canada to all around the world.",
 				image: "games.png",
 				imageModal: "gamesModal.gif",
 				imageModalXL: "gamesModalXL.gif",
 				languages: "Python, Django and MongoDB",
-				links: { repository: "private" },
+				links: { repository: "private", construction: true },
 				types: { backend: true, frontend: true, leadership: false }
 			},
 			aiesec: {
 				title: "AIESEC",
 				subtitle: "Global Leadership Movement",
 				description:
-          "Est quia consectetur. Quo quo fugit sunt eius et et et corporis. Id magnam iste porro voluptas voluptatibus nostrum eaque ipsam. Et aut repellendus quaerat quia accusamus quibusdam. Eveniet natus in quae autem.",
+          "AIESEC is the world's largest youth-run organization. It is an international non-governmental and Not-for-profit that provides young people with leadership development, cross-cultural any internships, and volunteer exchange globalist experiences. The organization focuses on empowering young people to make a Progressive social impact. The AIESEC network includes approximately 44,280 members in 127 countries.",
 				image: "aiesec.png",
 				imageModal: "aiesecModal.gif",
 				imageModalXL: "aiesecModalXL.gif",
@@ -184,7 +182,7 @@ export default {
 				title: "TEDx",
 				subtitle: "Ideas Worth Spreading",
 				description:
-          "Possimus deserunt iste distinctio vero et. Similique pariatur accusantium ab nostrum illum est perspiciatis sapiente quibusdam. Cumque quod reiciendis. Delectus consectetur rerum quos neque eligendi.",
+          "TEDx brings the spirit of TED’s mission of ideas worth spreading to local communities around the globe. TEDx events are organized by curious individuals who seek to discover ideas and spark conversations in their own community. TEDx events include live speakers and recorded TED Talks, and are organized independently under a free license granted by TED.",
 				image: "tedx.png",
 				imageModal: "tedxModal.gif",
 				imageModalXL: "tedxModalXL.gif",
@@ -200,7 +198,7 @@ export default {
 				title: "Google Developers Groups",
 				subtitle: "Developers interested in Google's Technology",
 				description:
-          "Nulla in debitis at inventore voluptates corrupti amet. Ut doloribus nobis aut fugit mollitia nihil ratione. Qui sunt et et incidunt sequi est aliquid quos autem. Aut quasi omnis.",
+          "Google Developers Groups (GDG) is for people who are interested in Google's developer technology; everything from the Android and App Engine platforms, to product APIs like the YouTube API, Google+ API, Google Maps API and the Google Calendar API, to initiatives like OpenSocial. Check out code.google.com for the full list of offerings.",
 				image: "google.png",
 				imageModal: "googleModal.gif",
 				imageModalXL: "googleModalXL.gif",
