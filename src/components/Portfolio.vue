@@ -87,7 +87,10 @@ export default {
 				imageModal: "queryfoxModal.gif",
 				imageModalXL: "queryfoxModalXL.gif",
 				languages: "PHP, Laravel and Vue ",
-				link: "https://queryfox.com/",
+				links: {
+					site: "https://queryfox.com/",
+					repository: "private"
+				},
 				types: { backend: true, frontend: true, leadership: false }
 			},
 			czabalet: {
@@ -99,7 +102,10 @@ export default {
 				imageModal: "czabaletModal.gif",
 				imageModalXL: "czabaletModalXL.gif",
 				languages: "Vue and Bootstrap",
-				link: "http://czabalet.com/",
+				links: {
+					site: "http://czabalet.com/",
+					repository: "private"
+				},
 				types: { backend: true, frontend: true, leadership: false }
 			},
 			delisa: {
@@ -111,7 +117,11 @@ export default {
 				imageModal: "delisaModal.gif",
 				imageModalXL: "delisaModalXL.gif",
 				languages: "Bootstrap, Vue and Laravel",
-				link: "http://delisamaranth.com/",
+				links: {
+					site: "http://delisamaranth.com/",
+					repository: "https://github.com/c-zab/delisa"
+				},
+
 				types: { backend: true, frontend: true, leadership: false }
 			},
 			space: {
@@ -123,7 +133,9 @@ export default {
 				imageModal: "spaceModal.gif",
 				imageModalXL: "spaceModalXL.gif",
 				languages: "Typescript",
-				link: "https://github.com/ClaudiaFeliciano/Arrow-6",
+				links: {
+					repository: "https://github.com/ClaudiaFeliciano/Arrow-6"
+				},
 				types: { backend: false, frontend: true, leadership: false }
 			},
 			books: {
@@ -135,7 +147,9 @@ export default {
 				imageModal: "booksModal.gif",
 				imageModalXL: "booksModalXL.gif",
 				languages: "C#, MySQL and Bootstrap",
-				link: "https://github.com/UTSCCSCC01/final-charjd",
+				links: {
+					repository: "https://github.com/UTSCCSCC01/final-charjd"
+				},
 				types: { backend: true, frontend: true, leadership: true }
 			},
 			games: {
@@ -147,7 +161,7 @@ export default {
 				imageModal: "gamesModal.gif",
 				imageModalXL: "gamesModalXL.gif",
 				languages: "Python, Django and MongoDB",
-				link: "",
+				links: { repository: "private" },
 				types: { backend: true, frontend: true, leadership: false }
 			},
 			aiesec: {
@@ -159,7 +173,11 @@ export default {
 				imageModal: "aiesecModal.gif",
 				imageModalXL: "aiesecModalXL.gif",
 				languages: "Team Work, Sales, and Time Management",
-				link: "https://aiesec.org/",
+				links: {
+					site: "https://aiesec.org/",
+					volunteer: true
+				},
+
 				types: { backend: false, frontend: false, leadership: true }
 			},
 			tedx: {
@@ -172,7 +190,10 @@ export default {
 				imageModalXL: "tedxModalXL.gif",
 				languages:
           "Event Management, Volunteer Management, Finance, and Team Empowerment",
-				link: "https://www.ted.com/about/programs-initiatives/tedx-program",
+				links: {
+					site: "https://www.tedxumsa.org",
+					volunteer: true
+				},
 				types: { backend: false, frontend: false, leadership: true }
 			},
 			google: {
@@ -184,7 +205,10 @@ export default {
 				imageModal: "googleModal.gif",
 				imageModalXL: "googleModalXL.gif",
 				languages: "Presentation Skills, Teaching and Counselling",
-				link: "https://developers.google.com/community/gdg/",
+				links: {
+					site: "https://developers.google.com/community/gdg/",
+					volunteer: true
+				},
 				types: { backend: false, frontend: false, leadership: true }
 			}
 		};
