@@ -4,9 +4,9 @@
       <picture>
         <source media="(max-width: 550px)" srcset="../assets/images/coverBg-450w.png" />
         <source media="(max-width: 800px)" srcset="../assets/images/coverBg-800w.png" />
-        <source media="(min-width: 1300px)" srcset="../assets/images/coverBg-1300px.png" />
+        <source media="(min-width: 1300px)" srcset="../assets/images/coverBg-1300w.png" />
         <img
-          src="../assets/images/coverBg-1300px.png"
+          src="../assets/images/coverBg-1300w.png"
           alt="placeholder"
           class="img-fluid cover-image"
         />

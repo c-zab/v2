@@ -96,7 +96,7 @@ export default {
 			czabalet: {
 				title: "Czabalet",
 				subtitle: "Personal Website",
-				description: `Czabalet is a dream come true. Since I started my first "Hello World" in Java I had an idea about showing my work and experience in a website, build it from scratch. At this point in my life I have learnt enough about programming languages, algorithms, and best practices for frontend and backend that helped me to build this gorgeous website and others. This is one of my first steps yet not the last in this development journey.`,
+				description: `Czabalet is a dream come true. Since I started my first "Hello World" in Java I had an idea about showing my work and experience in a website, build it from scratch. At this point in my life I have learnt enough about programming languages, algorithms, and best practices for front end and back end development that helped me to build this gorgeous website and others. This is one of my first steps yet not the last in this development journey.`,
 				image: "czabalet.png",
 				imageModal: "czabaletModal.gif",
 				imageModalXL: "czabaletModalXL.gif",

@@ -10,7 +10,7 @@
           data-aos-anchor-placement="top-bottom"
           class="col-md align-self-center"
         >
-          <img class="me-picture" src="../assets/images/me.jpg" align="center" alt="image" />
+          <img class="me-picture" src="../assets/images/me.png" align="center" alt="image" />
           <h2>Who am I?</h2>
           <p>
             I am a
