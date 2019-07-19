@@ -9,6 +9,12 @@ require("./assets/js/_references");
 
 Vue.config.productionTip = false;
 
+import VeeValidate from 'vee-validate';
+
+Vue.use(VeeValidate, {
+	validity: true
+});
+
 window.Event = new Vue();
 
 new Vue({

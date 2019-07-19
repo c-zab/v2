@@ -96,7 +96,7 @@ export default {
 			czabalet: {
 				title: "Czabalet",
 				subtitle: "Personal Website",
-				description: `Czabalet is a dream come true. Since I started my first "Hello World" in Java I had an idea about showing my work and experience in a website, build it from scratch. At this point in my life I have learnt enough about programming languages, algorithms, and best practices for frontend and backend that helped me to build this gorgeous website and others. This is one of my first steps yet the last in this development journey.`,
+				description: `Czabalet is a dream come true. Since I started my first "Hello World" in Java I had an idea about showing my work and experience in a website, build it from scratch. At this point in my life I have learnt enough about programming languages, algorithms, and best practices for frontend and backend that helped me to build this gorgeous website and others. This is one of my first steps yet not the last in this development journey.`,
 				image: "czabalet.png",
 				imageModal: "czabaletModal.gif",
 				imageModalXL: "czabaletModalXL.gif",
@@ -140,7 +140,7 @@ export default {
 				title: "Books Library",
 				subtitle: "College Project",
 				description:
-          "Books Library is a web project developed in Centennial College, We work as a team of 6 people working in an Agile environment.",
+          "Books Library is a web project developed in Centennial College using C# for the backend (ASP.net MVC). We work as a team of 6 people working in an Agile environment.",
 				image: "books.png",
 				imageModal: "booksModal.gif",
 				imageModalXL: "booksModalXL.gif",
@@ -195,10 +195,10 @@ export default {
 				types: { backend: false, frontend: false, leadership: true }
 			},
 			google: {
-				title: "Google Developers Groups",
+				title: "Google Developers Group",
 				subtitle: "Developers interested in Google's Technology",
 				description:
-          "Google Developers Groups (GDG) is for people who are interested in Google's developer technology; everything from the Android and App Engine platforms, to product APIs like the YouTube API, Google+ API, Google Maps API and the Google Calendar API, to initiatives like OpenSocial. Check out code.google.com for the full list of offerings.",
+          "Google Developers Group (GDG) is for people who are interested in Google's developer technology; everything from the Android and App Engine platforms, to product APIs like the YouTube API, Google+ API, Google Maps API and the Google Calendar API, to initiatives like OpenSocial. Check out code.google.com for the full list of offerings.",
 				image: "google.png",
 				imageModal: "googleModal.gif",
 				imageModalXL: "googleModalXL.gif",
