@@ -1,6 +1,6 @@
 <template>
   <div>
-    <form id="contact-form" name="contact-form" action="#" method="POST">
+    <form id="contact-form" name="contact-form" action="/form.php" method="POST">
       <div class="row">
         <div class="col-md-6">
           <div class="form-group">
@@ -112,7 +112,7 @@ export default {
 		onSubmit() {
 			this.$validator.validate().then(valid => {
 				if (!valid) {
-					alert("not submitting");
+					console.log("Not submited it!");
 				}
 			});
 		}
