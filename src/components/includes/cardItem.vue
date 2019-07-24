@@ -1,8 +1,10 @@
 <template>
   <div class="mix col-lg-4 col-sm-10 col-12" :class="cardItem.types">
     <div class="text-white" @mouseover="show = true" @mouseleave="show = false">
-      <img class="card-img" :src="image" :class="{'card-ima-blur': show}" />
-
+      <picture>
+        <source :srcset="imageWebp" />
+        <img :src="image" class="card-img" :class="{'card-ima-blur': show}" />
+      </picture>
       <div class="card-img-overlay card-body text-center align-items-center">
         <transition name="bounce">
           <div v-if="show">
@@ -38,6 +40,9 @@ export default {
 	computed: {
 		image() {
 			return require("@/assets/images/cards/" + this.cardItem.image);
+		},
+		imageWebp() {
+			return require("@/assets/images/cards/" + this.cardItem.imageWebp);
 		}
 	}
 };

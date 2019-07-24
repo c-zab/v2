@@ -1,4 +1,5 @@
 import Vue from "vue";
+import CoverApp from "./CoverApp.vue";
 import App from "./App.vue";
 
 import AOS from "aos";
@@ -16,6 +17,16 @@ Vue.use(VeeValidate, {
 });
 
 window.Event = new Vue();
+
+new Vue({
+	created() {
+		AOS.init({
+			duration: 700,
+			once: true
+		});
+	},
+	render: h => h(CoverApp)
+}).$mount("#cover-app");
 
 new Vue({
 	created() {

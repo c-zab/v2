@@ -8,7 +8,9 @@
               <div class="col-12 bg-danger p-0">
                 <picture>
                   <source media="(max-width: 550px)" :srcset="imageModal" />
+                  <source media="(max-width: 550px)" :srcset="imageModalWebp" />
                   <source media="(min-width: 551px)" :srcset="imageModalXL" />
+                  <source media="(min-width: 551px)" :srcset="imageModalXLWebp" />
                   <img :src="imageModalXL" class="d-block w-100" alt="image" />
                 </picture>
               </div>
@@ -107,8 +109,15 @@ export default {
 		imageModal() {
 			return require("@/assets/images/modals/" + this.modalData.imageModal);
 		},
+		imageModalWebp() {
+			return require("@/assets/images/modals/" + this.modalData.imageModalWebp);
+		},
 		imageModalXL() {
 			return require("@/assets/images/modals/" + this.modalData.imageModalXL);
+		},
+		imageModalXLWebp() {
+			return require("@/assets/images/modals/" +
+        this.modalData.imageModalXLWebp);
 		}
 	}
 };
