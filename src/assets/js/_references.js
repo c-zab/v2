@@ -1,5 +1,6 @@
 // CSS
-require("../../../node_modules/bootstrap/dist/css/bootstrap.min.css");
+// require("../../../node_modules/bootstrap/scss/bootstrap.scss");
+require("../css/custom.scss");
 require("../css/styles.scss");
 
 // JS
