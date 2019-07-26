@@ -101,11 +101,6 @@ export default {
     }
   },
   computed: {
-    repository() {
-      return this.modalData.links.repository === "private"
-        ? "private my frien"
-        : this.modalData.links.repository;
-    },
     imageModal() {
       return "/images/modals/" + this.modalData.imageModal;
     },
