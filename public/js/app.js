@@ -63401,7 +63401,7 @@ var render = function() {
               staticClass: "col-md col-lg py-3",
               attrs: {
                 "data-aos": "fade-up",
-                "data-aos-anchor-placement": "center-bottom",
+                "data-aos-anchor-placement": "bottom-bottom",
                 "data-aos-delay": "450"
               }
             },
