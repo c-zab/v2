@@ -78319,7 +78319,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! aos */ "./node_modules/aos/dist/aos.js");
+/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! aos */ "./node_modules/aos/dist/aos.js");
 /* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(aos__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! aos/dist/aos.css */ "./node_modules/aos/dist/aos.css");
 /* harmony import */ var aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_1__);
@@ -78335,6 +78335,13 @@ Vue.use(vee_validate__WEBPACK_IMPORTED_MODULE_2__["default"], {
 });
 window.Event = new Vue();
 Vue.component('app', __webpack_require__(/*! ./App.vue */ "./resources/js/App.vue")["default"]);
+
+if (process.env.MIX_APP_ENV === 'production') {
+  Vue.config.devtools = false;
+  Vue.config.debug = false;
+  Vue.config.silent = true;
+}
+
 var app = new Vue({
   el: '#app',
   created: function created() {
@@ -78344,6 +78351,7 @@ var app = new Vue({
     });
   }
 });
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/process/browser.js */ "./node_modules/process/browser.js")))
 
 /***/ }),
 

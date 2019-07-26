@@ -4,6 +4,11 @@
 // Bootstrap
 @import 'custom';
 
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+
 // Cover
 html, body{ overflow-x: hidden }
 

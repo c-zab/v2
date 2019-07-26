@@ -15,6 +15,13 @@ window.Event = new Vue();
 
 Vue.component('app', require('./App.vue').default);
 
+
+if (process.env.MIX_APP_ENV === 'production') {
+	Vue.config.devtools = false;
+	Vue.config.debug = false;
+	Vue.config.silent = true;
+}
+
 const app = new Vue({
 	el: '#app',
 	created() {
