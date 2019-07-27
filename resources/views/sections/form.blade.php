@@ -16,8 +16,8 @@
 					<div class="col-md-6">
 						<div class="form-group">
 							<label for="name" class>Your name</label>
-							<input v-validate="'required|alpha_spaces|max:25'" type="text" v-model="name" id="name" name="name"
-								class="form-control" required />
+							<input v-validate="'alpha_spaces|max:25'" type="text" v-model="name" id="name" name="name"
+								class="form-control" />
 							<span class="form-text text-danger" v-if="errorsBE.name" v-text="geterrorsBE(errorsBE.name)"></span>
 							<span class="form-text text-danger">@{{ errors.first('name') }}</span>
 						</div>
@@ -26,8 +26,7 @@
 					<div class="col-md-6">
 						<div class="form-group">
 							<label for="email" class>Your email</label>
-							<input v-validate="'required|email'" name="email" type="text" v-model="email" id="email"
-								class="form-control" required />
+							<input v-validate="'email'" name="email" type="text" v-model="email" id="email" class="form-control" />
 							<span class="form-text text-danger" v-if="errorsBE.email" v-text="geterrorsBE(errorsBE.email)"></span>
 							<span class="form-text text-danger">@{{ errors.first('email') }}</span>
 						</div>
@@ -38,8 +37,8 @@
 					<div class="col-md-12">
 						<div class="form-group">
 							<label for="subject" class>Subject</label>
-							<input v-validate="'required|max:35'" type="text" v-model="subject" id="subject" name="subject"
-								class="form-control" required />
+							<input v-validate="'max:35'" type="text" v-model="subject" id="subject" name="subject"
+								class="form-control" />
 							<span class="form-text text-danger" v-if="errorsBE.subject" v-text="geterrorsBE(errorsBE.subject)"></span>
 							<span class="form-text text-danger">@{{ errors.first('subject') }}</span>
 						</div>
@@ -50,8 +49,8 @@
 					<div class="col-md-12">
 						<div class="form-group">
 							<label for="message">Your message</label>
-							<textarea v-validate="'required|max:200'" v-model="message" type="text" id="message" name="message"
-								rows="2" class="form-control" required></textarea>
+							<textarea v-validate="'max:200'" v-model="message" type="text" id="message" name="message" rows="2"
+								class="form-control"></textarea>
 
 							<span class="form-text text-danger" v-if="errorsBE.message" v-text="geterrorsBE(errorsBE.message)"></span>
 							<span class="form-text text-danger">@{{ errors.first('message') }}</span>

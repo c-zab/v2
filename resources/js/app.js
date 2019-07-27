@@ -1,21 +1,4 @@
-require('./bootstrap');
-
-import AOS from "aos";
-import "aos/dist/aos.js";
-
-$(function () {
-	AOS.init({
-		duration: 700,
-		once: true,
-		disable: 'mobile'
-	});
-});
-
 window.Vue = require('vue');
-
-import VeeValidate from 'vee-validate';
-
-Vue.use(VeeValidate);
 
 window.Event = new Vue();
 
@@ -31,26 +14,23 @@ Vue.component('skills', require('./components/Skills.vue').default);
 Vue.component('portfolio', require('./components/Portfolio.vue').default);
 Vue.component('contact', require('./components/Contact.vue').default);
 
-import { Validator } from "vee-validate";
-import Axios from "axios";
+import VeeValidate, { Validator } from 'vee-validate';
+
+Vue.use(VeeValidate);
 
 const dict = {
 	custom: {
 		name: {
-			required: "Your name is required",
 			alpha_spaces: "Please enter a valid name",
 			max: "Please enter a name no longer than 25 characters"
 		},
 		email: {
-			required: "Your email is required",
 			email: "Please enter a valid email"
 		},
 		subject: {
-			required: "A subject is required",
 			max: "Please enter a subject no longer than 35 characters"
 		},
 		message: {
-			required: "A message is required",
 			max: "Please enter a message no longer than 200 characters"
 		}
 	}
@@ -85,6 +65,7 @@ const app = new Vue({
 					.then(this.onSuccess)
 					.catch(error => {
 						this.errorsBE = error.response.data.errors
+						console.log('Oopsy Doopsy!!! Please try again!')
 					});
 			});
 		},
