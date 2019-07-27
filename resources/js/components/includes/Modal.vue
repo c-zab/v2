@@ -7,11 +7,11 @@
             <div class="row">
               <div class="col-12 bg-danger p-0">
                 <picture>
-                  <source media="(max-width: 550px)" :srcset="imageModalWebp" />
-                  <source media="(max-width: 550px)" :srcset="imageModal" />
-                  <source media="(min-width: 551px)" :srcset="imageModalXLWebp" />
-                  <source media="(min-width: 551px)" :srcset="imageModalXL" />
-                  <img :src="imageModalXLWebp" class="d-block w-100" alt="image" />
+                  <source media="(max-width: 550px)" type="image/webp" :srcset="imageModalWebp" />
+                  <source media="(max-width: 550px)" type="image/png" :srcset="imageModal" />
+                  <source media="(min-width: 551px)" type="image/webp" :srcset="imageModalXLWebp" />
+                  <source media="(min-width: 551px)" type="image/png" :srcset="imageModalXL" />
+                  <img :src="imageModalXL"type="image/png" class="d-block w-100" alt="image" />
                 </picture>
               </div>
             </div>

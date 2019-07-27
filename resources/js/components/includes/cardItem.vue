@@ -4,7 +4,7 @@
       <picture>
         <source :srcset="imageWebp" type="image/webp" />
         <source :srcset="image" type="image/png" />
-        <img :src="imageWebp" type="image/webp" class="card-img" :class="{'card-ima-blur': show}" />
+        <img :src="image" type="image/png" class="card-img" :class="{'card-ima-blur': show}" />
       </picture>
       <div class="card-img-overlay card-body text-center align-items-center">
         <transition name="bounce">
