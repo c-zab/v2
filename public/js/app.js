@@ -2134,13 +2134,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
- // import ContactForm from "./includes/ContactForm";
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "contact",
   components: {
-    Title: _includes_Title__WEBPACK_IMPORTED_MODULE_0__["default"] // ContactForm
-
+    Title: _includes_Title__WEBPACK_IMPORTED_MODULE_0__["default"]
   }
 });
 
@@ -63675,7 +63673,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", [
-      _c("section", { staticClass: "mb-4" }, [
+      _c("section", { staticClass: "mb-0" }, [
         _c(
           "div",
           {
@@ -63688,7 +63686,7 @@ var staticRenderFns = [
             }
           },
           [
-            _c("h4", { staticClass: "text-center w-responsive mx-auto mb-5" }, [
+            _c("h4", { staticClass: "text-center w-responsive mx-auto mb-0" }, [
               _vm._v("Have a question or want to work together?")
             ])
           ]
@@ -77018,7 +77016,8 @@ var dict = {
   custom: {
     name: {
       required: "Your name is required",
-      alpha_spaces: "Please enter a valid name"
+      alpha_spaces: "Please enter a valid name",
+      max: "Please enter a name no longer than 25 characters"
     },
     email: {
       required: "Your email is required",
@@ -77039,11 +77038,13 @@ var app = new Vue({
   el: '#app',
   data: function data() {
     return {
-      name: "Carlos Zaba",
-      email: "zaasfasd@asd.asdas",
-      subject: "my subject",
-      message: "This is a message",
-      coffeeMessage: false
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+      coffeeMessage: false,
+      clientName: '',
+      errorsBE: {}
     };
   },
   methods: {
@@ -77051,25 +77052,22 @@ var app = new Vue({
       var _this = this;
 
       this.$validator.validate().then(function (valid) {
-        if (!valid) {
-          console.log("TCL: validationSubmit -> valid", valid);
-          return;
-        }
-
-        ;
+        if (!valid) return;
         axios__WEBPACK_IMPORTED_MODULE_3___default.a.post('/messages', {
           name: _this.name,
           email: _this.email,
           subject: _this.subject,
           message: _this.message
         }).then(_this.onSuccess)["catch"](function (error) {
-          console.log("TCL: validationSubmit -> error", error);
+          _this.errorsBE = error.response.data.errors;
         });
       });
     },
     onSuccess: function onSuccess(response) {
       var _this2 = this;
 
+      console.log(response.data.message);
+      this.clientName = response.data.clientName;
       this.name = '';
       this.email = '';
       this.subject = '';
@@ -77082,6 +77080,12 @@ var app = new Vue({
         });
       });
       this.coffeeMessage = true;
+    },
+    geterrorsBE: function geterrorsBE(field) {
+      return "".concat(field);
+    },
+    clearInputBE: function clearInputBE(field) {
+      delete this.errorsBE[field];
     }
   },
   mounted: function mounted() {

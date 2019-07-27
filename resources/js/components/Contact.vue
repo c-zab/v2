@@ -3,7 +3,7 @@
     <div class="container">
       <Title data-aos="fade-right" title="CONTACT" />
       <div>
-        <section class="mb-4">
+        <section class="mb-0">
           <div
             data-aos="fade-right"
             data-aos-offset="100"
@@ -12,7 +12,7 @@
             data-aos-duration="1000"
           >
             <h4
-              class="text-center w-responsive mx-auto mb-5"
+              class="text-center w-responsive mx-auto mb-0"
             >Have a question or want to work together?</h4>
           </div>
         </section>
@@ -23,13 +23,11 @@
 
 <script>
 import Title from "./includes/Title";
-// import ContactForm from "./includes/ContactForm";
 
 export default {
   name: "contact",
   components: {
     Title
-    // ContactForm
   }
 };
 </script>

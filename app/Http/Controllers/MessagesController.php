@@ -11,10 +11,10 @@ class MessagesController extends Controller
     public function store(Request $request)
     {
         $validateData = $request->validate([
-					'name' => 'required',
-					'email' => 'required',
-					'subject' => 'required',
-					'message' => 'required'
+					'name' => 'required|max:25',
+					'email' => 'required|email',
+					'subject' => 'required|max:35',
+					'message' => 'required|max:200'
 				]);
 
         $message = new Message();
@@ -23,8 +23,12 @@ class MessagesController extends Controller
         $message->subject = request('subject');
         $message->message = request('message');
 
-        // $message->save();
+				$message->save();
 
-        return ['message' => 'Message sended!'];
+				$response = [
+					'message' => 'Message sended!',
+					'clientName' => $message->name
+				];
+        return $response;
     }
 }

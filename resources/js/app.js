@@ -38,7 +38,8 @@ const dict = {
 	custom: {
 		name: {
 			required: "Your name is required",
-			alpha_spaces: "Please enter a valid name"
+			alpha_spaces: "Please enter a valid name",
+			max: "Please enter a name no longer than 25 characters"
 		},
 		email: {
 			required: "Your email is required",
@@ -61,20 +62,19 @@ const app = new Vue({
 	el: '#app',
 	data() {
 		return {
-			name: "Carlos Zaba",
-			email: "zaasfasd@asd.asdas",
-			subject: "my subject",
-			message: "This is a message",
-			coffeeMessage: false
+			name: "",
+			email: "",
+			subject: "",
+			message: "",
+			coffeeMessage: false,
+			clientName: '',
+			errorsBE: {}
 		};
 	},
 	methods: {
 		validationSubmit() {
 			this.$validator.validate().then(valid => {
-				if (!valid) {
-					console.log("TCL: validationSubmit -> valid", valid)
-					return
-				};
+				if (!valid) return;
 
 				Axios.post('/messages', {
 					name: this.name,
@@ -84,12 +84,13 @@ const app = new Vue({
 				})
 					.then(this.onSuccess)
 					.catch(error => {
-						console.log("TCL: validationSubmit -> error", error)
+						this.errorsBE = error.response.data.errors
 					});
-			}
-			);
+			});
 		},
 		onSuccess(response) {
+			console.log(response.data.message)
+			this.clientName = response.data.clientName
 			this.name = ''
 			this.email = ''
 			this.subject = ''
@@ -101,6 +102,12 @@ const app = new Vue({
 				});
 			});
 			this.coffeeMessage = true
+		},
+		geterrorsBE(field) {
+			return `${field}`
+		},
+		clearInputBE(field) {
+			delete this.errorsBE[field];
 		}
 	},
 	mounted() {
