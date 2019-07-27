@@ -15,9 +15,7 @@ window.Vue = require('vue');
 
 import VeeValidate from 'vee-validate';
 
-Vue.use(VeeValidate, {
-	validity: true
-});
+Vue.use(VeeValidate);
 
 window.Event = new Vue();
 
@@ -33,6 +31,80 @@ Vue.component('skills', require('./components/Skills.vue').default);
 Vue.component('portfolio', require('./components/Portfolio.vue').default);
 Vue.component('contact', require('./components/Contact.vue').default);
 
+import { Validator } from "vee-validate";
+import Axios from "axios";
+
+const dict = {
+	custom: {
+		name: {
+			required: "Your name is required",
+			alpha_spaces: "Please enter a valid name"
+		},
+		email: {
+			required: "Your email is required",
+			email: "Please enter a valid email"
+		},
+		subject: {
+			required: "A subject is required",
+			max: "Please enter a subject no longer than 35 characters"
+		},
+		message: {
+			required: "A message is required",
+			max: "Please enter a message no longer than 200 characters"
+		}
+	}
+};
+
+Validator.localize("en", dict);
+
 const app = new Vue({
-	el: '#app'
+	el: '#app',
+	data() {
+		return {
+			name: "Carlos Zaba",
+			email: "zaasfasd@asd.asdas",
+			subject: "my subject",
+			message: "This is a message",
+			coffeeMessage: false
+		};
+	},
+	methods: {
+		validationSubmit() {
+			this.$validator.validate().then(valid => {
+				if (!valid) {
+					console.log("TCL: validationSubmit -> valid", valid)
+					return
+				};
+
+				Axios.post('/messages', {
+					name: this.name,
+					email: this.email,
+					subject: this.subject,
+					message: this.message
+				})
+					.then(this.onSuccess)
+					.catch(error => {
+						console.log("TCL: validationSubmit -> error", error)
+					});
+			}
+			);
+		},
+		onSuccess(response) {
+			this.name = ''
+			this.email = ''
+			this.subject = ''
+			this.message = ''
+			this.$nextTick(() => {
+				this.errors.clear();
+				this.$nextTick(() => {
+					this.$validator.reset();
+				});
+			});
+			this.coffeeMessage = true
+		}
+	},
+	mounted() {
+		let contact_sec = this.$refs["contact-sec"].offsetTop;
+		Event.$emit("offsetContact", contact_sec);
+	}
 });

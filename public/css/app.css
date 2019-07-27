@@ -9432,11 +9432,3 @@ video {
   font-size: 0.8rem;
 }
 
-input:invalid {
-  border-color: red;
-}
-
-textarea:invalid {
-  border-color: red;
-}
-

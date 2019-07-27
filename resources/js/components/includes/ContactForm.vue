@@ -1,6 +1,6 @@
 <template>
   <div>
-    <form id="contact-form" name="contact-form" action="/form.php" method="POST">
+    <form id="contact-form" name="contact-form" action="/messages" method="POST">
       <div class="row">
         <div class="col-md-6">
           <div class="form-group">
@@ -77,48 +77,45 @@
 <script>
 import { Validator } from "vee-validate";
 const dict = {
-	custom: {
-		name: {
-			required: "Your name is required",
-			alpha_spaces: "Please enter a valid name"
-		},
-		email: {
-			required: "Your email is required",
-			email: "Please enter a valid email"
-		},
-		subject: {
-			required: "A subject is required",
-			max: "Please enter a subject no longer than 35 characters"
-		},
-		message: {
-			required: "A message is required",
-			max: "Please enter a message no longer than 200 characters"
-		}
-	}
+  custom: {
+    name: {
+      required: "Your name is required",
+      alpha_spaces: "Please enter a valid name"
+    },
+    email: {
+      required: "Your email is required",
+      email: "Please enter a valid email"
+    },
+    subject: {
+      required: "A subject is required",
+      max: "Please enter a subject no longer than 35 characters"
+    },
+    message: {
+      required: "A message is required",
+      max: "Please enter a message no longer than 200 characters"
+    }
+  }
 };
 
 Validator.localize("en", dict);
 
 export default {
-	data() {
-		return {
-			name: "",
-			email: "",
-			subject: "",
-			message: ""
-		};
-	},
-	methods: {
-		onSubmit() {
-			this.$validator.validate().then(valid => {
-				if (!valid) {
-					console.log("Not submited it!");
-				}
-			});
-		}
-	}
+  data() {
+    return {
+      name: "Carlos Zaba",
+      email: "zaasfasd@asd.asdas",
+      subject: "my subject",
+      message: "This is a message"
+    };
+  },
+  methods: {
+    onSubmit() {
+      this.$validator.validate().then(valid => {
+        if (!valid) {
+          console.log("Not submited it!");
+        }
+      });
+    }
+  }
 };
 </script>
-
-<style>
-</style>

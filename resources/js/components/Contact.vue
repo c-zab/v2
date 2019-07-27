@@ -15,14 +15,6 @@
               class="text-center w-responsive mx-auto mb-5"
             >Have a question or want to work together?</h4>
           </div>
-
-          <div ref="contact-sec" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
-            <div class="row justify-content-center">
-              <div class="col-lg-9">
-                <contact-form></contact-form>
-              </div>
-            </div>
-          </div>
         </section>
       </div>
     </div>
@@ -31,17 +23,13 @@
 
 <script>
 import Title from "./includes/Title";
-import ContactForm from "./includes/ContactForm";
+// import ContactForm from "./includes/ContactForm";
 
 export default {
-	name: "contact",
-	components: {
-		Title,
-		ContactForm
-	},
-	mounted() {
-		let contact_sec = this.$refs["contact-sec"].offsetTop;
-		Event.$emit("offsetContact", contact_sec);
-	}
+  name: "contact",
+  components: {
+    Title
+    // ContactForm
+  }
 };
 </script>
