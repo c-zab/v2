@@ -1,5 +1,5 @@
 <?php
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', 'PagesController@home');
+
+Route::post('/messages', 'MessagesController@store');
