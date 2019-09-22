@@ -35,7 +35,7 @@ export default {
   data() {
     return {
       show: false,
-      img: "/images/cards/" + this.cardItem.image
+      img: "/images/cards/" + this.cardItem.image,
     };
   },
   computed: {
@@ -44,7 +44,7 @@ export default {
     },
     imageWebp() {
       return "/images/cards/" + this.cardItem.imageWebp;
-    }
-  }
+    },
+  },
 };
 </script>

@@ -83,6 +83,6 @@
 
 <script>
 export default {
-	props: ["title", "table"]
+  props: ["title", "table"],
 };
 </script>

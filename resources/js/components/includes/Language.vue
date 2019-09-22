@@ -14,14 +14,14 @@
 
 <script>
 export default {
-	props: {
-		name: String,
-		percentage: String
-	},
-	data() {
-		return {
-			numberWidth: 70 - (this.percentage * 70) / 100
-		};
-	}
+  props: {
+    name: String,
+    percentage: String,
+  },
+  data() {
+    return {
+      numberWidth: 70 - (this.percentage * 70) / 100,
+    };
+  },
 };
 </script>

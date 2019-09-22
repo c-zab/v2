@@ -7,6 +7,8 @@
 
 @import "~aos/dist/aos.css";
 
+[v-cloak] > * { display:none; }
+
 // Cover
 html, body{ overflow-x: hidden }
 
@@ -185,7 +187,6 @@ video {
 
 .bg-color {
 	background-color: $my-bg-color;
-
 }
 
 .footer-content {

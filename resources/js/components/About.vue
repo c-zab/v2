@@ -104,7 +104,7 @@
         </div>
         <div
           data-aos="fade-up"
-          data-aos-anchor-placement="bottom-bottom"
+          data-aos-anchor-placement="center-bottom"
           data-aos-delay="450"
           class="col-md col-lg py-3"
         >
@@ -120,7 +120,7 @@
         <div
           data-aos="fade-up"
           data-aos-anchor-placement="center-bottom"
-          data-aos-delay="450"
+          data-aos-delay="400"
           class="col-md-12 col-lg-12 py-3"
         >
           <div @mouseover="hoverCode = true" @mouseleave="hoverCode = false">
@@ -156,7 +156,7 @@ export default {
   name: "about-sec",
   components: {
     Title,
-    Language
+    Language,
   },
   data() {
     return {
@@ -164,12 +164,12 @@ export default {
       hoverMobile: false,
       hoverLight: false,
       hoverRocket: false,
-      hoverCode: false
+      hoverCode: false,
     };
   },
   mounted() {
     let about_sec = this.$refs["about-sec"].offsetTop;
     Event.$emit("offsetAbout", about_sec);
-  }
+  },
 };
 </script>

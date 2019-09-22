@@ -27,7 +27,7 @@ import Title from "./includes/Title";
 export default {
   name: "contact",
   components: {
-    Title
-  }
+    Title,
+  },
 };
 </script>

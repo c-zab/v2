@@ -59,7 +59,7 @@ export default {
   components: {
     Title,
     cardItem,
-    modal
+    modal,
   },
   async mounted() {
     var containerEl = document.querySelector(".containerMix");
@@ -71,7 +71,7 @@ export default {
     showModal(modalData) {
       this.modalData = modalData;
       this.isModalVisible = true;
-    }
+    },
   },
   data() {
     return {
@@ -92,9 +92,9 @@ export default {
         languages: "PHP, Laravel and Vue ",
         links: {
           site: "https://queryfox.com/",
-          repository: "private"
+          repository: "private",
         },
-        types: { backend: true, frontend: true, leadership: false }
+        types: { backend: true, frontend: true, leadership: false },
       },
       czabalet: {
         title: "Czabalet",
@@ -109,9 +109,9 @@ export default {
         languages: "Vue and Bootstrap",
         links: {
           site: "http://czabalet.com/",
-          repository: "private"
+          repository: "private",
         },
-        types: { backend: true, frontend: true, leadership: false }
+        types: { backend: true, frontend: true, leadership: false },
       },
       delisa: {
         title: "Delisa",
@@ -127,10 +127,10 @@ export default {
         languages: "Bootstrap, Vue and Laravel",
         links: {
           site: "http://delisamaranth.com/",
-          repository: "https://github.com/c-zab/delisa"
+          repository: "https://github.com/c-zab/delisa",
         },
 
-        types: { backend: true, frontend: true, leadership: false }
+        types: { backend: true, frontend: true, leadership: false },
       },
       space: {
         title: "Space Shooter",
@@ -144,9 +144,9 @@ export default {
         imageModalXLWebp: "spaceModalXL.webp",
         languages: "Typescript",
         links: {
-          repository: "https://github.com/ClaudiaFeliciano/Arrow-6"
+          repository: "https://github.com/ClaudiaFeliciano/Arrow-6",
         },
-        types: { backend: false, frontend: true, leadership: false }
+        types: { backend: false, frontend: true, leadership: false },
       },
       books: {
         title: "Books Library",
@@ -161,9 +161,9 @@ export default {
         imageModalXLWebp: "booksModalXL.webp",
         languages: "C#, MySQL and Bootstrap",
         links: {
-          repository: "https://github.com/UTSCCSCC01/final-charjd"
+          repository: "https://github.com/UTSCCSCC01/final-charjd",
         },
-        types: { backend: true, frontend: true, leadership: true }
+        types: { backend: true, frontend: true, leadership: true },
       },
       games: {
         title: "Games and Stuff",
@@ -178,7 +178,7 @@ export default {
         imageModalXLWebp: "gamesModalXL.webp",
         languages: "Python, Django and MongoDB",
         links: { repository: "private", construction: true },
-        types: { backend: true, frontend: true, leadership: false }
+        types: { backend: true, frontend: true, leadership: false },
       },
       aiesec: {
         title: "AIESEC",
@@ -194,10 +194,10 @@ export default {
         languages: "Team Work, Sales, and Time Management",
         links: {
           site: "https://aiesec.org/",
-          volunteer: true
+          volunteer: true,
         },
 
-        types: { backend: false, frontend: false, leadership: true }
+        types: { backend: false, frontend: false, leadership: true },
       },
       tedx: {
         title: "TEDx",
@@ -214,9 +214,9 @@ export default {
           "Event Management, Volunteer Management, Finance, and Team Empowerment",
         links: {
           site: "https://www.tedxumsa.org",
-          volunteer: true
+          volunteer: true,
         },
-        types: { backend: false, frontend: false, leadership: true }
+        types: { backend: false, frontend: false, leadership: true },
       },
       google: {
         title: "Google Developers Group",
@@ -232,11 +232,11 @@ export default {
         languages: "Presentation Skills, Teaching and Counselling",
         links: {
           site: "https://developers.google.com/community/gdg/",
-          volunteer: true
+          volunteer: true,
         },
-        types: { backend: false, frontend: false, leadership: true }
-      }
+        types: { backend: false, frontend: false, leadership: true },
+      },
     };
-  }
+  },
 };
 </script>

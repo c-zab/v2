@@ -70,65 +70,65 @@
 import pinned from "./includes/Pinned";
 
 export default {
-	components: {
-		pinned
-	},
-	data() {
-		return {
-			show: false,
-			isActiveCover: false,
-			isActiveAbout: false,
-			isActiveSkills: false,
-			isActivePortfolio: false,
-			isActiveContact: false
-		};
-	},
-	methods: {
-		toggleNavbar() {
-			this.show = !this.show;
-		},
-		scrollTo(selector) {
-			document.querySelector(selector).scrollIntoView({ behavior: "smooth" });
-			this.show = false;
-		}
-	},
-	mounted() {
-		Event.$on("isActiveCover", () => {
-			this.isActiveCover = true;
-			this.isActiveAbout = false;
-			this.isActiveSkills = false;
-			this.isActivePortfolio = false;
-			this.isActiveContact = false;
-		});
-		Event.$on("isActiveAbout", () => {
-			this.isActiveCover = false;
-			this.isActiveAbout = true;
-			this.isActiveSkills = false;
-			this.isActivePortfolio = false;
-			this.isActiveContact = false;
-		});
-		Event.$on("isActiveSkills", () => {
-			this.isActiveCover = false;
-			this.isActiveAbout = false;
-			this.isActiveSkills = true;
-			this.isActivePortfolio = false;
-			this.isActiveContact = false;
-		});
-		Event.$on("isActivePortfolio", () => {
-			this.isActiveSkills = false;
-			this.isActiveCover = false;
-			this.isActiveAbout = false;
-			this.isActivePortfolio = true;
-			this.isActiveContact = false;
-		});
-		Event.$on("isActiveContact", () => {
-			this.isActiveSkills = false;
-			this.isActiveCover = false;
-			this.isActiveAbout = false;
-			this.isActivePortfolio = false;
-			this.isActiveContact = true;
-		});
-	}
+  components: {
+    pinned,
+  },
+  data() {
+    return {
+      show: false,
+      isActiveCover: false,
+      isActiveAbout: false,
+      isActiveSkills: false,
+      isActivePortfolio: false,
+      isActiveContact: false,
+    };
+  },
+  methods: {
+    toggleNavbar() {
+      this.show = !this.show;
+    },
+    scrollTo(selector) {
+      document.querySelector(selector).scrollIntoView({ behavior: "smooth" });
+      this.show = false;
+    },
+  },
+  mounted() {
+    Event.$on("isActiveCover", () => {
+      this.isActiveCover = true;
+      this.isActiveAbout = false;
+      this.isActiveSkills = false;
+      this.isActivePortfolio = false;
+      this.isActiveContact = false;
+    });
+    Event.$on("isActiveAbout", () => {
+      this.isActiveCover = false;
+      this.isActiveAbout = true;
+      this.isActiveSkills = false;
+      this.isActivePortfolio = false;
+      this.isActiveContact = false;
+    });
+    Event.$on("isActiveSkills", () => {
+      this.isActiveCover = false;
+      this.isActiveAbout = false;
+      this.isActiveSkills = true;
+      this.isActivePortfolio = false;
+      this.isActiveContact = false;
+    });
+    Event.$on("isActivePortfolio", () => {
+      this.isActiveSkills = false;
+      this.isActiveCover = false;
+      this.isActiveAbout = false;
+      this.isActivePortfolio = true;
+      this.isActiveContact = false;
+    });
+    Event.$on("isActiveContact", () => {
+      this.isActiveSkills = false;
+      this.isActiveCover = false;
+      this.isActiveAbout = false;
+      this.isActivePortfolio = false;
+      this.isActiveContact = true;
+    });
+  },
 };
 </script>
 

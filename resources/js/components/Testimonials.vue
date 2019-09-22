@@ -23,9 +23,9 @@
 import Title from "./includes/Title";
 
 export default {
-	name: "testimonials-sec",
-	components: {
-		Title
-	}
+  name: "testimonials-sec",
+  components: {
+    Title,
+  },
 };
 </script>

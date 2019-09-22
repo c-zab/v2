@@ -11,7 +11,7 @@
                   <source media="(max-width: 550px)" type="image/png" :srcset="imageModal" />
                   <source media="(min-width: 551px)" type="image/webp" :srcset="imageModalXLWebp" />
                   <source media="(min-width: 551px)" type="image/png" :srcset="imageModalXL" />
-                  <img :src="imageModalXL"type="image/png" class="d-block w-100" alt="image" />
+                  <img :src="imageModalXL" type="image/png" class="d-block w-100" alt="image" />
                 </picture>
               </div>
             </div>
@@ -97,8 +97,8 @@ export default {
   props: {
     modalData: {
       type: Object,
-      required: true
-    }
+      required: true,
+    },
   },
   computed: {
     imageModal() {
@@ -112,7 +112,7 @@ export default {
     },
     imageModalXLWebp() {
       return "/images/modals/" + this.modalData.imageModalXLWebp;
-    }
-  }
+    },
+  },
 };
 </script>
