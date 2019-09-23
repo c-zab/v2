@@ -24397,14 +24397,11 @@ new Vue({
     clearInputBE: function clearInputBE(field) {
       delete this.errorsBE[field];
     }
+  },
+  mounted: function mounted() {
+    var contact_sec = this.$refs["contact-sec"].offsetTop;
+    Event.$emit("offsetContact", contact_sec);
   }
-  /*
-   * mounted() {
-   *   let contact_sec = this.$refs["contact-sec"].offsetTop;
-   *   Event.$emit("offsetContact", contact_sec);
-   * },
-   */
-
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/process/browser.js */ "./node_modules/process/browser.js")))
 

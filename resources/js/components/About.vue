@@ -119,7 +119,7 @@
         </div>
         <div
           data-aos="fade-up"
-          data-aos-anchor-placement="center-bottom"
+          data-aos-anchor-placement="top-bottom"
           data-aos-delay="400"
           class="col-md-12 col-lg-12 py-3"
         >

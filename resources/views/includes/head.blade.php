@@ -5,11 +5,8 @@
 <title>CZabalet</title>
 <!-- External Libraries -->
 <link rel="stylesheet" type="text/css"
-	href="https://fonts.googleapis.com/css?family=Montserrat:400,600|Raleway:400,600&display=swap">
-<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
-	href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" />
-<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
-	href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" />
+  href="https://fonts.googleapis.com/css?family=Montserrat:400,600|Raleway:400,600&display=swap">
+
 <!-- Local Dependencies -->
 <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}" />
 <!-- Global site tag (gtag.js) - Google Analytics -->

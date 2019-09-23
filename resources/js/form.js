@@ -85,10 +85,10 @@ new Vue({
       delete this.errorsBE[field];
     },
   },
-  /*
-   * mounted() {
-   *   let contact_sec = this.$refs["contact-sec"].offsetTop;
-   *   Event.$emit("offsetContact", contact_sec);
-   * },
-   */
+
+  mounted() {
+    let contact_sec = this.$refs["contact-sec"].offsetTop;
+    Event.$emit("offsetContact", contact_sec);
+  },
+
 });
