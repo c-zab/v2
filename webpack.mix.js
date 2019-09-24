@@ -1,6 +1,8 @@
 const mix = require('laravel-mix');
 require('laravel-mix-svg-vue');
 
+mix.extract(['vue', 'jquery']);
+
 mix.js('resources/js/main.js', 'public/js')
   .js('resources/js/app.js', 'public/js')
   .js('resources/js/form.js', 'public/js')
@@ -10,4 +12,6 @@ mix.copy('resources/images/', 'public/images')
   .copy('resources/images/cards/', 'public/images/cards')
   .copy('resources/images/modals/', 'public/images/modals');
 
-mix.svgVue();
+mix.svgVue({
+  extract: true,
+});

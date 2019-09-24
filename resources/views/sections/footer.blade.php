@@ -16,7 +16,7 @@
 						<i class="fab fa-instagram fa-lg text-white mx-4 fa-2x"></i>
 					</a>
 					<!--Linkedin -->
-					<a class="li-ic" href="https://www.linkedin.com/in/czarloss/">
+					<a class="li-ic" href="https://www.linkedin.com/in/czabalet/">
 						<i class="fab fa-linkedin-in fa-lg text-white mx-4 fa-2x"></i>
 					</a>
 				</div>

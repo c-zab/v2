@@ -161,16 +161,16 @@ export default {
           svg: 'yarn',
         },
         {
-          name: "Chrome Dev Tools",
-          svg: 'chrome',
-        },
-        {
           name: "Photoshop",
           classItem: "devicon-image devicon-photoshop-plain colored",
         },
         {
           name: "GIMP",
           svg: 'gimp',
+        },
+        {
+          name: "Chrome Dev Tools",
+          svg: 'chrome',
         },
       ],
     };

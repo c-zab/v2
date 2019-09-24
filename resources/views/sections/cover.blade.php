@@ -10,8 +10,8 @@
 	</picture>
 	<div class="jumbotron cover-caption shadow-none bg-transparent">
 		<div class="container">
-			<h1 class="text-white">Hello, I'm Carlos Zabaleta.</h1>
-			<h1 class="text-success">I'm a full-stack web developer.</h1>
+			<h1 class="text-white">Hello, I'm Carlos Zabaleta</h1>
+			<h1 class="text-success">I'm a full-stack developer</h1>
 		</div>
 	</div>
 </div>
