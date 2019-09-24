@@ -75,7 +75,7 @@
         <div
           data-aos="fade-up"
           data-aos-anchor-placement="center-bottom"
-          data-aos-delay="350"
+          data-aos-delay="250"
           class="col-md-6 col-lg py-3"
         >
           <div @mouseover="hoverMobile = true" @mouseleave="hoverMobile = false">
@@ -90,7 +90,7 @@
         <div
           data-aos="fade-up"
           data-aos-anchor-placement="center-bottom"
-          data-aos-delay="400"
+          data-aos-delay="300"
           class="col-md col-lg py-3"
         >
           <div @mouseover="hoverLight = true" @mouseleave="hoverLight = false">
@@ -105,7 +105,7 @@
         <div
           data-aos="fade-up"
           data-aos-anchor-placement="center-bottom"
-          data-aos-delay="450"
+          data-aos-delay="350"
           class="col-md col-lg py-3"
         >
           <div @mouseover="hoverRocket = true" @mouseleave="hoverRocket = false">

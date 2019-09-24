@@ -2,6 +2,10 @@ window.Vue = require('vue');
 
 window.Event = new Vue();
 
+import SvgVue from 'svg-vue';
+
+Vue.use(SvgVue);
+
 if (process.env.MIX_APP_ENV === 'production') {
   Vue.config.devtools = false;
   Vue.config.debug = false;

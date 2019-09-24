@@ -31,185 +31,146 @@ export default {
     return {
       backendTable: [
         {
-          id: 1,
-          name: "Python",
+          name: "Node.js",
+          svg: 'nodejs',
         },
         {
-          id: 2,
-          name: "Django",
-          classItem: "devicon-image devicon-django-plain colored",
+          name: "Express.js",
+          svg: 'express',
         },
         {
-          id: 3,
+          name: "MongoDB",
+          svg: 'mongodb',
+        },
+        {
           name: "PHP",
           classItem: "devicon-image devicon-php-plain colored",
         },
         {
-          id: 4,
           name: "Laravel",
           classItem: "devicon-image devicon-laravel-plain colored",
         },
         {
-          id: 5,
           name: "MySQL",
           classItem: "devicon-image devicon-mysql-plain colored",
         },
         {
-          id: 6,
           name: "Oracle DB",
           classItem: "devicon-image devicon-oracle-original colored",
         },
       ],
       expBackendTable: [
         {
-          id: 1,
           name: "Apache",
           classItem: "devicon-image devicon-apache-line colored",
         },
         {
-          id: 2,
-          name: "C#",
+          name: "Nginx",
+          classItem: "devicon-image devicon-nginx-original colored",
         },
         {
-          id: 3,
-          name: ".NET",
-        },
-        {
-          id: 4,
           name: "Java",
+          svg: 'java',
         },
         {
-          id: 5,
           name: "PostgreSQL",
           classItem: "devicon-image devicon-postgresql-plain colored",
-        },
-        {
-          id: 6,
-          name: "MongoDB",
-          classItem: "devicon-image devicon-mongodb-plain colored",
         },
       ],
       frontendTable: [
         {
-          id: 1,
-          name: "Vue",
-        },
-        {
-          id: 2,
-          name: "Javascript",
-          classItem: "devicon-image devicon-javascript-plain colored",
-        },
-        {
-          id: 3,
-          name: "Bootstrap",
-          classItem: "devicon-image devicon-bootstrap-plain colored",
-        },
-        {
-          id: 4,
-          name: "JQuery",
-          classItem: "devicon-image devicon-jquery-plain colored",
-        },
-        {
-          id: 5,
-          name: "CSS3",
-        },
-        {
-          id: 6,
-          name: "NPM",
-        },
-        {
-          id: 7,
-          name: "HTML",
-        },
-      ],
-      expFrontendTable: [
-        {
-          id: 1,
           name: "React",
           classItem: "devicon-image devicon-react-plain colored",
         },
         {
-          id: 2,
-          name: "Less",
-          classItem: "devicon-image devicon-less-plain-wordmark colored",
+          name: "Vue",
+          svg: 'vuejs',
         },
         {
-          id: 3,
+          name: "Javascript",
+          classItem: "devicon-image devicon-javascript-plain colored",
+        },
+        {
+          name: "JQuery",
+          classItem: "devicon-image devicon-jquery-plain colored",
+        },
+        {
           name: "Sass",
           classItem: "devicon-image devicon-sass-original colored",
         },
         {
-          id: 4,
-          name: "NodeJS",
-          classItem: "devicon-image devicon-nodejs-plain colored",
+          name: "CSS3",
+          svg: 'css3',
         },
         {
-          id: 5,
+          name: "HTML",
+          svg: 'html5',
+        },
+      ],
+      expFrontendTable: [
+        {
+          name: "Less",
+          classItem: "devicon-image devicon-less-plain-wordmark colored",
+        },
+        {
+          name: "Google APIs",
+          svg: "google",
+        },
+        {
+          name: "Bootstrap",
+          classItem: "devicon-image devicon-bootstrap-plain colored",
+        },
+        {
           name: "Typescript",
           classItem: "devicon-image devicon-typescript-plain colored",
         },
       ],
       othersTable: [
         {
-          id: 1,
           name: "Git",
           classItem: "devicon-image devicon-git-plain colored",
         },
         {
-          id: 2,
           name: "GitHub",
           classItem: "devicon-image devicon-github-plain colored",
         },
         {
-          id: 3,
-          name: "GIMP",
-        },
-        {
-          id: 4,
-          name: "Photoshop",
-          classItem: "devicon-image devicon-photoshop-plain colored",
-        },
-        {
-          id: 5,
-          name: "Linux",
-        },
-        {
-          id: 6,
-          name: "Debian",
-          classItem: "devicon-image devicon-debian-plain colored",
-        },
-        {
-          id: 7,
-          name: "Slack",
-        },
-      ],
-      expOthersTable: [
-        {
-          id: 1,
           name: "Webpack",
+          svg: 'webpack',
         },
         {
-          id: 2,
           name: "Babel",
           classItem: "devicon-image devicon-babel-plain colored",
         },
         {
-          id: 3,
+          name: "NPM",
+          svg: 'npm',
+        },
+        {
+          name: "Linux",
+          svg: 'linux',
+        },
+        {
+          name: "Slack",
+          svg: 'slack',
+        },
+      ],
+      expOthersTable: [
+        {
           name: "Yarn",
+          svg: 'yarn',
         },
         {
-          id: 4,
-          name: "Illustrator",
-          classItem: "devicon-image devicon-illustrator-plain colored",
-        },
-        {
-          id: 5,
-          name: "Android Studio",
-          classItem: "devicon-image devicon-android-plain colored",
-        },
-        {
-          id: 6,
           name: "Chrome Dev Tools",
+          svg: 'chrome',
+        },
+        {
+          name: "Photoshop",
+          classItem: "devicon-image devicon-photoshop-plain colored",
+        },
+        {
+          name: "GIMP",
+          svg: 'gimp',
         },
       ],
     };

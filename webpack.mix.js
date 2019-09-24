@@ -1,4 +1,5 @@
 const mix = require('laravel-mix');
+require('laravel-mix-svg-vue');
 
 mix.js('resources/js/main.js', 'public/js')
   .js('resources/js/app.js', 'public/js')
@@ -8,3 +9,5 @@ mix.js('resources/js/main.js', 'public/js')
 mix.copy('resources/images/', 'public/images')
   .copy('resources/images/cards/', 'public/images/cards')
   .copy('resources/images/modals/', 'public/images/modals');
+
+mix.svgVue();
