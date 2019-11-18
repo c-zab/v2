@@ -1,6 +1,18 @@
 window.Vue = require('vue');
 window.Event = new Vue();
 
+require('./bootstrap');
+import AOS from "aos";
+import "aos/dist/aos.js";
+
+$(function () {
+  AOS.init({
+    duration: 700,
+    once: true,
+    disable: 'mobile',
+  });
+});
+
 if (process.env.MIX_APP_ENV === 'production') {
   Vue.config.devtools = false;
   Vue.config.debug = false;

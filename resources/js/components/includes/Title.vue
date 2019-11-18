@@ -1,12 +1,12 @@
-<template>
+<template functional>
   <div class="pb-4">
     <div class="row justify-content-center">
       <h1
-        :id="title"
+        :id="props.title"
         class="sec-title col-auto"
         data-aos="fade-right"
         data-aos-anchor-placement="center-bottom"
-      >{{ title }}</h1>
+      >{{ props.title }}</h1>
     </div>
     <div class="row justify-content-center pt-2">
       <div
@@ -21,11 +21,11 @@
 
 <script>
 export default {
-	props: {
-		title: {
-			type: String,
-			require: true
-		}
-	}
+  props: {
+    title: {
+      type: String,
+      require: true,
+    },
+  },
 };
 </script>

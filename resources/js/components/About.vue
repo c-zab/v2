@@ -41,15 +41,14 @@
           data-aos-anchor-placement="top-bottom"
           class="col-md align-self-center"
         >
-          <Language name="Python" percentage="70" />
+          <Language name="VueJS" percentage="80" />
+          <Language name="React" percentage="85" />
+          <Language name="Node.js" percentage="75" />
+          <Language name="JavaScript" percentage="85" />
           <Language name="PHP" percentage="70" />
           <Language name="C#" percentage="60" />
-          <Language name="JavaScript" percentage="70" />
-          <Language name="Typescript" percentage="65" />
-          <Language name="VueJS" percentage="70" />
-          <Language name="React" percentage="55" />
-          <Language name="CSS" percentage="80" />
-          <Language name="HTML" percentage="75" />
+          <Language name="Typescript" percentage="70" />
+          <Language name="SCSS" percentage="80" />
           <Language name="Git" percentage="75" />
         </div>
       </div>

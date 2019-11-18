@@ -1,4 +1,4 @@
-<template>
+<template functional>
 <footer class="footer-content">
 	<div class="container">
 		<div class="row">
