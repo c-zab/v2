@@ -12,8 +12,7 @@
   <contact class="py-3">
     @include('sections.form')
   </contact>
+  <my-footer />
 </div>
-
-@include('sections.footer')
 
 @endsection

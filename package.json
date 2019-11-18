@@ -10,7 +10,6 @@
 		"production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
 	},
 	"devDependencies": {
-		"@fortawesome/fontawesome-free": "^5.11.1",
 		"@vue/babel-preset-app": "^3.11.0",
 		"aos": "^2.3.4",
 		"axios": "^0.19",
@@ -33,5 +32,12 @@
 		"vee-validate": "^2.2.15",
 		"vue": "^2.5.17",
 		"vue-template-compiler": "^2.6.10"
+	},
+	"dependencies": {
+		"@fortawesome/fontawesome-svg-core": "^1.2.25",
+		"@fortawesome/free-brands-svg-icons": "^5.11.2",
+		"@fortawesome/free-regular-svg-icons": "^5.11.2",
+		"@fortawesome/free-solid-svg-icons": "^5.11.2",
+		"@fortawesome/vue-fontawesome": "^0.1.8"
 	}
 }

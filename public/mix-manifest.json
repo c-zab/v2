@@ -1,10 +1,9 @@
 {
     "/js/app.js": "/js/app.js",
-    "/js/form.js": "/js/form.js",
     "/js/main.js": "/js/main.js",
     "/css/fonts.css": "/css/fonts.css",
-    "/css/app.css": "/css/app.css",
     "/js/manifest.js": "/js/manifest.js",
     "/js/svg.js": "/js/svg.js",
-    "/js/vendor.js": "/js/vendor.js"
+    "/js/vendor.js": "/js/vendor.js",
+    "/css/app.css": "/css/app.css"
 }

@@ -64,10 +64,19 @@
           class="col-md-6 col-lg py-3"
         >
           <div @mouseover="hoverBolt = true" @mouseleave="hoverBolt = false">
-            <i
-              class="about-icon fas fa-5x mb-3"
-              :class="{'text-warning':hoverBolt, 'fa-bolt':hoverBolt,'fa-tachometer-alt':!hoverBolt}"
-            ></i>
+            <div class="about-icon mb-3">
+              <font-awesome-icon
+                v-if="hoverBolt"
+                icon="bolt"
+                size="5x"
+                class="text-warning"
+              />
+              <font-awesome-icon
+                v-else
+                icon="tachometer-alt"
+                size="5x"
+              />
+            </div>
             <h3>Fast</h3>
           </div>
           <p>First impressions are vital on the Internet. According to statistics, half of us don’t even wait two seconds for a website content to pop up!</p>
@@ -79,10 +88,19 @@
           class="col-md-6 col-lg py-3"
         >
           <div @mouseover="hoverMobile = true" @mouseleave="hoverMobile = false">
-            <i
-              class="about-icon fas fa-5x mb-3"
-              :class="{'text-info':hoverMobile, 'fa-laptop':!hoverMobile,'fa-mobile-alt':hoverMobile}"
-            ></i>
+            <div class="about-icon mb-3">
+              <font-awesome-icon
+                v-if="hoverMobile"
+                icon="mobile-alt"
+                size="5x"
+                class="text-info"
+              />
+              <font-awesome-icon
+                v-else
+                icon="laptop"
+                size="5x"
+              />
+            </div>
             <h3>Responsive</h3>
           </div>
           <p>Every website needs to be user-friendly on a smartphone or any device as Google's SEO increases visibility on search engines based on its responsiveness.</p>
@@ -94,10 +112,19 @@
           class="col-md col-lg py-3"
         >
           <div @mouseover="hoverLight = true" @mouseleave="hoverLight = false">
-            <i
-              class="about-icon far fa-5x mb-3"
-              :class="{'fa-grin-beam': hoverLight, 'fa-lightbulb': !hoverLight, 'text-success': hoverLight}"
-            ></i>
+            <div class="about-icon mb-3">
+              <font-awesome-icon
+                v-if="hoverLight"
+                :icon="['far', 'laugh-beam']"
+                size="5x"
+                class="text-success"
+              />
+              <font-awesome-icon
+                v-else
+                :icon="['far', 'lightbulb']"
+                size="5x"
+              />
+            </div>
             <h3>Intuitive</h3>
           </div>
           <p>Intuitive design is invisible yet important. The easier your website is to use, the more people will use it.</p>
@@ -109,10 +136,19 @@
           class="col-md col-lg py-3"
         >
           <div @mouseover="hoverRocket = true" @mouseleave="hoverRocket = false">
-            <i
-              class="about-icon fa-5x mb-3"
-              :class="{'fas fa-rocket':hoverRocket,'far fa-paper-plane':!hoverRocket, 'text-danger':hoverRocket}"
-            ></i>
+            <div class="about-icon mb-3">
+              <font-awesome-icon
+                v-if="hoverRocket"
+                icon="rocket"
+                size="5x"
+                class="text-danger"
+              />
+              <font-awesome-icon
+                v-else
+                :icon="['far', 'paper-plane']"
+                size="5x"
+              />
+            </div>
             <h3>Dynamic</h3>
           </div>
           <p>A dynamic website allows to make updates and improves its code faster than having an static website.</p>
@@ -124,10 +160,19 @@
           class="col-md-12 col-lg-12 py-3"
         >
           <div @mouseover="hoverCode = true" @mouseleave="hoverCode = false">
-            <i
-              class="about-icon fa-5x mb-3"
-              :class="{'fas fa-laptop-code':hoverCode, 'far fa-file-code':!hoverCode, 'text-primary': hoverCode }"
-            ></i>
+             <div class="about-icon mb-3">
+              <font-awesome-icon
+                v-if="hoverCode"
+                :icon="['far', 'file-code']"
+                size="5x"
+                class="text-primary"
+              />
+              <font-awesome-icon
+                v-else
+                icon="laptop-code"
+                size="5x"
+              />
+            </div>
             <h3>Code</h3>
           </div>
           <p>I seek to write open source code so people can modify and share.</p>
