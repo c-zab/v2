@@ -3,9 +3,10 @@ require('laravel-mix-svg-vue');
 
 mix.extract(['vue', 'jquery']);
 
+mix.sass('resources/sass/fonts.scss', 'public/css');
+
 mix.js('resources/js/main.js', 'public/js')
   .js('resources/js/app.js', 'public/js')
-  .js('resources/js/form.js', 'public/js')
   .sass('resources/sass/app.scss', 'public/css');
 
 mix.copy('resources/images/', 'public/images')
@@ -15,3 +16,5 @@ mix.copy('resources/images/', 'public/images')
 mix.svgVue({
   extract: true,
 });
+
+mix.browserSync('localhost:8000');

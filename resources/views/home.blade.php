@@ -9,11 +9,9 @@
 	<about class=" py-3"></about>
 	<skills class="py-3"></skills>
 	<portfolio class="py-3"></portfolio>
-</div>
-
-<div id="form" v-cloak>
-  <contact class="py-3"></contact>
-	@include('sections.form')
+  <contact class="py-3">
+    @include('sections.form')
+  </contact>
 </div>
 
 @include('sections.footer')

@@ -3,12 +3,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="/favicon.ico" />
 <title>CZabalet</title>
-<!-- External Libraries -->
-<link rel="stylesheet" type="text/css"
-  href="https://fonts.googleapis.com/css?family=Montserrat:400,600|Raleway:400,600&display=swap">
-
 <!-- Local Dependencies -->
 <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}" />
+<link rel="stylesheet" type="text/css" href="{{asset('css/fonts.css')}}" />
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144214905-1"></script>
 <script>
