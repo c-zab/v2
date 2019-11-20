@@ -32,7 +32,11 @@
                 <div class="row my-2">
                   <div v-if="modalData.links.site" class="col-auto my-1 col-sm-auto text-center">
                     <a class="li-ic" :href="modalData.links.site">
-                      <i class="fas fa-globe-americas text-info mx-1"></i> Website
+                      <font-awesome-icon
+                        icon="globe-americas"
+                        size="1x"
+                        class='text-info mx-1'
+                      /> Website
                     </a>
                   </div>
                   <div
@@ -40,7 +44,11 @@
                     class="col-auto col-sm-auto text-center"
                   >
                     <p class="li-ic text-danger my-0" :href="modalData.links.repository">
-                      <i class="fas fa-eye-slash mx-1"></i> Private Code
+                      <font-awesome-icon
+                          :icon="['far', 'eye-slash']"
+                          size="1x"
+                          class='mx-1'
+                      /> Private Code
                     </p>
                   </div>
                   <div
@@ -48,7 +56,11 @@
                     class="col-auto col-sm-auto text-center"
                   >
                     <a class="li-ic" :href="modalData.links.repository">
-                      <i class="fas fa-code text-info mx-1"></i> Code
+                      <font-awesome-icon
+                        icon="code"
+                        size="1x"
+                        class='text-info mx-1'
+                      /> Code
                     </a>
                   </div>
                   <div
@@ -56,7 +68,11 @@
                     class="col-auto my-1 col-sm-auto text-center"
                   >
                     <p class="li-ic my-0 text-success" :href="modalData.links.repository">
-                      <i class="fas fa-hands-helping mx-1"></i> Volunteer
+                      <font-awesome-icon
+                        icon="hands-helping"
+                        size="1x"
+                        class='mx-1'
+                      /> Volunteer
                     </p>
                   </div>
                   <div
@@ -64,7 +80,11 @@
                     class="col-auto my-1 col-sm-auto text-center"
                   >
                     <p class="li-ic my-0 text-warning" :href="modalData.links.repository">
-                      <i class="fas fa-tools mx-1"></i> In progress
+                      <font-awesome-icon
+                        icon="tools"
+                        size="1x"
+                        class='mx-1'
+                      /> In progress
                     </p>
                   </div>
                 </div>

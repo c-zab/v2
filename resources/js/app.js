@@ -35,6 +35,10 @@ import {
   faMobileAlt,
   faRocket,
   faLaptopCode,
+  faGlobeAmericas,
+  faHandsHelping,
+  faTools,
+  faCode,
 } from '@fortawesome/free-solid-svg-icons';
 
 import {
@@ -42,6 +46,8 @@ import {
   faLaughBeam,
   faPaperPlane,
   faFileCode,
+  faStickyNote,
+  faEyeSlash,
 } from '@fortawesome/free-regular-svg-icons';
 
 import {
@@ -51,7 +57,7 @@ import {
   faLinkedin,
 } from '@fortawesome/free-brands-svg-icons';
 
-library.add(faBolt, faTachometerAlt, faLaptop, faMobileAlt, faLightbulb, faLaughBeam, faPaperPlane, faRocket, faFileCode, faLaptopCode, faGithub, faTwitter, faInstagram, faLinkedin);
+library.add(faBolt, faTachometerAlt, faLaptop, faMobileAlt, faLightbulb, faLaughBeam, faPaperPlane, faRocket, faFileCode, faLaptopCode, faGithub, faTwitter, faInstagram, faLinkedin, faStickyNote, faGlobeAmericas, faHandsHelping, faCode, faEyeSlash, faTools);
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 

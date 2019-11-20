@@ -11,7 +11,8 @@
 	<div class="jumbotron cover-caption shadow-none bg-transparent">
 		<div class="container">
 			<h1 class="text-white">Hello, I'm Carlos Zabaleta</h1>
-			<h1 class="text-success">I'm a full-stack developer</h1>
+      <h1 class="text-success">I'm a full-stack developer</h1>
+      <button type="button" class="btn btn-outline-info btn-lg">View more</button>
 		</div>
 	</div>
 </div>

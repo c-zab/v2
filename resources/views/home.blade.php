@@ -2,9 +2,9 @@
 
 @section('content')
 
-@include('sections.cover')
-
 <div id="app" v-cloak>
+  @include('sections.cover')
+
 	<navbar></navbar>
 	<about class=" py-3"></about>
 	<skills class="py-3"></skills>

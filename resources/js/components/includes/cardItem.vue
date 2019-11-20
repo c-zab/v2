@@ -13,14 +13,16 @@
               <strong>{{ cardItem.title }}</strong>
             </h3>
             <h5 class="pink-text">{{ cardItem.languages }}</h5>
-
             <a
               class="btn btn-danger"
               @click="$emit('showModal', cardItem)"
               data-toggle="modal"
               data-target="#myModal"
             >
-              <i class="fas fa-clone left"></i> Details
+              <font-awesome-icon
+                  :icon="['far', 'sticky-note']"
+                  size="1x"
+              /> Details
             </a>
           </div>
         </transition>

@@ -5,6 +5,7 @@ mix.sass('resources/sass/fonts.scss', 'public/css')
   .sass('resources/sass/app.scss', 'public/css');
 
 mix.js('resources/js/app.js', 'public/js')
+  .sourceMaps()
   .extract([
     'vue',
     "bootstrap",
@@ -21,6 +22,10 @@ mix.js('resources/js/app.js', 'public/js')
     "axios",
     "aos",
   ]);
+
+if (mix.inProduction()) {
+  mix.version();
+}
 
 mix.copy('resources/images/', 'public/images')
   .copy('resources/images/cards/', 'public/images/cards')
