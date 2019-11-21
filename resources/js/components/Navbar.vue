@@ -71,6 +71,15 @@ export default {
       isActiveContact: false,
     };
   },
+  updated() {
+    setTimeout(() => {
+      this.isActiveCover = false;
+      this.isActiveAbout = false;
+      this.isActiveSkills = false;
+      this.isActivePortfolio = false;
+      this.isActiveContact = false;
+    }, 2000);
+  },
   methods: {
     toggleNavbar() {
       this.show = !this.show;
