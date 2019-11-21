@@ -1,29 +1,32 @@
+/* Typography */
+$font-family-sans-serif: 'Montserrat', sans-serif;
+
+/* Colors */
+$body-color: #191b1b;
+$success: #2ce059;
+$danger: #fb173f;
+$warning: #ffe219;
+$primary: #0496FF;
+$info: #14cbeb;
+
 // Required
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
 
 // Custom
-// @import "~bootstrap/scss/root";
 @import "~bootstrap/scss/reboot";
-// @import "~bootstrap/scss/type";
 @import "~bootstrap/scss/images";
 @import "~bootstrap/scss/grid";
 @import "~bootstrap/scss/forms";
 @import "~bootstrap/scss/buttons";
 @import "~bootstrap/scss/transitions";
-// @import "~bootstrap/scss/button-group";
-// @import "~bootstrap/scss/input-group";
-// @import "~bootstrap/scss/custom-forms";
 @import "~bootstrap/scss/nav";
 @import "~bootstrap/scss/navbar";
 @import "~bootstrap/scss/card";
-// @import "~bootstrap/scss/breadcrumb";
 @import "~bootstrap/scss/jumbotron";
 @import "~bootstrap/scss/alert";
 @import "~bootstrap/scss/list-group";
 @import "~bootstrap/scss/close";
 @import "~bootstrap/scss/modal";
-// @import "~bootstrap/scss/tooltip";
 @import "~bootstrap/scss/utilities";
-// @import "~bootstrap/scss/print";

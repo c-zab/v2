@@ -31,12 +31,12 @@
               <div class="col-lg-3 offset-lg-1 align-self-center">
                 <div class="row my-2">
                   <div v-if="modalData.links.site" class="col-auto my-1 col-sm-auto text-center">
-                    <a class="li-ic" :href="modalData.links.site">
+                    <a class="li-ic text-primary" :href="modalData.links.site">
                       <font-awesome-icon
                         icon="globe-americas"
                         size="1x"
-                        class='text-info mx-1'
-                      /> Website
+                        class='text-info mx-2'
+                      />Website
                     </a>
                   </div>
                   <div
@@ -47,8 +47,8 @@
                       <font-awesome-icon
                           :icon="['far', 'eye-slash']"
                           size="1x"
-                          class='mx-1'
-                      /> Private Code
+                          class='mx-2'
+                      />Private Code
                     </p>
                   </div>
                   <div
@@ -59,8 +59,8 @@
                       <font-awesome-icon
                         icon="code"
                         size="1x"
-                        class='text-info mx-1'
-                      /> Code
+                        class='text-info mx-2'
+                      />Code
                     </a>
                   </div>
                   <div
@@ -71,8 +71,8 @@
                       <font-awesome-icon
                         icon="hands-helping"
                         size="1x"
-                        class='mx-1'
-                      /> Volunteer
+                        class='mx-2'
+                      />Volunteer
                     </p>
                   </div>
                   <div
@@ -83,8 +83,8 @@
                       <font-awesome-icon
                         icon="tools"
                         size="1x"
-                        class='mx-1'
-                      /> In progress
+                        class='mx-2'
+                      />In progress
                     </p>
                   </div>
                 </div>

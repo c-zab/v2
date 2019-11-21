@@ -1,35 +1,24 @@
 
 // Typography
 $font-family-sans-serif: 'Montserrat', sans-serif;
-
 $break-large: 800px;
-
-$my-cyan: #14cbeb;
-
-$my-pink: #D90368;
-
 $my-dark-gray: #2d2d2d;
-
 $my-dark-cyan: #0e8aa0;
-
 $my-bg-color: #041b2b;
-
 $my-footer: #052438;
 
-$my-success: #2ce059;
+// $my-success: #2ce059;
+// $my-danger: #fb173f;
+// $my-warning: #ffe219;
+// $my-primary: #0496FF;
+$my-cyan: #14cbeb;
 
-$my-danger: #fb173f;
-
-$my-warning: #ffe219;
-
-$my-primary: #0496FF;
-
-.text-success {
-	color: $my-success !important;
-}
-.text-danger {
-	color: $my-danger !important;
-};
+// .text-success {
+// 	color: $my-success !important;
+// }
+// .text-danger {
+// 	color: $my-danger !important;
+// };
 
 .text-info {
 	color: $my-cyan !important;
@@ -40,13 +29,13 @@ $my-primary: #0496FF;
 	background-color: $my-cyan !important;
 }
 
-.text-warning {
-	color: $my-warning !important;
-};
+// .text-warning {
+// 	color: $my-warning !important;
+// };
 
-.text-primary {
-	color: $my-primary !important;
-};
+// .text-primary {
+// 	color: $my-primary !important;
+// };
 
 
 h1 {

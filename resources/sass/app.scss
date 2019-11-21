@@ -39,12 +39,12 @@ html, body{ overflow-x: hidden }
 
 .nav-item {
 	&:hover .nav-link{
-		color: $my-success !important
+		color: $success !important
 	}
 }
 
 .active-item {
-	color: $my-success !important
+	color: $success !important
 }
 
 .stick {
