@@ -1,5 +1,5 @@
 <template>
-  <div ref="portfolio-sec" id="portfolio" class="container">
+  <div id="portfolio" ref="portfolio-sec" class="container">
     <Title title="PORTFOLIO" />
     <div class="container pb-4">
       <div class="controls row justify-content-center">
@@ -14,7 +14,7 @@
           data-aos="zoom-in"
           data-aos-delay="350"
           type="button"
-          class="col-sm-4 col-md-2 col-xs-2 control btn btn-info m-1"
+          class="col-sm-4 col-md-2 col-xs-2 control btn btn-info m-1 text-white"
           data-filter=".backend"
         >Backend</button>
         <button
@@ -64,8 +64,6 @@ export default {
   async mounted() {
     var containerEl = document.querySelector(".containerMix");
     mixitup(containerEl);
-    let portfolio_sec = this.$refs["portfolio-sec"].offsetTop;
-    Event.$emit("offsetPortfolio", portfolio_sec);
   },
   methods: {
     showModal(modalData) {

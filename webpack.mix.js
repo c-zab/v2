@@ -1,8 +1,7 @@
 const mix = require('laravel-mix');
 require('laravel-mix-svg-vue');
 
-mix.sass('resources/sass/fonts.scss', 'public/css')
-  .sass('resources/sass/app.scss', 'public/css');
+mix.sass('resources/sass/app.scss', 'public/css');
 
 mix.js('resources/js/app.js', 'public/js')
   // .sourceMaps()

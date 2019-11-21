@@ -1,5 +1,5 @@
 <template>
-  <div ref="contact-sec" id="contact">
+  <div id="contact" ref="contact-sec">
     <div class="container">
       <Title data-aos="fade-right" title="CONTACT" />
       <div>
@@ -19,7 +19,6 @@
       </div>
     </div>
     <slot
-      :carlos='carlos'
       :form='form'
       :message='message'
       :errorsBE='errorsBE'
@@ -72,7 +71,6 @@ export default {
         clientName: '',
       },
       errorsBE: {},
-      carlos: 'carlos moises',
     };
   },
   methods: {
@@ -112,10 +110,6 @@ export default {
     clearInputBE(field) {
       delete this.errorsBE[field];
     },
-  },
-  mounted() {
-    let contact_sec = this.$refs["contact-sec"].offsetTop;
-    Event.$emit("offsetContact", contact_sec);
   },
 };
 </script>

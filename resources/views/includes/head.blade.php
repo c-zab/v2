@@ -5,7 +5,6 @@
 <title>CZabalet</title>
 <!-- Local Dependencies -->
 <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}" />
-<link rel="stylesheet" type="text/css" href="{{asset('css/fonts.css')}}" />
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144214905-1"></script>
 <script>

@@ -197,7 +197,7 @@ import Title from "./includes/Title";
 import Language from "./includes/Language";
 
 export default {
-  name: "about-sec",
+  name: "about",
   components: {
     Title,
     Language,
@@ -210,10 +210,6 @@ export default {
       hoverRocket: false,
       hoverCode: false,
     };
-  },
-  mounted() {
-    let about_sec = this.$refs["about-sec"].offsetTop;
-    Event.$emit("offsetAbout", about_sec);
   },
 };
 </script>

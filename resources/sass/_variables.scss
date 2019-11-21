@@ -1,42 +1,35 @@
-
-// Typography
-$font-family-sans-serif: 'Montserrat', sans-serif;
-$break-large: 800px;
 $my-dark-gray: #2d2d2d;
 $my-dark-cyan: #0e8aa0;
 $my-bg-color: #041b2b;
 $my-footer: #052438;
 
-// $my-success: #2ce059;
-// $my-danger: #fb173f;
-// $my-warning: #ffe219;
-// $my-primary: #0496FF;
-$my-cyan: #14cbeb;
+/* Typography */
+$font-family-sans-serif: 'Montserrat', sans-serif;
 
-// .text-success {
-// 	color: $my-success !important;
-// }
-// .text-danger {
-// 	color: $my-danger !important;
-// };
-
-.text-info {
-	color: $my-cyan !important;
-}
+/* Colors */
+$body-color: #191b1b;
+$success: #2ce059;
+$danger: #fb173f;
+$warning: #ffe219;
+$primary: #0496FF;
+$info: #14cbeb;
 
 .btn-info {
-	border-color: $my-cyan !important;
-	background-color: $my-cyan !important;
+  color: white !important;
+	border-color: $info !important;
+	background-color: $info !important;
 }
 
-// .text-warning {
-// 	color: $my-warning !important;
-// };
+.btn-outline-info:hover, .btn-outline-info:focus, .btn-outline-info:active, .btn-outline-info.active, .open>.dropdown-toggle.btn-outline-info {
+  color: #fff;
+  background-color: #00b3db;
+  border-color: #00b3db;
+}
 
-// .text-primary {
-// 	color: $my-primary !important;
-// };
-
+.btn:focus,.btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
 
 h1 {
 	font-family: "Raleway", sans-serif;
@@ -57,20 +50,13 @@ h3 {
 }
 
 h4 {
-	font-family: "Montserrat", sans-serif;
 	font-weight: 400;
 	font-size: 1.5rem;
 }
 
 h5 {
-	font-family: "Montserrat", sans-serif;
 	font-weight: 400;
 	font-size: 1.25rem;
-}
-
-p {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
 }
 
 @media screen and (max-width: 992px){

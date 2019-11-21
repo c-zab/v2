@@ -1,5 +1,5 @@
 <template>
-  <div ref="skills-sec" id="skills" class="container">
+  <div id="skills" ref="skills-sec" class="container">
     <Title title="SKILLS" />
     <div class="container">
       <div class="row justify-content-center">
@@ -174,10 +174,6 @@ export default {
         },
       ],
     };
-  },
-  mounted() {
-    let skills_sec = this.$refs["skills-sec"].offsetTop;
-    Event.$emit("offsetSkills", skills_sec);
   },
 };
 </script>

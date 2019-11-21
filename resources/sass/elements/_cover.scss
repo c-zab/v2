@@ -1,0 +1,12 @@
+.cover-image {
+	height: 100vh !important;
+	width: 100vw !important;
+	position: relative;
+}
+
+.cover-caption {
+	position: absolute;
+	width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
