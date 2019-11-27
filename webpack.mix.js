@@ -4,7 +4,7 @@ require('laravel-mix-svg-vue');
 mix.sass('resources/sass/app.scss', 'public/css');
 
 mix.js('resources/js/app.js', 'public/js')
-  // .sourceMaps()
+  .sourceMaps()
   .extract([
     'vue',
     "bootstrap",

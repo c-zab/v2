@@ -13,7 +13,7 @@
             />
 					</a>
 					<!-- Twitter -->
-					<a class="mx-4" href="https://twitter.com/CZabaletaCopa">
+					<a class="mx-4" href="https://twitter.com/czabaletDev">
             <font-awesome-icon
               :icon="['fab', 'twitter']"
               size='2x'
@@ -21,7 +21,7 @@
             />
 					</a>
 					<!--Instagram-->
-					<a class="mx-4" href="https://www.instagram.com/car.zab/">
+					<a class="mx-4" href="https://www.instagram.com/czabalet.dev">
             <font-awesome-icon
               :icon="['fab', 'instagram']"
               size='2x'
