@@ -59,6 +59,10 @@ h5 {
 	font-size: 1.25rem;
 }
 
+.bg-color {
+	background-color: $my-bg-color;
+}
+
 @media screen and (max-width: 992px){
 	h1{
 		font-size: 2em;

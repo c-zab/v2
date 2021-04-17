@@ -11,47 +11,71 @@
     >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav" :class="{ 'show': show }">
+    <div
+      class="collapse navbar-collapse"
+      id="navbarNav"
+      :class="{ show: show }"
+    >
       <ul class="navbar-nav mx-auto">
         <li class="nav-item px-3">
           <a
-            :class="{'active-item':isActiveCover}"
+            :class="{ 'active-item': isActiveCover }"
             class="nav-link"
             href="#cover"
-            @click.prevent="scrollTo('#cover'); activeCover();"
-          >HOME</a>
+            @click.prevent="
+              scrollTo('#cover');
+              activeCover();
+            "
+            >HOME</a
+          >
         </li>
         <li class="nav-item px-3">
           <a
-            :class="{'active-item':isActiveAbout}"
+            :class="{ 'active-item': isActiveAbout }"
             class="nav-link"
             href="#about"
-            @click.prevent="scrollTo('#about'); activeAbout();"
-          >ABOUT</a>
+            @click.prevent="
+              scrollTo('#about');
+              activeAbout();
+            "
+            >ABOUT</a
+          >
         </li>
         <li class="nav-item px-3">
           <a
-            :class="{'active-item':isActiveSkills}"
+            :class="{ 'active-item': isActiveSkills }"
             class="nav-link"
             href="#skills"
-            @click.prevent="scrollTo('#skills'); activeSkills();"
-          >SKILLS</a>
+            @click.prevent="
+              scrollTo('#skills');
+              activeSkills();
+            "
+            >SKILLS</a
+          >
         </li>
         <li class="nav-item px-3">
           <a
-            :class="{'active-item':isActivePortfolio}"
+            :class="{ 'active-item': isActivePortfolio }"
             class="nav-link"
             href="#portfolio"
-            @click.prevent="scrollTo('#portfolio'); activePortfolio();"
-          >PORTFOLIO</a>
+            @click.prevent="
+              scrollTo('#portfolio');
+              activePortfolio();
+            "
+            >PORTFOLIO</a
+          >
         </li>
         <li class="nav-item px-3">
           <a
-            :class="{'active-item':isActiveContact}"
+            :class="{ 'active-item': isActiveContact }"
             class="nav-link"
             href="#contact"
-            @click.prevent="scrollTo('#contact'); activeContact();"
-          >CONTACT</a>
+            @click.prevent="
+              scrollTo('#contact');
+              activeContact();
+            "
+            >CONTACT</a
+          >
         </li>
       </ul>
     </div>
@@ -60,7 +84,7 @@
 
 <script>
 export default {
-  name: 'navbar',
+  name: "navbar",
   data() {
     return {
       show: false,
@@ -126,3 +150,7 @@ export default {
   },
 };
 </script>
+
+<style>
+  /* @import '../../scss/elements/_navbar.scss'; */
+</style>
