@@ -1,6 +1,7 @@
-import './bootstrap';
+// import './bootstrap';
 import './fontawesome';
-import './aos';
-import './svg-vue';
-import './vee-validate';
-
+/*
+ * import './aos';
+ * import './svg-vue';
+ * import './vee-validate';
+ */
