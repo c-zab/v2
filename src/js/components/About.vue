@@ -11,11 +11,11 @@
           class="col-md align-self-center"
         >
           <picture>
-            <source srcset="/images/me.webp" type="image/webp" />
-            <source srcset="/images/me.png" type="image/png" />
+            <source srcset="@/images/me.webp" type="image/webp" />
+            <source srcset="@/images/me.png" type="image/png" />
             <img
               class="me-picture"
-              src="/images/me.webp"
+              src="@/images/me.webp"
               type="image/webp"
               align="center"
               alt="image"
@@ -29,9 +29,9 @@
           <p>
             I am passionate about
             <strong>quality software development</strong>. I am
-            <strong>innovative</strong>,
-            <strong>flexible</strong> and
-            <strong>curious</strong>, always looking to learn about new technologies and best practices.
+            <strong>innovative</strong>, <strong>flexible</strong> and
+            <strong>curious</strong>, always looking to learn about new
+            technologies and best practices.
           </p>
         </div>
         <div
@@ -70,15 +70,15 @@
                 size="5x"
                 class="text-warning"
               />
-              <font-awesome-icon
-                v-else
-                icon="tachometer-alt"
-                size="5x"
-              />
+              <font-awesome-icon v-else icon="tachometer-alt" size="5x" />
             </div>
             <h3>Fast</h3>
           </div>
-          <p>First impressions are vital on the Internet. According to statistics, half of us don’t even wait two seconds for a website content to pop up!</p>
+          <p>
+            First impressions are vital on the Internet. According to
+            statistics, half of us don’t even wait two seconds for a website
+            content to pop up!
+          </p>
         </div>
         <div
           data-aos="fade-up"
@@ -86,7 +86,10 @@
           data-aos-delay="250"
           class="col-md-6 col-lg py-3"
         >
-          <div @mouseover="hoverMobile = true" @mouseleave="hoverMobile = false">
+          <div
+            @mouseover="hoverMobile = true"
+            @mouseleave="hoverMobile = false"
+          >
             <div class="about-icon mb-3">
               <font-awesome-icon
                 v-if="hoverMobile"
@@ -94,15 +97,15 @@
                 size="5x"
                 class="text-info"
               />
-              <font-awesome-icon
-                v-else
-                icon="laptop"
-                size="5x"
-              />
+              <font-awesome-icon v-else icon="laptop" size="5x" />
             </div>
             <h3>Responsive</h3>
           </div>
-          <p>Every website needs to be user-friendly on a smartphone or any device as Google's SEO increases visibility on search engines based on its responsiveness.</p>
+          <p>
+            Every website needs to be user-friendly on a smartphone or any
+            device as Google's SEO increases visibility on search engines based
+            on its responsiveness.
+          </p>
         </div>
         <div
           data-aos="fade-up"
@@ -126,7 +129,10 @@
             </div>
             <h3>Intuitive</h3>
           </div>
-          <p>Intuitive design is invisible yet important. The easier your website is to use, the more people will use it.</p>
+          <p>
+            Intuitive design is invisible yet important. The easier your website
+            is to use, the more people will use it.
+          </p>
         </div>
         <div
           data-aos="fade-up"
@@ -134,7 +140,10 @@
           data-aos-delay="350"
           class="col-md col-lg py-3"
         >
-          <div @mouseover="hoverRocket = true" @mouseleave="hoverRocket = false">
+          <div
+            @mouseover="hoverRocket = true"
+            @mouseleave="hoverRocket = false"
+          >
             <div class="about-icon mb-3">
               <font-awesome-icon
                 v-if="hoverRocket"
@@ -150,7 +159,10 @@
             </div>
             <h3>Dynamic</h3>
           </div>
-          <p>A dynamic website allows to make updates and improves its code faster than having an static website.</p>
+          <p>
+            A dynamic website allows to make updates and improves its code
+            faster than having an static website.
+          </p>
         </div>
         <div
           data-aos="fade-up"
@@ -159,28 +171,27 @@
           class="col-md-12 col-lg-12 py-3"
         >
           <div @mouseover="hoverCode = true" @mouseleave="hoverCode = false">
-             <div class="about-icon mb-3">
+            <div class="about-icon mb-3">
               <font-awesome-icon
                 v-if="hoverCode"
                 :icon="['far', 'file-code']"
                 size="5x"
                 class="text-primary"
               />
-              <font-awesome-icon
-                v-else
-                icon="laptop-code"
-                size="5x"
-              />
+              <font-awesome-icon v-else icon="laptop-code" size="5x" />
             </div>
             <h3>Code</h3>
           </div>
-          <p>I seek to write open source code so people can modify and share.</p>
+          <p>
+            I seek to write open source code so people can modify and share.
+          </p>
           <p>
             It is important to
             <strong>write clean code</strong> so it is easy to read,
           </p>
           <p>
-            <strong>consistent code</strong> to make it easy for people to understand how it is working,
+            <strong>consistent code</strong> to make it easy for people to
+            understand how it is working,
           </p>
           <p>
             and
