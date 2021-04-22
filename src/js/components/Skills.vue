@@ -3,15 +3,15 @@
     <Title title="SKILLS" />
     <div class="container">
       <div class="row justify-content-center">
-        <!-- <SkillsTable title="Backend" :table="backendTable" />
+        <SkillsTable title="Backend" :table="backendTable" />
         <SkillsTable title="Frontend" :table="frontendTable" />
-        <SkillsTable title="Others" :table="othersTable" /> -->
+        <SkillsTable title="Others" :table="othersTable" />
       </div>
       <h2 data-aos="zoom-in" class="text-center py-5">I also have experience working on</h2>
       <div class="row justify-content-center">
-        <!-- <SkillsTable title="Backend" :table="expBackendTable" />
+        <SkillsTable title="Backend" :table="expBackendTable" />
         <SkillsTable title="Frontend" :table="expFrontendTable" />
-        <SkillsTable title="Others" :table="expOthersTable" /> -->
+        <SkillsTable title="Others" :table="expOthersTable" />
       </div>
     </div>
   </div>
@@ -19,13 +19,13 @@
 
 <script>
 import Title from "./includes/Title";
-// import SkillsTable from "./includes/SkillsTable";
+import SkillsTable from "./includes/SkillsTable";
 
 export default {
   name: "skills",
   components: {
     Title,
-    // SkillsTable,
+    SkillsTable,
   },
   data() {
     return {
