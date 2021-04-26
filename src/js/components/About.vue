@@ -11,15 +11,15 @@
           class="col-md align-self-center"
         >
           <picture>
-            <source srcset="@/images/me.webp" type="image/webp" />
-            <source srcset="@/images/me.png" type="image/png" />
+            <source srcset="@/images/me.webp" type="image/webp">
+            <source srcset="@/images/me.png" type="image/png">
             <img
               class="me-picture"
               src="@/images/me.webp"
               type="image/webp"
               align="center"
               alt="image"
-            />
+            >
           </picture>
           <h2>Who am I?</h2>
           <p>
@@ -204,11 +204,11 @@
 </template>
 
 <script>
-import Title from "./includes/Title";
-import Language from "./includes/Language";
+import Title from './includes/Title';
+import Language from './includes/Language';
 
 export default {
-  name: "about",
+  name: 'About',
   components: {
     Title,
     Language,

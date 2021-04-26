@@ -9,11 +9,11 @@
       aria-label="Toggle navigation"
       @click="show = !show"
     >
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon" />
     </button>
     <div
-      class="collapse navbar-collapse"
       id="navbarNav"
+      class="collapse navbar-collapse"
       :class="{ show: show }"
     >
       <ul class="navbar-nav mx-auto">
@@ -26,8 +26,9 @@
               scrollTo('#cover');
               activeCover();
             "
-            >HOME</a
           >
+            HOME
+          </a>
         </li>
         <li class="nav-item px-3">
           <a
@@ -38,8 +39,9 @@
               scrollTo('#about');
               activeAbout();
             "
-            >ABOUT</a
           >
+            ABOUT
+          </a>
         </li>
         <li class="nav-item px-3">
           <a
@@ -50,8 +52,9 @@
               scrollTo('#skills');
               activeSkills();
             "
-            >SKILLS</a
           >
+            SKILLS
+          </a>
         </li>
         <li class="nav-item px-3">
           <a
@@ -62,8 +65,9 @@
               scrollTo('#portfolio');
               activePortfolio();
             "
-            >PORTFOLIO</a
           >
+            PORTFOLIO
+          </a>
         </li>
         <li class="nav-item px-3">
           <a
@@ -74,8 +78,9 @@
               scrollTo('#contact');
               activeContact();
             "
-            >CONTACT</a
           >
+            CONTACT
+          </a>
         </li>
       </ul>
     </div>
@@ -84,7 +89,7 @@
 
 <script>
 export default {
-  name: "navbar",
+  name: 'Navbar',
   data() {
     return {
       show: false,
@@ -109,7 +114,7 @@ export default {
       this.show = !this.show;
     },
     scrollTo(selector) {
-      document.querySelector(selector).scrollIntoView({ behavior: "smooth" });
+      document.querySelector(selector).scrollIntoView({ behavior: 'smooth' });
       this.show = false;
     },
     activeCover() {

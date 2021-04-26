@@ -1,5 +1,11 @@
 <template>
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div
+    id="myModal"
+    class="modal fade"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="myModalLabel"
+  >
     <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
       <div class="modal-content border-0">
         <div class="modal-body p-0">
@@ -7,11 +13,16 @@
             <div class="row">
               <div class="col-12 bg-danger p-0">
                 <picture>
-                  <source media="(max-width: 550px)" type="image/webp" :srcset="imageModalWebp" />
-                  <source media="(max-width: 550px)" type="image/png" :srcset="imageModal" />
-                  <source media="(min-width: 551px)" type="image/webp" :srcset="imageModalXLWebp" />
-                  <source media="(min-width: 551px)" type="image/png" :srcset="imageModalXL" />
-                  <img :src="imageModalXL" type="image/png" class="d-block w-100" alt="image" />
+                  <source media="(max-width: 550px)" type="image/webp" :srcset="imageModalWebp">
+                  <source media="(max-width: 550px)" type="image/png" :srcset="imageModal">
+                  <source media="(min-width: 551px)" type="image/webp" :srcset="imageModalXLWebp">
+                  <source media="(min-width: 551px)" type="image/png" :srcset="imageModalXL">
+                  <img
+                    :src="imageModalXL"
+                    type="image/png"
+                    class="d-block w-100"
+                    alt="image"
+                  >
                 </picture>
               </div>
             </div>
@@ -19,12 +30,16 @@
               <div class="col-lg-8 align-self-center">
                 <div class="row">
                   <div class="col-12">
-                    <h3 class="mb-0 mt-3">{{ modalData.title }}</h3>
+                    <h3 class="mb-0 mt-3">
+                      {{ modalData.title }}
+                    </h3>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-12 text-muted">
-                    <p class="pb-0">{{ modalData.subtitle }}</p>
+                    <p class="pb-0">
+                      {{ modalData.subtitle }}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -35,7 +50,7 @@
                       <font-awesome-icon
                         icon="globe-americas"
                         size="1x"
-                        class='text-info mx-2'
+                        class="text-info mx-2"
                       />Website
                     </a>
                   </div>
@@ -45,9 +60,9 @@
                   >
                     <p class="li-ic text-danger my-0" :href="modalData.links.repository">
                       <font-awesome-icon
-                          :icon="['far', 'eye-slash']"
-                          size="1x"
-                          class='mx-2'
+                        :icon="['far', 'eye-slash']"
+                        size="1x"
+                        class="mx-2"
                       />Private Code
                     </p>
                   </div>
@@ -59,7 +74,7 @@
                       <font-awesome-icon
                         icon="code"
                         size="1x"
-                        class='text-info mx-2'
+                        class="text-info mx-2"
                       />Code
                     </a>
                   </div>
@@ -71,7 +86,7 @@
                       <font-awesome-icon
                         icon="hands-helping"
                         size="1x"
-                        class='mx-2'
+                        class="mx-2"
                       />Volunteer
                     </p>
                   </div>
@@ -83,7 +98,7 @@
                       <font-awesome-icon
                         icon="tools"
                         size="1x"
-                        class='mx-2'
+                        class="mx-2"
                       />In progress
                     </p>
                   </div>
@@ -93,7 +108,9 @@
 
             <div class="row">
               <div class="col-12">
-                <p class="border-top border-dark pt-2">{{ modalData.description }}</p>
+                <p class="border-top border-dark pt-2">
+                  {{ modalData.description }}
+                </p>
               </div>
             </div>
 
@@ -101,8 +118,12 @@
               <div
                 class="alert alert-primary mr-auto mb-0"
                 role="alert"
-              >The images shown above are only references of my work.</div>
-              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              >
+                The images shown above are only references of my work.
+              </div>
+              <button type="button" class="btn btn-danger" data-dismiss="modal">
+                Close
+              </button>
             </div>
           </div>
         </div>
@@ -113,7 +134,7 @@
 
 <script>
 export default {
-  name: "modal",
+  name: 'Modal',
   props: {
     modalData: {
       type: Object,
@@ -122,16 +143,16 @@ export default {
   },
   computed: {
     imageModal() {
-      return "/images/modals/" + this.modalData.imageModal;
+      return '/images/modals/' + this.modalData.imageModal;
     },
     imageModalWebp() {
-      return "/images/modals/" + this.modalData.imageModalWebp;
+      return '/images/modals/' + this.modalData.imageModalWebp;
     },
     imageModalXL() {
-      return "/images/modals/" + this.modalData.imageModalXL;
+      return '/images/modals/' + this.modalData.imageModalXL;
     },
     imageModalXLWebp() {
-      return "/images/modals/" + this.modalData.imageModalXLWebp;
+      return '/images/modals/' + this.modalData.imageModalXLWebp;
     },
   },
 };

@@ -10,7 +10,7 @@ import Cover from './Cover.vue';
  * import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
  */
 
-Vue.component("Cover", Cover);
+Vue.component('Cover', Cover);
 
 // [
 //   Cover,

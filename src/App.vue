@@ -8,13 +8,13 @@
 </template>
 
 <script>
-import Cover from "./js/components/Cover";
-import Navbar from "./js/components/Navbar";
-import About from "./js/components/About";
+import Cover from './js/components/Cover';
+import Navbar from './js/components/Navbar';
+import About from './js/components/About';
 import Skills from './js/components/Skills';
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
     Cover,
     Navbar,

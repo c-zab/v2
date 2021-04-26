@@ -13,58 +13,60 @@
           >
             <h4
               class="text-center w-responsive mx-auto mb-0"
-            >Have a question or want to work together?</h4>
+            >
+              Have a question or want to work together?
+            </h4>
           </div>
         </section>
       </div>
     </div>
     <slot
-      :form='form'
-      :message='message'
-      :errorsBE='errorsBE'
-      :validationSubmit='validationSubmit'
-      :geterrorsBE='geterrorsBE'
-      :clearInputBE='clearInputBE'
-      />
+      :form="form"
+      :message="message"
+      :errorsBE="errorsBE"
+      :validationSubmit="validationSubmit"
+      :geterrorsBE="geterrorsBE"
+      :clearInputBE="clearInputBE"
+    />
   </div>
 </template>
 
 <script>
 import { Validator } from 'vee-validate';
-import Title from "./includes/Title";
+import Title from './includes/Title';
 
 const dict = {
   custom: {
     name: {
-      alpha_spaces: "Please enter a valid name",
-      max: "Please enter a name no longer than 25 characters",
+      alpha_spaces: 'Please enter a valid name',
+      max: 'Please enter a name no longer than 25 characters',
     },
     email: {
-      email: "Please enter a valid email",
+      email: 'Please enter a valid email',
     },
     subject: {
-      max: "Please enter a subject no longer than 35 characters",
+      max: 'Please enter a subject no longer than 35 characters',
     },
     message: {
-      max: "Please enter a message no longer than 200 characters",
+      max: 'Please enter a message no longer than 200 characters',
     },
   },
 };
 
-Validator.localize("en", dict);
+Validator.localize('en', dict);
 
 export default {
-  name: "contact",
+  name: 'Contact',
   components: {
     Title,
   },
   data() {
     return {
       form: {
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
       },
       message: {
         coffeeMessage: false,

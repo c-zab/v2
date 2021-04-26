@@ -6,7 +6,9 @@
         class="sec-title col-auto"
         data-aos="fade-right"
         data-aos-anchor-placement="center-bottom"
-      >{{ props.title }}</h1>
+      >
+        {{ props.title }}
+      </h1>
     </div>
     <div class="row justify-content-center pt-2">
       <div
@@ -14,7 +16,7 @@
         data-aos-anchor-placement="center-bottom"
         data-aos-delay="200"
         class="col-md-auto bar"
-      ></div>
+      />
     </div>
   </div>
 </template>
