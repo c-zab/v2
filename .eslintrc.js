@@ -6,7 +6,7 @@ module.exports = {
     },
     "extends": [
         "eslint:recommended",
-        "plugin:vue/essential"
+        'plugin:vue/recommended'
     ],
     "globals": {
         "Atomics": "readonly",
@@ -57,6 +57,7 @@ module.exports = {
       //
       'comma-spacing': ['error', {'before': false, 'after': true}],
       'no-multiple-empty-lines': ['error', {'max': 1, 'maxEOF':1}],
-      'no-undef': 'off'
+      'no-undef': 'off',
+      'quotes': ["error", "single"]
     }
 };
