@@ -19,20 +19,17 @@
           View more
         </button>
       </div>
-      <svg-item type="vue" />
     </div>
   </div>
 </template>
 
 <script>
 import CoverImages from './includes/CoverImages';
-import SvgItem from './includes/SvgItem';
 
 export default {
   name: 'Cover',
   components: {
     CoverImages,
-    SvgItem,
   },
   methods: {
     scrollTo(selector) {

@@ -1,11 +1,11 @@
-<template functional>
+<template>
   <div class="col-md-6 col-lg">
     <h3 data-aos="fade-right" data-aos-anchor-placement="bottom-bottom" class="py-4">
-      {{ props.title }}
+      {{ title }}
     </h3>
     <div class="list-group-flush">
       <div class="list-group-flush">
-        <div v-for="(item, index) in props.table" :key="index" class="list-group-item py-2">
+        <div v-for="(item, index) in table" :key="index" class="list-group-item py-2">
           <div
             data-aos="zoom-in"
             data-aos-anchor-placement="top-bottom"
@@ -13,7 +13,7 @@
             class="row"
           >
             <div class="col-3">
-              <svg-vue v-if="item.svg" :icon="item.svg" height="48" />
+              <svg-item v-if="item.svg" :name="item.svg" />
               <i v-else :class="[item.classItem]" />
             </div>
             <div class="col">
@@ -29,7 +29,15 @@
 </template>
 
 <script>
+import SvgItem from './SvgItem';
+
 export default {
-  props: ['title', 'table'],
+  name:'SkillsTable',
+  components: {
+    SvgItem,
+  },
+  props: { 
+    'title': { type: String, required: true }, 
+    'table': { type: Array, required: true } },
 };
 </script>

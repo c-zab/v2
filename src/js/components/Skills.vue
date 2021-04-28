@@ -34,11 +34,11 @@ export default {
       backendTable: [
         {
           name: 'Node.js',
-          svg: 'nodejs',
+          classItem: 'devicon-image devicon-nodejs-plain colored',
         },
         {
           name: 'Express.js',
-          svg: 'express',
+          classItem: 'devicon-image devicon-express-original colored',
         },
         {
           name: 'MongoDB',
@@ -146,11 +146,11 @@ export default {
         },
         {
           name: 'NPM',
-          svg: 'npm',
+          classItem: 'devicon-image devicon-npm-original-wordmark colored',
         },
         {
           name: 'Linux',
-          svg: 'linux',
+          classItem: 'devicon-image devicon-linux-plain colored',
         },
         {
           name: 'Slack',
@@ -160,7 +160,7 @@ export default {
       expOthersTable: [
         {
           name: 'Yarn',
-          svg: 'yarn',
+          classItem: 'devicon-image devicon-yarn-plain colored',
         },
         {
           name: 'Photoshop',
@@ -168,7 +168,7 @@ export default {
         },
         {
           name: 'GIMP',
-          svg: 'gimp',
+          classItem: 'devicon-image devicon-gimp-plain colored',
         },
         {
           name: 'Chrome Dev Tools',
