@@ -42,7 +42,7 @@ export default {
         },
         {
           name: 'MongoDB',
-          svg: 'mongodb',
+          svgPath: 'mongodb',
         },
         {
           name: 'PHP',
@@ -72,7 +72,7 @@ export default {
         },
         {
           name: 'Java',
-          svg: 'java',
+          svgPath: 'java',
         },
         {
           name: 'PostgreSQL',
@@ -86,7 +86,7 @@ export default {
         },
         {
           name: 'Vue',
-          svg: 'vuejs',
+          svgPath: 'vuejs',
         },
         {
           name: 'Javascript',
@@ -102,11 +102,11 @@ export default {
         },
         {
           name: 'CSS3',
-          svg: 'css3',
+          svgPath: 'css3',
         },
         {
           name: 'HTML',
-          svg: 'html5',
+          svgPath: 'html5',
         },
       ],
       expFrontendTable: [
@@ -116,7 +116,7 @@ export default {
         },
         {
           name: 'Google APIs',
-          svg: 'google',
+          svgPath: 'google',
         },
         {
           name: 'Bootstrap',
@@ -138,7 +138,7 @@ export default {
         },
         {
           name: 'Webpack',
-          svg: 'webpack',
+          svgPath: 'webpack',
         },
         {
           name: 'Babel',
@@ -150,12 +150,11 @@ export default {
         },
         {
           name: 'Linux',
-          image: 'linux',
-          src: '@/svg/linux.svg',
+          svgImage: 'linux',
         },
         {
           name: 'Slack',
-          svg: 'slack',
+          svgPath: 'slack',
         },
       ],
       expOthersTable: [
@@ -169,11 +168,11 @@ export default {
         },
         {
           name: 'GIMP',
-          classItem: 'devicon-image devicon-gimp-plain colored',
+          svgImage: 'gimp',
         },
         {
           name: 'Chrome Dev Tools',
-          svg: 'chrome',
+          svgPath: 'chrome',
         },
       ],
     };
