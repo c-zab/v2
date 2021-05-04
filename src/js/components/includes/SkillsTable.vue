@@ -14,7 +14,13 @@
           >
             <div class="col-3">
               <svg-item v-if="item.svg" :name="item.svg" />
-              <i v-else :class="[item.classItem]" />
+              <i v-else-if="item.classItem" :class="[item.classItem]" />
+              <img
+                v-else
+                src="@/svg/linux.svg"
+                alt="Kiwi standing on oval"
+                class="svg-size"
+              >
             </div>
             <div class="col">
               <h4 class="pt-2">

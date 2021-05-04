@@ -150,7 +150,8 @@ export default {
         },
         {
           name: 'Linux',
-          classItem: 'devicon-image devicon-linux-plain colored',
+          image: 'linux',
+          src: '@/svg/linux.svg',
         },
         {
           name: 'Slack',
