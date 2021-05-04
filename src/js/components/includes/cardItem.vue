@@ -2,10 +2,10 @@
   <div class="mix col-lg-4 col-sm-10 col-12" :class="cardItem.types">
     <div class="text-white" @mouseover="show = true" @mouseleave="show = false">
       <picture>
-        <source :srcset="imageWebp" type="image/webp">
-        <source :srcset="image" type="image/png">
+        <source :srcset="require(`@/images/cards/${cardItem.imageWebp}`)" type="image/webp">
+        <source :srcset="require(`@/images/cards/${cardItem.image}`)" type="image/png">
         <img
-          :src="image"
+          :src="require(`@/images/cards/${cardItem.image}`)"
           type="image/png"
           class="card-img"
           :class="{'card-ima-blur': show}"
@@ -46,14 +46,6 @@ export default {
       show: false,
       img: '/images/cards/' + this.cardItem.image,
     };
-  },
-  computed: {
-    image() {
-      return '/images/cards/' + this.cardItem.image;
-    },
-    imageWebp() {
-      return '/images/cards/' + this.cardItem.imageWebp;
-    },
   },
 };
 </script>
