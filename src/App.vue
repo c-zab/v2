@@ -5,6 +5,7 @@
     <About />
     <Skills />
     <Portfolio />
+    <Footer />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Navbar from './js/components/Navbar';
 import About from './js/components/About';
 import Skills from './js/components/Skills';
 import Portfolio from './js/components/Portfolio';
+import Footer from './js/components/Footer';
 
 export default {
   name: 'App',
@@ -23,6 +25,7 @@ export default {
     About,
     Skills,
     Portfolio,
+    Footer,
   },
 };
 </script>
