@@ -7745,11 +7745,6 @@ svg-tags@^1.0.0:
   resolved "https://registry.yarnpkg.com/svg-tags/-/svg-tags-1.0.0.tgz#58f71cee3bd519b59d4b2a843b6c7de64ac04764"
   integrity sha1-WPcc7jvVGbWdSyqEO2x95krAR2Q=
 
-svg-vue@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/svg-vue/-/svg-vue-0.1.2.tgz#a989c914cd475ae555d720da3eb32930749ca83c"
-  integrity sha512-9pIcDURjgbbjZFCPMGg5UVfQzs4SX6AAdCrsr7iM8KqMM7jO6OdezaHWnCFYx0waiR+JM+ut/OH45msf86O64A==
-
 svgo@^1.0.0:
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/svgo/-/svgo-1.3.2.tgz#b6dc511c063346c9e415b81e43401145b96d4167"
