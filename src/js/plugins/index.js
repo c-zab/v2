@@ -1,4 +1,3 @@
-// import './bootstrap';
 import './fontawesome';
 import './aos';
 /*
