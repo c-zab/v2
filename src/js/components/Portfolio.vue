@@ -52,7 +52,14 @@
       <cardItem :card-item="aiesec" @showModal="showModal" />
       <cardItem :card-item="google" @showModal="showModal" />
     </div>
-    <modal v-if="isModalVisible" :modal-data="modalData" @close="isModalVisible = false" />
+    <modal
+      v-if="isModalVisible"
+      :modal-data="modalData"
+      active="active"
+      show="show"
+      @toggleModal="toggleModal"
+      @close="isModalVisible = false"
+    />
   </div>
 </template>
 
@@ -71,8 +78,10 @@ export default {
   },
   data() {
     return {
+      active: false,
       show: false,
       isModalVisible: false,
+      body: document.querySelector('body'),
       modalData: {},
       queryfox: {
         title: 'QueryFox',
@@ -242,6 +251,15 @@ export default {
     showModal(modalData) {
       this.modalData = modalData;
       this.isModalVisible = true;
+      this.active = true;
+      this.body.classList.add('modal-open');  
+      this.show = !this.show;
+    },
+    toggleModal() {
+      this.isModalVisible = false;
+      this.active = false;
+      this.body.classList.remove('modal-open');
+      this.show = !this.show;
     },
   },
 };
