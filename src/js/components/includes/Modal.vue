@@ -121,7 +121,9 @@
                   class="alert alert-primary mr-auto mb-0"
                   role="alert"
                 >
-                  The images shown above are only references of my work.
+                  <span>
+                    The images shown above are only references of my work.
+                  </span>
                 </div>
                 <button 
                   type="button" 
@@ -160,3 +162,11 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.alert-primary{
+  span {
+    font-size: 0.8rem;
+  }
+}
+</style>

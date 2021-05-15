@@ -11,7 +11,7 @@
         </h1>
         <button
           type="button"
-          class="btn btn-outline-info btn-lg"
+          class="btn btn-info btn-info-cover"
           data-aos="fade-right"
           data-aos-delay="500"
           @click.prevent="scrollTo('#about')"

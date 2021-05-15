@@ -9,6 +9,7 @@
           type="image/png"
           class="card-img"
           :class="{'card-ima-blur': show}"
+          :alt="`${cardItem.title} image`"
         >
       </picture>
       <div class="card-img-overlay card-body text-center align-items-center">

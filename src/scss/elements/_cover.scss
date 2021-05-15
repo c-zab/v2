@@ -10,3 +10,8 @@
   top: 50%;
   transform: translateY(-50%);
 }
+
+.btn-info-cover:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 2px #082234, 0 0 0 4px #14cbeb !important;
+}

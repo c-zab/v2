@@ -1,10 +1,12 @@
 <template>
   <div id="app">
-    <Cover />
-    <Navbar />
-    <About />
-    <Skills />
-    <Portfolio />
+    <main>
+      <Cover />
+      <Navbar />
+      <About />
+      <Skills />
+      <Portfolio />
+    </main>
     <Footer />
   </div>
 </template>

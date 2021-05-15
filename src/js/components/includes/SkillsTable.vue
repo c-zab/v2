@@ -13,9 +13,14 @@
             class="row"
           >
             <div class="col-3">
-              <svg-item v-if="item.svgPath" :name="item.svgPath" />
-              <i v-else-if="item.classItem" :class="[item.classItem]" />
-              <img v-else :src="require(`@/svg/${item.svgImage}.svg`)" class="svg-size">
+              <svg-item v-if="item.svgPath" :name="item.svgPath" :alt-text="item.altText" />
+              <i v-else-if="item.classItem" :class="[item.classItem]" :aria-label="item.altText" />
+              <img
+                v-else
+                :src="require(`@/svg/${item.svgImage}.svg`)"
+                class="svg-size"
+                :alt="item.altText"
+              >
             </div>
             <div class="col">
               <h4 class="pt-2">

@@ -18,7 +18,7 @@
               src="@/images/me.webp"
               type="image/webp"
               align="center"
-              alt="image"
+              alt="profile picture"
             >
           </picture>
           <h2>Who am I?</h2>
@@ -26,7 +26,7 @@
             I am a
             <strong>full-stack</strong> developer based in Toronto, Canada.
           </p>
-          <p>
+          <p class="text-justify">
             I am passionate about
             <strong>quality software development</strong>. I am
             <strong>innovative</strong>, <strong>flexible</strong> and
@@ -74,7 +74,7 @@
             </div>
             <h3>Fast</h3>
           </div>
-          <p>
+          <p class="text-justify">
             First impressions are vital on the Internet. According to
             statistics, half of us don’t even wait two seconds for a website
             content to pop up!
@@ -101,7 +101,7 @@
             </div>
             <h3>Responsive</h3>
           </div>
-          <p>
+          <p class="text-justify">
             Every website needs to be user-friendly on a smartphone or any
             device as Google's SEO increases visibility on search engines based
             on its responsiveness.
@@ -129,7 +129,7 @@
             </div>
             <h3>Intuitive</h3>
           </div>
-          <p>
+          <p class="text-justify">
             Intuitive design is invisible yet important. The easier your website
             is to use, the more people will use it.
           </p>
@@ -159,16 +159,18 @@
             </div>
             <h3>Dynamic</h3>
           </div>
-          <p>
+          <p class="text-justify">
             A dynamic website allows to make updates and improves its code
             faster than having an static website.
           </p>
         </div>
+      </div>
+      <div class="row justify-content-md-center text-center">
         <div
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
           data-aos-delay="400"
-          class="col-md-12 col-lg-12 py-3"
+          class="col-md-6 col-lg-6 py-3"
         >
           <div @mouseover="hoverCode = true" @mouseleave="hoverCode = false">
             <div class="about-icon mb-3">
@@ -182,20 +184,9 @@
             </div>
             <h3>Code</h3>
           </div>
-          <p>
-            I seek to write open source code so people can modify and share.
-          </p>
-          <p>
-            It is important to
-            <strong>write clean code</strong> so it is easy to read,
-          </p>
-          <p>
-            <strong>consistent code</strong> to make it easy for people to
-            understand how it is working,
-          </p>
-          <p>
-            and
-            <strong>extensible code</strong> so it is easy to reuse and modify.
+          <p class="text-justify">
+            I seek to write open source code so people can modify and share. It is important to <strong>write clean code</strong> so it is easy to read, <strong>consistent code</strong> to make it easy for people to
+            understand how it is working, and <strong>extensible code</strong> so it is easy to reuse and modify.
           </p>
         </div>
       </div>
