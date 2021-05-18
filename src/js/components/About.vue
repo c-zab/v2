@@ -47,7 +47,7 @@
           <Language name="JavaScript" percentage="85" />
           <Language name="PHP" percentage="70" />
           <Language name="C#" percentage="60" />
-          <Language name="Typescript" percentage="70" />
+          <Language name="Typescript" percentage="65" />
           <Language name="SCSS" percentage="80" />
           <Language name="Git" percentage="75" />
         </div>

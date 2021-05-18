@@ -6,6 +6,7 @@
       <About />
       <Skills />
       <Portfolio />
+      <Contact />
     </main>
     <Footer />
   </div>
@@ -18,6 +19,7 @@ import About from './js/components/About';
 import Skills from './js/components/Skills';
 import Portfolio from './js/components/Portfolio';
 import Footer from './js/components/Footer';
+import Contact from './js/components/Contact';
 
 export default {
   name: 'App',
@@ -28,6 +30,7 @@ export default {
     Skills,
     Portfolio,
     Footer,
+    Contact,
   },
 };
 </script>

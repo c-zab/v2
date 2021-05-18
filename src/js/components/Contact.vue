@@ -20,13 +20,13 @@
         </section>
       </div>
     </div>
-    <slot
+    <Form
       :form="form"
       :message="message"
-      :errorsBE="errorsBE"
-      :validationSubmit="validationSubmit"
-      :geterrorsBE="geterrorsBE"
-      :clearInputBE="clearInputBE"
+      :errors-b-e="errorsBE"
+      :validation-submit="validationSubmit"
+      :geterrors-b-e="geterrorsBE"
+      :clear-input-b-e="clearInputBE"
     />
   </div>
 </template>
@@ -34,6 +34,7 @@
 <script>
 import { Validator } from 'vee-validate';
 import Title from './includes/Title';
+import Form from './includes/Form';
 
 const dict = {
   custom: {
@@ -59,6 +60,7 @@ export default {
   name: 'Contact',
   components: {
     Title,
+    Form,
   },
   data() {
     return {
