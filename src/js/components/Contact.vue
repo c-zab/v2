@@ -20,11 +20,12 @@
     </div>
     <contact-form
       :form="form"
-      :message="message"
+      :pulse="pulse"
       :errors-b-e="errorsBE"
       :validation-submit="validationSubmit"
       :geterrors-b-e="geterrorsBE"
       :clear-input-b-e="clearInputBE"
+      :form-items="formItems"
     />
   </div>
 </template>
@@ -68,39 +69,19 @@ export default {
         subject: '',
         message: '',
       },
-      message: {
-        coffeeMessage: true,
-        clientName: '',
-      },
+      pulse: false,
       errorsBE: {},
+      formItems: ['name', 'email', 'subject', 'message'],
     };
   },
   methods: {
     validationSubmit() {
       this.$validator.validate().then(valid => {
         if (!valid) return;
-        this.errorsBE = { 
-          name: 'Sorry, your name couldn\'t be sent',
-          email: 'Sorry, your email couldn\'t be sent', 
-          subject: 'Sorry, your subject couldn\'t be sent',
-          message: 'Sorry, your message couldn\'t be sent',
-        };
-        console.warn('Oopsy Doopsy!!! This form is not longer working! Only frontend working - please visit my current website 🙂');
+        this.formItems.forEach(item => this.errorsBE[item] = 'Sorry, your message couldn\'t be sent');
+        this.pulse = true;
+        console.warn('Oopsy Doopsy!!! This form is not longer working! Only frontend working - please visit my latest website 🙂');
       });
-    },
-    onSuccess(response) {
-      this.message.clientName = response.data.clientName;
-      this.form.name = '';
-      this.form.email = '';
-      this.form.subject = '';
-      this.form.message = '';
-      this.$nextTick(() => {
-        this.errors.clear();
-        this.$nextTick(() => {
-          this.$validator.reset();
-        });
-      });
-      this.message.coffeeMessage = true;
     },
     geterrorsBE(field) {
       return `${field}`;

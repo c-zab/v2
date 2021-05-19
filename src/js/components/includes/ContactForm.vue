@@ -4,8 +4,6 @@
       <div class="col-lg-8">
         <form
           name="contact-form"
-          action="/messages"
-          method="POST"
           @submit.prevent="validationSubmit"
           @keydown="clearInputBE($event.target.name)"
         >
@@ -20,6 +18,7 @@
                   type="text"
                   name="name"
                   class="form-control"
+                  :class="{'is-invalid': errors.first('name')}"
                 >
                 <small v-if="errorsBE.name" class="text-danger form-error-message" v-text="geterrorsBE(errorsBE.name)" />
                 <small class="text-danger form-error-message">{{ errors.first('name') }}</small>
@@ -36,6 +35,7 @@
                   name="email"
                   type="text"
                   class="form-control"
+                  :class="{'is-invalid': errors.first('email')}"
                 >
                 <small v-if="errorsBE.email" class="form-error-message text-danger" v-text="geterrorsBE(errorsBE.email)" />
                 <small class="form-error-message text-danger">{{ errors.first('email') }}</small>
@@ -54,6 +54,7 @@
                   type="text"
                   name="subject"
                   class="form-control"
+                  :class="{'is-invalid': errors.first('subject')}"
                 >
                 <small v-if="errorsBE.subject" class="form-error-message text-danger" v-text="geterrorsBE(errorsBE.subject)" />
                 <small class="form-error-message text-danger">{{ errors.first('subject') }}</small>
@@ -73,6 +74,7 @@
                   name="message"
                   rows="2"
                   class="form-control"
+                  :class="{'is-invalid': errors.first('message') }"
                 />
                 
                 <small v-if="errorsBE.message" class="form-error-message text-danger" v-text="geterrorsBE(errorsBE.message)" />
@@ -83,15 +85,17 @@
           <div class="row align-items-center">
             <div class="col-2 text-center text-md-left">
               <div class="control">
-                <button class="btn btn-info" name="submit">
+                <button class="btn btn-info" name="submit" :disabled="isFormCompleted">
                   Send
                 </button>
               </div>
             </div>
 
             <div class="col-10">
-              <div v-if="message.coffeeMessage" class="alert alert-warning fade show text-center mb-0">
-                <strong>Hi{{ message.clientName }}!</strong> This form is no longer maintained
+              <div class="alert alert-warning fade show text-center mb-0" :class="{pulse}">
+                <small>
+                  <strong>Hi{{ (form.name.length > 0) ? ' ' + form.name : '' }}!</strong> This form is no longer maintained. Please visit my latest website 🙂!
+                </small>
               </div>
             </div>
           </div>
@@ -107,8 +111,8 @@ export default {
       type: Object,
       required: true,
     },
-    message: {
-      type: Object,
+    pulse: {
+      type: Boolean,
       required: true,
     },
     errorsBE: {
@@ -127,6 +131,15 @@ export default {
       type: Function,
       required: true,
     },
+    formItems: {
+      type: Array,
+      required: true,
+    },
+  },
+  computed: {
+    isFormCompleted: function () {
+      return this.formItems.some(item => this.form[item].length === 0) || this.errors.items.length > 0;
+    },
   },
 };
 </script>
@@ -139,5 +152,13 @@ export default {
   .form-error-message {
     position: absolute;
     bottom: calc(-1.7 * 1em);
+  }
+  .pulse {
+    animation: pulse 1s infinite ease-in-out alternate;
+  }
+
+  @keyframes pulse {
+    from { transform: scale(1.0); }
+    to { transform: scale(1.1); }
   }
 </style>
