@@ -11,16 +11,14 @@
             data-aos-delay="300"
             data-aos-duration="1000"
           >
-            <h4
-              class="text-center w-responsive mx-auto mb-0"
-            >
+            <h4 class="text-center w-responsive mx-auto mb-0">
               Have a question or want to work together?
             </h4>
           </div>
         </section>
       </div>
     </div>
-    <Form
+    <contact-form
       :form="form"
       :message="message"
       :errors-b-e="errorsBE"
@@ -34,7 +32,7 @@
 <script>
 import { Validator } from 'vee-validate';
 import Title from './includes/Title';
-import Form from './includes/Form';
+import ContactForm from './includes/ContactForm';
 
 const dict = {
   custom: {
@@ -60,7 +58,7 @@ export default {
   name: 'Contact',
   components: {
     Title,
-    Form,
+    ContactForm,
   },
   data() {
     return {
@@ -71,7 +69,7 @@ export default {
         message: '',
       },
       message: {
-        coffeeMessage: false,
+        coffeeMessage: true,
         clientName: '',
       },
       errorsBE: {},
