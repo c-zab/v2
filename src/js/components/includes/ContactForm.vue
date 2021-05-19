@@ -1,20 +1,6 @@
 <template>
   <div class="container">
-    <div class="row justify-content-center pb-4">
-      <div v-if="message.coffeeMessage" class="alert alert-warning alert-dismissible fade show" role="alert">
-        <strong>I got it!</strong> I will send you a message {{ message.clientName }} as soon as I finish my coffee.
-        <button
-          type="button"
-          class="close"
-          data-dismiss="alert"
-          aria-label="Close"
-        >
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-    </div>
-
-    <div class="row justify-content-center pb-4">
+    <div class="row justify-content-center">
       <div class="col-lg-8">
         <form
           name="contact-form"
@@ -25,8 +11,8 @@
         >
           <div class="row">
             <div class="col-md-6">
-              <div class="form-group">
-                <label for="name" class>Your name</label>
+              <div class="form-group form-item">
+                <label for="name" class>Name*</label>
                 <input
                   id="name"
                   v-model="form.name"
@@ -35,14 +21,14 @@
                   name="name"
                   class="form-control"
                 >
-                <span v-if="errorsBE.name" class="form-text text-danger" v-text="geterrorsBE(errorsBE.name)" />
-                <span class="form-text text-danger">{{ errors.first('name') }}</span>
+                <small v-if="errorsBE.name" class="text-danger form-error-message" v-text="geterrorsBE(errorsBE.name)" />
+                <small class="text-danger form-error-message">{{ errors.first('name') }}</small>
               </div>
             </div>
 
             <div class="col-md-6">
-              <div class="form-group">
-                <label for="email" class>Your email</label>
+              <div class="form-group form-item">
+                <label for="email" class>Email*</label>
                 <input
                   id="email"
                   v-model="form.email"
@@ -51,16 +37,16 @@
                   type="text"
                   class="form-control"
                 >
-                <span v-if="errorsBE.email" class="form-text text-danger" v-text="geterrorsBE(errorsBE.email)" />
-                <span class="form-text text-danger">{{ errors.first('email') }}</span>
+                <small v-if="errorsBE.email" class="form-error-message text-danger" v-text="geterrorsBE(errorsBE.email)" />
+                <small class="form-error-message text-danger">{{ errors.first('email') }}</small>
               </div>
             </div>
           </div>
 
           <div class="row">
             <div class="col-md-12">
-              <div class="form-group">
-                <label for="subject" class>Subject</label>
+              <div class="form-group form-item">
+                <label for="subject" class>Subject*</label>
                 <input
                   id="subject"
                   v-model="form.subject"
@@ -69,16 +55,16 @@
                   name="subject"
                   class="form-control"
                 >
-                <span v-if="errorsBE.subject" class="form-text text-danger" v-text="geterrorsBE(errorsBE.subject)" />
-                <span class="form-text text-danger">{{ errors.first('subject') }}</span>
+                <small v-if="errorsBE.subject" class="form-error-message text-danger" v-text="geterrorsBE(errorsBE.subject)" />
+                <small class="form-error-message text-danger">{{ errors.first('subject') }}</small>
               </div>
             </div>
           </div>
 
           <div class="row">
             <div class="col-md-12">
-              <div class="form-group">
-                <label for="message">Your message</label>
+              <div class="form-group form-item">
+                <label for="message">Message*</label>
                 <textarea
                   id="message"
                   v-model="form.message"
@@ -88,16 +74,25 @@
                   rows="2"
                   class="form-control"
                 />
-                <span v-if="errorsBE.message" class="form-text text-danger" v-text="geterrorsBE(errorsBE.message)" />
-                <span class="form-text text-danger">{{ errors.first('message') }}</span>
+                
+                <small v-if="errorsBE.message" class="form-error-message text-danger" v-text="geterrorsBE(errorsBE.message)" />
+                <small class="form-error-message text-danger">{{ errors.first('message') }}</small>
               </div>
             </div>
           </div>
-          <div class="text-center text-md-left">
-            <div class="control">
-              <button class="btn btn-info" name="submit" disabled>
-                Send
-              </button>
+          <div class="row align-items-center">
+            <div class="col-2 text-center text-md-left">
+              <div class="control">
+                <button class="btn btn-info" name="submit">
+                  Send
+                </button>
+              </div>
+            </div>
+
+            <div class="col-10">
+              <div v-if="message.coffeeMessage" class="alert alert-warning fade show text-center mb-0">
+                <strong>Hi{{ message.clientName }}!</strong> This form is no longer maintained
+              </div>
             </div>
           </div>
         </form>
@@ -135,3 +130,14 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+  .form-item {
+    position: relative;
+    margin-bottom: 2em;
+  }
+  .form-error-message {
+    position: absolute;
+    bottom: calc(-1.7 * 1em);
+  }
+</style>

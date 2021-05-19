@@ -3,7 +3,7 @@
     <div class="container">
       <Title data-aos="fade-right" title="CONTACT" />
       <div>
-        <section class="mb-0">
+        <section class="mb-5">
           <div
             data-aos="fade-right"
             data-aos-offset="100"
@@ -79,17 +79,13 @@ export default {
     validationSubmit() {
       this.$validator.validate().then(valid => {
         if (!valid) return;
-        Axios.post('/messages', {
-          name: this.form.name,
-          email: this.form.email,
-          subject: this.form.subject,
-          message: this.form.message,
-        })
-          .then(this.onSuccess)
-          .catch(error => {
-            this.errorsBE = error.response.data.errors;
-            console.log('Oopsy Doopsy!!! Please try again!');
-          });
+        this.errorsBE = { 
+          name: 'Sorry, your name couldn\'t be sent',
+          email: 'Sorry, your email couldn\'t be sent', 
+          subject: 'Sorry, your subject couldn\'t be sent',
+          message: 'Sorry, your message couldn\'t be sent',
+        };
+        console.warn('Oopsy Doopsy!!! This form is not longer working! Only frontend working - please visit my current website 🙂');
       });
     },
     onSuccess(response) {
