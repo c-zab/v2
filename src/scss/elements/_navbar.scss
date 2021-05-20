@@ -4,12 +4,17 @@
 	font-weight: 400;
 }
 
-.nav-item {
-	&:hover .nav-link{
-		color: $success !important
-	}
+.active-item {
+  color: $success !important;
 }
 
-.active-item {
-  color: $success !important
+.nav-link:focus {
+	outline: none !important;
+	color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.nav-item {
+	&:hover .nav-link{
+		color: $success !important;
+	}
 }

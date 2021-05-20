@@ -14,7 +14,7 @@
     <div
       id="navbarNav"
       class="collapse navbar-collapse"
-      :class="{ show: show }"
+      :class="{ show }"
     >
       <ul class="navbar-nav mx-auto">
         <li class="nav-item px-3">
@@ -155,7 +155,3 @@ export default {
   },
 };
 </script>
-
-<style>
-  /* @import '../../scss/elements/_navbar.scss'; */
-</style>
