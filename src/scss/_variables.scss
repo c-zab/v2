@@ -1,0 +1,91 @@
+$my-dark-gray: #2d2d2d;
+$my-dark-cyan: #0C8297;
+$my-bg-color: #041b2b;
+$my-footer: #052438;
+
+/* Typography */
+$font-family-sans-serif: 'Montserrat', sans-serif;
+
+/* Colors */
+$body-color: #191b1b;
+$success: #2ce059;
+$danger: #fb173f;
+$warning: #ffe219;
+$primary: #0496FF;
+$info: #14cbeb;
+
+.btn-info {
+  color: white !important;
+	background-color: #0C8297 !important;
+  border-color: #0C8297 !important;
+}
+
+.btn-info:hover:enabled {
+  background-color: #14cbeb !important;
+  border-color: #14cbeb !important;
+}
+
+.btn-danger:hover {
+	background-color: #d60025 !important;
+  border-color: #d60025 !important;
+}
+
+.btn-info:focus {
+	outline: none !important;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #14cbeb !important;
+}
+
+.btn-danger:focus {
+	outline: none !important;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #d60025 !important;
+}
+
+.btn-outline-info:hover, .btn-outline-info:focus, .btn-outline-info:active, .btn-outline-info.active, .open>.dropdown-toggle.btn-outline-info {
+  color: #fff;
+  background-color: #00b3db;
+  border-color: #00b3db;
+}
+
+h1 {
+	font-family: "Raleway", sans-serif;
+	font-weight: 600;
+	font-size: 2.5rem;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+	font-weight: 400;
+	font-size: 2rem;
+}
+
+h3 {
+  font-family: "Raleway", sans-serif;
+	font-weight: 400;
+	font-size: 1.75rem;
+}
+
+h4 {
+	font-weight: 400;
+	font-size: 1.5rem;
+}
+
+h5 {
+	font-weight: 400;
+	font-size: 1.25rem;
+}
+
+.bg-color {
+	background-color: $my-bg-color;
+}
+
+@media screen and (max-width: 992px){
+	h1{
+		font-size: 2em;
+	}
+	h4 {
+		font-size: 1.4em;
+	}
+	h5 {
+		font-size: 1em;
+	}
+}

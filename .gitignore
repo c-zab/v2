@@ -23,3 +23,5 @@ yarn-error.log
 public/js/*
 public/images/*
 public/css/*
+
+.DS_Store

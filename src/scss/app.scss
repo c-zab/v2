@@ -1,0 +1,16 @@
+@import 'variables';
+@import 'bootstrap';
+@import 'fonts';
+
+@import "~aos/src/sass/aos";
+@import "~devicon/devicon.min.css";
+
+@import './elements/about';
+@import './elements/cover';
+@import './elements/footer';
+@import './elements/navbar';
+@import './elements/portfolio';
+@import './elements/skills';
+@import './elements/title';
+
+[v-cloak] > * { display:none; }

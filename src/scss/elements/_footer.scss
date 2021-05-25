@@ -1,0 +1,19 @@
+#my-footer {
+	a:focus {
+		outline: none !important;
+		box-shadow: 0 0 0 2px #052438, 0 0 0 4px #14cbeb !important;
+	}
+}
+.footer-content {
+	background-color: $my-footer;
+	margin-top: 3em;
+}
+
+.footer-text {
+	font-size:0.8rem;
+	color: #79838B;
+}
+
+.text-heart {
+	color: #FC1D46;
+}
