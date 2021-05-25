@@ -38,7 +38,3 @@ export default {
   },
 };
 </script>
-
-<style>
-  /* @import '../../scss/elements/_cover.scss'; */
-</style>
