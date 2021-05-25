@@ -5,7 +5,7 @@
         <div class="col-md-12 py-4">
           <div class="my-2 d-flex justify-content-center">
             <!-- Github -->
-            <a class="mx-4" href="https://github.com/c-zab">
+            <a class="mx-4" href="https://github.com/c-zab" target="_blank">
               <font-awesome-icon
                 :icon="['fab', 'github']"
                 size="2x"
@@ -13,7 +13,7 @@
               />
             </a>
             <!-- Twitter -->
-            <a class="mx-4" href="https://twitter.com/czabaletDev">
+            <a class="mx-4" href="https://twitter.com/czabaletDev" target="_blank">
               <font-awesome-icon
                 :icon="['fab', 'twitter']"
                 size="2x"
@@ -21,7 +21,7 @@
               />
             </a>
             <!--Instagram-->
-            <a class="mx-4" href="https://www.instagram.com/czabalet.dev">
+            <a class="mx-4" href="https://www.instagram.com/czabal3ta" target="_blank">
               <font-awesome-icon
                 :icon="['fab', 'instagram']"
                 size="2x"
@@ -29,7 +29,7 @@
               />
             </a>
             <!--Linkedin -->
-            <a class="mx-4" href="https://www.linkedin.com/in/czabalet/">
+            <a class="mx-4" href="https://www.linkedin.com/in/czabalet/" target="_blank">
               <font-awesome-icon
                 :icon="['fab', 'linkedin']"
                 size="2x"
