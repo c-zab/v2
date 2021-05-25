@@ -1,7 +1,5 @@
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production'
-    ? '/czabalet.com/'
-    : '/',
+  publicPath: '/czabalet.com/',
 };
 
 // https://github.com/c-zab/czabalet.com
