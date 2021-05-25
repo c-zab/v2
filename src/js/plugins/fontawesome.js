@@ -53,4 +53,5 @@ library.add(
   faHandsHelping,
   faCode,
   faEyeSlash,
-  faTools);
+  faTools,
+);

@@ -41,11 +41,15 @@
 
 <script>
 export default {
-  props: { cardItem: Object },
+  props: { 
+    cardItem: {
+      type: Object,
+      required: true,
+    }, 
+  },
   data() {
     return {
       show: false,
-      img: '/images/cards/' + this.cardItem.image,
     };
   },
 };

@@ -19,8 +19,14 @@
 <script>
 export default {
   props: {
-    name: String,
-    percentage: String,
+    name: {
+      type: String,
+      required: true,
+    },
+    percentage: {
+      type: String,
+      required: true,
+    },
   },
 };
 </script>

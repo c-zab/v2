@@ -43,7 +43,14 @@ export default {
     SvgItem,
   },
   props: { 
-    'title': { type: String, required: true }, 
-    'table': { type: Array, required: true } },
+    title: { 
+      type: String, 
+      required: true, 
+    }, 
+    table: { 
+      type: Array, 
+      required: true, 
+    }, 
+  },
 };
 </script>
