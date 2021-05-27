@@ -23,7 +23,7 @@
                       :src="require(`@/images/modals/${modalData.imageModalXL}`)"
                       type="image/png"
                       class="d-block w-100"
-                      alt="image"
+                      :alt="`${modalData.title} sample images`"
                     >
                   </picture>
                 </div>

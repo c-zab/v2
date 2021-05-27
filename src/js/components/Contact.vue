@@ -11,9 +11,9 @@
             data-aos-delay="300"
             data-aos-duration="1000"
           >
-            <h4 class="text-center w-responsive mx-auto mb-0">
+            <p class="text-center w-responsive mx-auto mb-0 contact-text">
               Have a question or want to work together?
-            </h4>
+            </p>
           </div>
         </section>
       </div>
@@ -92,3 +92,9 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.contact-text {
+  font-size: 1.3rem;
+}
+</style>

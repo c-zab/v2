@@ -43,14 +43,14 @@
     </div>
     <div class="containerMix row justify-content-center no-gutters">
       <cardItem :card-item="queryfox" @showModal="showModal" />
-      <cardItem :card-item="czabalet" @showModal="showModal" />
-      <cardItem :card-item="delisa" @showModal="showModal" />
-      <cardItem :card-item="space" @showModal="showModal" />
       <cardItem :card-item="tedx" @showModal="showModal" />
+      <cardItem :card-item="czabalet" @showModal="showModal" />
+      <cardItem :card-item="space" @showModal="showModal" />
+      <cardItem :card-item="google" @showModal="showModal" />
       <cardItem :card-item="games" @showModal="showModal" />
       <cardItem :card-item="books" @showModal="showModal" />
       <cardItem :card-item="aiesec" @showModal="showModal" />
-      <cardItem :card-item="google" @showModal="showModal" />
+      <cardItem :card-item="delisa" @showModal="showModal" />
     </div>
     <modal
       v-if="isModalVisible"

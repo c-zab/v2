@@ -7,7 +7,13 @@
           @submit.prevent="validationSubmit"
           @keydown="clearInputBE($event.target.name)"
         >
-          <div class="row">
+          <div
+            class="row"
+            data-aos="flip-up"
+            data-aos-easing="ease-in-sine"
+            data-aos-delay="700"
+            data-aos-anchor-placement="top-center"
+          >
             <div class="col-md-6">
               <div class="form-group form-item">
                 <label for="name" class>Name*</label>
@@ -43,7 +49,13 @@
             </div>
           </div>
 
-          <div class="row">
+          <div
+            class="row"
+            data-aos="flip-up"
+            data-aos-easing="ease-in-sine"
+            data-aos-delay="700"
+            data-aos-anchor-placement="top-center"
+          >
             <div class="col-md-12">
               <div class="form-group form-item">
                 <label for="subject" class>Subject*</label>
@@ -62,7 +74,13 @@
             </div>
           </div>
 
-          <div class="row">
+          <div
+            class="row"
+            data-aos="flip-up"
+            data-aos-easing="ease-in-sine"
+            data-aos-delay="700"
+            data-aos-anchor-placement="top-center"
+          >
             <div class="col-md-12">
               <div class="form-group form-item">
                 <label for="message">Message*</label>
@@ -82,7 +100,13 @@
               </div>
             </div>
           </div>
-          <div class="row align-items-center">
+          <div
+            class="row align-items-center"
+            data-aos="flip-up"
+            data-aos-easing="ease-in-sine"
+            data-aos-delay="700"
+            data-aos-anchor-placement="top-center"
+          >
             <div class="col-2 text-center text-md-left">
               <div class="control">
                 <button class="btn btn-info" name="submit" :disabled="isFormCompleted">

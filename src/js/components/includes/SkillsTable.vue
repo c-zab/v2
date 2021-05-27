@@ -23,9 +23,9 @@
               >
             </div>
             <div class="col">
-              <h4 class="pt-2">
+              <p class="pt-2 skill-item">
                 {{ item.name }}
-              </h4>
+              </p>
             </div>
           </div>
         </div>

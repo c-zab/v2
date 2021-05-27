@@ -18,7 +18,7 @@
               src="@/images/me.webp"
               type="image/webp"
               align="center"
-              alt="profile picture"
+              alt="Carlos Zabaleta profile picture"
             >
           </picture>
           <h2>Who am I?</h2>

@@ -9,7 +9,7 @@
           type="image/png"
           class="card-img"
           :class="{'card-ima-blur': show}"
-          :alt="`${cardItem.title} image`"
+          :alt="`${cardItem.title} sample image`"
         >
       </picture>
       <div class="card-img-overlay card-body text-center align-items-center">
@@ -18,9 +18,9 @@
             <h3 class="card-title pt-2">
               <strong>{{ cardItem.title }}</strong>
             </h3>
-            <h5 class="pink-text">
+            <p class="pink-text">
               {{ cardItem.languages }}
-            </h5>
+            </p>
             <a
               class="btn btn-danger"
               data-toggle="modal"
