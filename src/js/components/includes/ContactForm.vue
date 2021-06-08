@@ -12,7 +12,7 @@
             data-aos="flip-up"
             data-aos-easing="ease-in-sine"
             data-aos-delay="700"
-            data-aos-anchor-placement="top-center"
+            data-aos-anchor-placement="bottom-bottom"
           >
             <div class="col-md-6">
               <div class="form-group form-item">
@@ -54,7 +54,7 @@
             data-aos="flip-up"
             data-aos-easing="ease-in-sine"
             data-aos-delay="700"
-            data-aos-anchor-placement="top-center"
+            data-aos-anchor-placement="top-bottom"
           >
             <div class="col-md-12">
               <div class="form-group form-item">
@@ -79,7 +79,7 @@
             data-aos="flip-up"
             data-aos-easing="ease-in-sine"
             data-aos-delay="700"
-            data-aos-anchor-placement="top-center"
+            data-aos-anchor-placement="top-bottom"
           >
             <div class="col-md-12">
               <div class="form-group form-item">
@@ -105,7 +105,7 @@
             data-aos="flip-up"
             data-aos-easing="ease-in-sine"
             data-aos-delay="700"
-            data-aos-anchor-placement="top-center"
+            data-aos-anchor-placement="top-bottom"
           >
             <div class="col-2 text-center text-md-left">
               <div class="control">
