@@ -1,29 +1,24 @@
 module.exports = {
-  'env': {
-    'browser': true,
-    'commonjs': true,
-    'es6': true,
+  env: {
+    browser: true,
+    commonjs: true,
+    es6: true,
   },
-  'extends': [
-    'eslint:recommended',
-    'plugin:vue/recommended',
-  ],
-  'globals': {
-    'Atomics': 'readonly',
-    'SharedArrayBuffer': 'readonly',
+  extends: ['eslint:recommended', 'plugin:vue/recommended'],
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
   },
-  'parserOptions': {
-    'ecmaVersion': 2018,
+  parserOptions: {
+    ecmaVersion: 2018,
   },
-  'plugins': [
-    'vue',
-  ],
-  'rules': {
-    'strict': ['error', 'global'],
+  plugins: ['vue'],
+  rules: {
+    strict: ['error', 'global'],
     'multiline-comment-style': ['error', 'starred-block'],
     'spaced-comment': ['error', 'always'],
     // always a semicolon at the end
-    'semi': ['error', 'always'],
+    semi: ['error', 'always'],
     // no space before semicolons
     'semi-spacing': 'error',
     // no extra semicolons
@@ -37,7 +32,7 @@ module.exports = {
     // the last element has a terminate comma
     'comma-dangle': ['error', 'always-multiline'],
     // indentation with spaces
-    'indent': ['error', 2],
+    indent: ['error', 2],
     // Spaces after and before opperators
     'space-infix-ops': 'error',
     // Add spaces before blocks (if, while) & No single openning bracket
@@ -47,7 +42,10 @@ module.exports = {
     'keyword-spacing': 'error',
     'arrow-spacing': 'error',
     // Space for functions
-    'space-before-function-paren': ['error', { 'anonymous':   'always', 'named': 'never', 'asyncArrow': 'always' }],
+    'space-before-function-paren': [
+      'error',
+      { anonymous: 'always', named: 'never', asyncArrow: 'always' },
+    ],
     // Indent method chains
     'newline-per-chained-call': 'error',
     // Space in enclosing characters
@@ -55,12 +53,16 @@ module.exports = {
     'array-bracket-spacing': ['error', 'never'],
     'object-curly-spacing': ['error', 'always'],
     //
-    'comma-spacing': ['error', { 'before': false, 'after': true }],
-    'no-multiple-empty-lines': ['error', { 'max': 1, 'maxEOF':1 }],
+    'comma-spacing': ['error', { before: false, after: true }],
+    'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 1 }],
     'no-undef': 'off',
-    'quotes': ['error', 'single'],
-    'vue/max-attributes-per-line': ['error', {
-      'singleline': 3,
-    }],
+    quotes: ['off', 'single'],
+    'vue/max-attributes-per-line': [
+      'error',
+      {
+        singleline: 3,
+      },
+    ],
+    'comma-dangle': 'off',
   },
 };

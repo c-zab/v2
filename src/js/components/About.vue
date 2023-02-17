@@ -2,24 +2,24 @@
   <div id="about" ref="about-sec" class="container">
     <Title title="ABOUT" />
     <div class="container pb-5">
-      <div class="row text-center">
+      <div class="row justify-content-md-center text-center">
         <div
           data-aos="fade-right"
           data-aos-offset="100"
           data-aos-easing="ease-in-sine"
           data-aos-anchor-placement="top-bottom"
-          class="col-md align-self-center"
+          class="col-md-6 align-self-center"
         >
           <picture>
-            <source srcset="@/images/me.webp" type="image/webp">
-            <source srcset="@/images/me.png" type="image/png">
+            <source srcset="@/images/me.webp" type="image/webp" />
+            <source srcset="@/images/me.png" type="image/png" />
             <img
               class="me-picture"
               src="@/images/me.webp"
               type="image/webp"
               align="center"
               alt="Carlos Zabaleta profile picture"
-            >
+            />
           </picture>
           <h2>Who am I?</h2>
           <p>
@@ -33,23 +33,6 @@
             <strong>curious</strong>, always looking to learn about new
             technologies and best practices.
           </p>
-        </div>
-        <div
-          data-aos="fade-left"
-          data-aos-offset="200"
-          data-aos-easing="ease-in-sine"
-          data-aos-anchor-placement="top-bottom"
-          class="col-md align-self-center"
-        >
-          <Language name="VueJS" percentage="80" />
-          <Language name="React" percentage="85" />
-          <Language name="Node.js" percentage="75" />
-          <Language name="JavaScript" percentage="85" />
-          <Language name="PHP" percentage="70" />
-          <Language name="C#" percentage="60" />
-          <Language name="Typescript" percentage="65" />
-          <Language name="SCSS" percentage="80" />
-          <Language name="Git" percentage="75" />
         </div>
       </div>
     </div>
@@ -185,8 +168,11 @@
             <h3>Code</h3>
           </div>
           <p class="text-justify">
-            I seek to write open source code so people can modify and share. It is important to <strong>write clean code</strong> so it is easy to read, <strong>consistent code</strong> to make it easy for people to
-            understand how it is working, and <strong>extensible code</strong> so it is easy to reuse and modify.
+            I seek to write open source code so people can modify and share. It
+            is important to <strong>write clean code</strong> so it is easy to
+            read, <strong>consistent code</strong> to make it easy for people to
+            understand how it is working, and
+            <strong>extensible code</strong> so it is easy to reuse and modify.
           </p>
         </div>
       </div>
@@ -195,14 +181,12 @@
 </template>
 
 <script>
-import Title from './includes/Title';
-import Language from './includes/Language';
+import Title from "./includes/Title";
 
 export default {
-  name: 'About',
+  name: "About",
   components: {
     Title,
-    Language,
   },
   data() {
     return {
